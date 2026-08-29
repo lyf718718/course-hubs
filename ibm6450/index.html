@@ -1,0 +1,3828 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>AI in Marketing Course Hub — Fall 2026</title><style>
+:root{--pine:#1B5E4B;--amber:#D98E32;--ink:#212B36;--paper:#F4F1EA;--gray:#5B6770}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+header{background:var(--pine);color:#fff;padding:2.2rem 1.5rem 1.6rem}
+header h1{margin:0 0 .3rem;font-size:1.7rem}header p{margin:.2rem 0;color:var(--paper)}
+header a{color:#FFD9A0}
+nav{position:sticky;top:0;z-index:10;background:var(--pine);border-top:1px solid rgba(255,255,255,.25);padding:.5rem 1.5rem;display:flex;gap:1.3rem;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.92rem}
+nav a:hover{color:#FFD9A0}
+main{max-width:1000px;margin:0 auto;padding:1rem 1.5rem 4rem}
+h2{color:var(--pine);border-bottom:3px solid var(--amber);padding-bottom:.3rem;margin-top:2.4rem;scroll-margin-top:3.4rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:1rem 0}
+th{background:var(--pine);color:#fff;text-align:left;padding:.45rem .6rem}
+td{border-bottom:1px solid #ddd;padding:.45rem .6rem;vertical-align:top}
+tr:nth-child(even) td{background:var(--paper)}
+details{border:1px solid #d8d3c8;border-radius:8px;margin:.7rem 0;background:#fff;scroll-margin-top:3.4rem}
+details[open]{box-shadow:0 2px 8px rgba(0,0,0,.07)}
+summary{cursor:pointer;padding:.8rem 1rem;font-weight:600;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+summary .due{color:var(--amber);font-weight:600;white-space:nowrap}
+.pa-body{padding:0 1.2rem 1rem;border-top:1px solid #eee}
+.pa-body table{font-size:.85rem}
+.pa-body h1{display:none}
+.pa-body h2{font-size:1.05rem;color:var(--ink);border-bottom:1px solid #e4dfd4;margin-top:1.3rem;padding-bottom:.15rem}
+.pa-body h3{font-size:.95rem;color:var(--ink);margin-bottom:.3rem}
+.sim-body h1{display:none}
+.card{background:var(--paper);border-radius:8px;padding:1rem 1.2rem;margin:.8rem 0}
+.card h3{margin:.1rem 0 .5rem;color:var(--pine);font-size:1.02rem}
+.card ul{margin:.3rem 0 .5rem 1.2rem;padding:0}
+.note{background:#FFF6E8;border-left:4px solid var(--amber);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:1rem 0}
+footer{color:var(--gray);font-size:.8rem;text-align:center;padding:2rem}
+@media(max-width:640px){table{display:block;overflow-x:auto}}
+</style></head>
+<body>
+<header>
+<h1>IBM 6450 / IBM 2990 AI in Marketing — Course Hub</h1>
+<p>Fall 2026 · Fridays 7:00–8:50 PM · In person, Bldg 163 Rm 2031 · Dr. Yufan (Frank) Lin</p>
+<p>Canvas <em>(on Canvas)</em> · one term, one arc: <em>learn → strategize → research → build → replicate → write → ship</em></p>
+</header>
+<nav><a href="#schedule">Schedule</a><a href="#gt">Ground truth (M0)</a><a href="#mini">Mini project</a><a href="#stamp">STAMP project</a><a href="#labs">Labs &amp; cases</a><a href="#resources">Resources</a></nav>
+<main>
+<div class="note"><strong>How to use this page:</strong> this hub is the reading room — one link that always has the current schedule, every assignment brief (each with its downloads inside), and the project guides. Everything you <em>submit</em> lives on Canvas (assignments, quizzes, grades). Bring it up in every Friday session. Bookmark it.</div>
+
+<h2 id="schedule">Weekly schedule</h2>
+<p>One Friday session per week. <strong>No class Fri Nov 27</strong> (Thanksgiving — that week's ethics module is on Canvas). Coding batches are due Mondays/Wednesdays 11:59 PM as listed; project milestones are due on their Fridays. <strong>The ground truth locks Friday Oct 9</strong> — no AI touches your coding before then. Quizzes are on Canvas, roughly biweekly, lowest dropped.</p>
+<table><tr><th>Wk</th><th>Friday</th><th>Lecture block</th><th>Project beat / due</th></tr><tr><td><strong>1</strong></td><td>Aug 21</td><td>AI Theory Foundation I: AI for marketing overview · term-project launch</td><td>M0: Solving Work codebook + training set (due Mon Aug 24)</td></tr><tr><td><strong>2</strong></td><td>Aug 28</td><td>AI Theory Foundation II: Generative AI overview</td><td>M0: SW batch 1 (due Wed Sep 2) · Mini kickoff: Li et al. reading, ladder 1–2, <strong>blind class survey</strong> (before the brief is released)</td></tr><tr><td><strong>3</strong></td><td>Sep 4</td><td><strong>AI for learning an academic paper</strong> — Li et al. (2024), synthetic respondents &amp; perceptual maps, six-prompt ladder live, voice-mode demo <em>(pre-class: AI types &amp; analytics levels)</em></td><td>M0: SW batch 2 (due Wed Sep 9) + batch-1 reconciliation · Mini Block 1 (beliefs photo, Commitment Card)</td></tr><tr><td><strong>4</strong></td><td>Sep 11</td><td><strong>Marketing strategy with AI + the delta method</strong> — STP/personas essentials; Kindle Fire three-box worked live</td><td>M0: <strong>Relational Work</strong> codebook + training (Mon Sep 14), RW batch 1 (Wed Sep 16) · <strong>Kindle Fire three-box HW out</strong> · Mini Block 2 (Ask-it / Map-it builds)</td></tr><tr><td><strong>5</strong></td><td>Sep 18</td><td><strong>AI-powered literature review + secondary research</strong> — Zotero, deep research, lit-review tables; industry research + source audit</td><td>M0: RW batch 2 (Wed Sep 23) + reconciliation · Mini Block 3: real data (Team 1 handoff, survey responses to Team 3) · <strong>Lab out: lit-review table + source audit</strong></td></tr><tr><td><strong>6</strong></td><td>Sep 25</td><td>Custom AI assistants — <strong>ODI product-recommendation chatbot case</strong> <em>(pre-class: prompt-engineering patterns)</em></td><td>M0: <strong>Recommendation</strong> codebook + training (Mon Sep 28), batch 1 (Wed Sep 30) · <strong>Mini-project presentations (10 + 3)</strong> · Kindle Fire HW + lab due</td></tr><tr><td><strong>7</strong></td><td>Oct 2</td><td><strong>Agentic coding foundations</strong> — Codex, Claude Code, GitHub, cloning the course repo, smoke test</td><td>M0: Rec batch 2 (Wed Oct 7) · RW/Rec reconciliation · <strong>every student clones <code>stamp-classroom</code> in class</strong></td></tr><tr><td><strong>8</strong></td><td>Oct 9</td><td><strong>The STAMP method</strong> (after the GT lock + reliability reveal)</td><td><strong>GT LOCK + reliability reveal</strong> · STAMP kickoff · chat-window coding lab (S1)</td></tr><tr><td><strong>9</strong></td><td>Oct 16</td><td>LLM/NLP essentials + the social-media sales case (engagement ≠ conversion) <em>(pre-class: classic NLP)</em></td><td><strong>S1 + M1 due Oct 16</strong> · replication-ladder runs begin</td></tr><tr><td><strong>10</strong></td><td>Oct 23</td><td>Marketing Analytics I — data viz, SQL/Python via AI code interpreter</td><td>Replication ladder runs: single model → majority vote → dual + judge → loop</td></tr><tr><td><strong>11</strong></td><td>Oct 30</td><td>Analytics II — experiments + STAMP hypothesis design + live-chat case</td><td><strong>M2 replication-ladder memo due Oct 30</strong> · experiment-design lecture</td></tr><tr><td><strong>12</strong></td><td>Nov 6</td><td><strong>AI for writing</strong> — AI markers, validating claims, owning the prose, coauthor workflow; live audit of your M2 memo</td><td>Experiment runs · extension track chosen Nov 6</td></tr><tr><td><strong>13</strong></td><td>Nov 13</td><td><strong>AI app creation &amp; hosting</strong> — Streamlit, keyless/BYOK, Community Cloud vs Railway vs HF Spaces · <strong>guest: ODI MSDM team (apps + n8n)</strong></td><td><strong>M3 experiment report due Nov 13</strong> · app build session</td></tr><tr><td><strong>14</strong></td><td>Nov 20</td><td>Automation &amp; agents + recommendation systems (n8n email case, AO1 accuracy study)</td><td><strong>M4 extension draft + app demo Nov 20</strong></td></tr><tr><td><strong>15</strong></td><td><em>Nov 27 — Thanksgiving, no class</em></td><td><strong>Asynchronous:</strong> Data Privacy &amp; Ethics (+ optional generative imagery/video module)</td><td>Buffer · report drafting</td></tr><tr><td><strong>16</strong></td><td>Dec 4</td><td><strong>TEAM PRESENTATIONS</strong> (strategy + analytics tracks) + Industry Fireside Chat</td><td>Presentations</td></tr><tr><td><strong>Finals</strong></td><td>Dec 7–13</td><td>—</td><td><strong>Final package due Wednesday, Dec 9</strong> · peer evals</td></tr></table>
+
+<h2 id="gt">Ground-truth coding — STAMP M0</h2>
+<p>Nine individual coding homeworks build the class benchmark the AI will later be measured against. Each card has the coding sheet and the codebook; the umbrella card explains the points and the rules.</p>
+<details id="m0"><summary><span>M0 — Ground-truth coding — the M0 umbrella (25 of the STAMP 100 · 10% of the course)</span><span class="due">25 pts · rolling → lock Fri Oct 9</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/00_GT_Coding_Playbook.docx" download>Download the Word document: 00_GT_Coding_Playbook.docx</a></strong></p><p>You are trained like a research annotator, one construct at a time: read the codebook, code a short training set (the construct's author reviews it and sends individual feedback), then two batches of ~60 items, then reconcile the splits in class. <strong>Solving Work</strong> (HW1–HW3) → <strong>Relational Work</strong> (HW4–HW6, the same turns coded again) → <strong>Recommendation</strong> (HW7–HW9, review statements coded E / I / B / C / N). Points: SW 8 · RW 8 · Recommendation 6 · reconciliation participation 3. Late −10% per day; a missing block scores 0 for that block. The class ground truth locks <strong>Friday Oct 9</strong> and its reliability (Krippendorff's α across nine coders) is revealed the same night. Rules of record, flag conventions, and hidden-control policy: the GT Coding Playbook (download above).</p></div></details><details id="hw1"><summary><span>HW1 — Solving Work — training set (14 utterances)</span><span class="due">2 pts · Mon Aug 24</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Solving_Training.xlsx" download>Coding sheet: Solving_Training.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/SOLVING CODE BOOK.docx" download>Codebook: SOLVING CODE BOOK.docx</a></strong></p><p>Code all <strong>14</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw2"><summary><span>HW2 — Solving Work — batch 1 (60)</span><span class="due">3 pts · Wed Sep 2</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Solving_Batch1.xlsx" download>Coding sheet: Solving_Batch1.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/SOLVING CODE BOOK.docx" download>Codebook: SOLVING CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw3"><summary><span>HW3 — Solving Work — batch 2 (60)</span><span class="due">3 pts · Wed Sep 9</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Solving_Batch2.xlsx" download>Coding sheet: Solving_Batch2.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/SOLVING CODE BOOK.docx" download>Codebook: SOLVING CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw4"><summary><span>HW4 — Relational Work — training set (same 14 turns)</span><span class="due">2 pts · Mon Sep 14</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Relational_Training.xlsx" download>Coding sheet: Relational_Training.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RELATIONAL CODE BOOK.docx" download>Codebook: RELATIONAL CODE BOOK.docx</a></strong></p><p>Code all <strong>14</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw5"><summary><span>HW5 — Relational Work — batch 1 (60)</span><span class="due">3 pts · Wed Sep 16</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Relational_Batch1.xlsx" download>Coding sheet: Relational_Batch1.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RELATIONAL CODE BOOK.docx" download>Codebook: RELATIONAL CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw6"><summary><span>HW6 — Relational Work — batch 2 (60)</span><span class="due">3 pts · Wed Sep 23</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Relational_Batch2.xlsx" download>Coding sheet: Relational_Batch2.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RELATIONAL CODE BOOK.docx" download>Codebook: RELATIONAL CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column, add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw7"><summary><span>HW7 — Recommendation — training set (15 statements)</span><span class="due">2 pts · Mon Sep 28</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Recommendation_Training.xlsx" download>Coding sheet: Recommendation_Training.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RECOMMENDATION CODE BOOK.docx" download>Codebook: RECOMMENDATION CODE BOOK.docx</a></strong></p><p>Code all <strong>15</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column (E / I / B / C / N for Recommendation), add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw8"><summary><span>HW8 — Recommendation — batch 1 (60)</span><span class="due">2 pts · Wed Sep 30</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Recommendation_Batch1.xlsx" download>Coding sheet: Recommendation_Batch1.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RECOMMENDATION CODE BOOK.docx" download>Codebook: RECOMMENDATION CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column (E / I / B / C / N), add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details><details id="hw9"><summary><span>HW9 — Recommendation — batch 2 (60)</span><span class="due">2 pts · Wed Oct 7</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Recommendation_Batch2.xlsx" download>Coding sheet: Recommendation_Batch2.xlsx</a></strong> &nbsp;·&nbsp; <strong>⬇ <a href="files/RECOMMENDATION CODE BOOK.docx" download>Codebook: RECOMMENDATION CODE BOOK.docx</a></strong></p><p>Code all <strong>60</strong> rows in the coding sheet against the codebook, independently and <strong>without any AI assistance</strong> (coders must be naive until the Oct 9 lock — this is an academic-integrity rule, not a suggestion). Read the codebook twice before you start. Enter 1/0 in the label column (E / I / B / C / N), add a one-line reason for any row you are unsure about, rename the file <code>&lt;Construct&gt;_&lt;Batch&gt;_YourName.xlsx</code>, and upload it on Canvas. Bring your flagged rows to the next reconciliation session.</p></div></details>
+
+<h2 id="mini">Mini project — replicate Li et al. (2024)</h2>
+<p>Weeks 2–6, teams of three, one angle each (Team 1 <em>Ask it</em> · Team 2 <em>Map it</em> · Team 3 <em>Check it</em>). Graded on the 100-point mini rubric (15% of the course); presentations Friday Sep 25, 10 minutes + 3.</p>
+<details id="minid1-d3"><summary><span>MiniD1-D3 — Paper-before-AI, rung-3 probe, Commitment Card</span><span class="due">mini rubric · Fri Sep 4</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/MiniD1-D3.docx" download>Download the fillable Word version</a></strong></p><h1>Mini D1–D3 — Paper-before-AI, rung-3 probe, Commitment Card</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>No separate Canvas points; feeds the 100-pt mini rubric (D1–D2 inside Explain 25, D3 inside Deliver 10; mini project = 15% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Sep 4 — D1 photo + D2 screenshot uploaded before class; D3 card read aloud in class (90 seconds)</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>D1–D2 Individual · D3 Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF of this doc's template, filled (photo + screenshot pasted in)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Sep 4 <em>AI for learning an academic paper</em> → Project beat — mini Block 1 (Learn) → Stack layer — <strong>learn</strong>.</p>
+<h2>The gist</h2>
+<p>Before any AI touches the Li et al. (2024) paper, you write down what you already believe about your team's angle, then let a chat model correct you at rung 3 of the six-prompt ladder. The correction it makes is the misunderstanding your Sep 25 audience will share, so it becomes the heart of your Teach beat. Your team then commits, out loud, to one angle, one validity check from the paper, and a duty split; nothing you build later can drift from that card without a conversation with me.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Paper first (D1).</strong> On paper, before your first AI conversation about this project, write three beliefs and two questions about your angle (Ask it / Map it / Check it). Photograph the sheet. Keep it; you add to it in step 3.</li>
+<li><strong>Climb rungs 1–2</strong> in ChatGPT Edu or Claude: "help me understand how <strong><em> works in simple English," then "what is the intuition behind </em></strong>? Use an everyday analogy." Fill the blank with your angle.</li>
+<li><strong>Rung 3, the graded rung (D2).</strong> Close the chat. Write your understanding in your own words. Open a fresh chat and paste it: "Here is my understanding: ___. What did I get wrong or miss?" Screenshot the exchange, then write one sentence naming what the AI corrected. Add that correction to your paper sheet by hand.</li>
+<li><strong>Check yourself.</strong> The restatement in the screenshot must be yours, not an AI-authored summary you pasted back. A vague restatement ("AI helps build maps") or an AI-written one scores Explain at floor for you.</li>
+<li><strong>Read the paper's Studies 1 and 2</strong> (PDF on Canvas) and, as a team, decide which validity check you replicate at workshop scale (brief §4) and what the paper's own number was.</li>
+<li><strong>Fill the Commitment Card (D3):</strong> angle · the paper's check you replicate, with its number · trap-brand name (Team 1 only; keep it secret from the other teams) · duty split across the four beats. Rehearse it once; 90 seconds is short.</li>
+<li><strong>Export to PDF</strong> with the photo and screenshot pasted into Appendix A and upload before class. Bring the paper sheet itself on Sep 4.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] D1 photo of the handwritten sheet: 3 beliefs + 2 questions, dated before the first AI chat</li>
+<li>[ ] D2 rung-3 screenshot showing your own restatement and the AI's correction</li>
+<li>[ ] D2 one sentence: what the AI corrected</li>
+<li>[ ] D3 Commitment Card, all four fields, read aloud in class (one card per team; each member pastes it)</li>
+<li>[ ] AI disclosure: tools, the rung 1–3 prompts, transcript link</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paper-before-AI sheet (→ Explain)</td>
+<td>25%</td>
+<td>Three specific beliefs and two real questions about your angle, visibly handwritten before the chat; the rung-3 correction added afterward in a different pass</td>
+</tr>
+<tr>
+<td>Rung-3 restatement (→ Explain)</td>
+<td>35%</td>
+<td>Your restatement was wrong in an interesting way and the AI corrected something substantive; the one sentence names the correction, not "it clarified things"</td>
+</tr>
+<tr>
+<td>Commitment Card content (→ Deliver)</td>
+<td>20%</td>
+<td>The paper's check named with its number; trap brand plausible and unused by the instructor; duty split covers all four beats</td>
+</tr>
+<tr>
+<td>Read-aloud (→ Deliver)</td>
+<td>10%</td>
+<td>Under 90 seconds, no reading from a screen, every member named against a duty</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourself before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What I asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What I kept</strong> — the change I accepted, and why it was an improvement.
+(c) <strong>What I overrode</strong> — the AI suggestion I rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<p>D3 is team work: answer (a)–(c) for your own D1–D2, then add one line on any AI use in drafting the card.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Team / angle</td>
+<td></td>
+</tr>
+<tr>
+<td>Chat model + version</td>
+<td></td>
+</tr>
+<tr>
+<td>Date of paper sheet (before first chat)</td>
+<td></td>
+</tr>
+<tr>
+<td>Date of rung-3 chat</td>
+<td></td>
+</tr>
+<tr>
+<td>Transcript link (rungs 1–3)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>D1 — Paper-before-AI photo.</strong> Paste the photo of your handwritten sheet here. It must show three beliefs, two questions, and (added after rung 3, in a different pen or pass) what the AI corrected.</p>
+<table>
+<thead>
+<tr>
+<th>Photo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(paste photo here)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D2 — Rung-3 screenshot.</strong> Paste the screenshot showing your restatement and the AI's reply.</p>
+<table>
+<thead>
+<tr>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(paste screenshot here)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D2 — One sentence: what the AI corrected.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Write here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(replace this text)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>D3 — Commitment Card (one per team; read aloud in 90 seconds).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Our angle</td>
+<td>Ask it / Map it / Check it</td>
+</tr>
+<tr>
+<td>2. The paper's validity check we replicate, and the paper's own number</td>
+<td></td>
+</tr>
+<tr>
+<td>3. Trap-brand name (Team 1 only; keep it secret from Teams 2 and 3)</td>
+<td></td>
+</tr>
+<tr>
+<td>4. Duty split (Teach / Warn / Show / Advise → who)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment</h2>
+<p><strong>A rung-3 exchange that earns the row (Team 3 example, paraphrased).</strong> Student restatement: "Team 3 checks whether the AI's numbers match the class's numbers; if the averages are close, the AI is valid." AI correction: the paper compares <em>orderings</em> of brand pairs, not raw averages, because scales and moods differ across instruments, and any agreement figure must be read against a chance floor near 50%. One sentence for D2: "I thought validity meant matching averages; the paper measures agreement on pair orderings against a 50% chance floor."</p>
+<p><strong>A rung-3 exchange that scores at floor.</strong> Restatement: "AI can simulate consumers and help build perceptual maps." Nothing specific enough to be wrong, so nothing to correct.</p></div></details><details id="minid4-d5"><summary><span>MiniD4-D5 — Execute evidence + Team 1 panel-table handoff</span><span class="due">mini rubric · Sep 11 · Sep 18</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/MiniD4-D5.docx" download>Download the fillable Word version</a></strong></p><h1>Mini D4–D5 — Execute evidence + panel-table handoff</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>No separate Canvas points; feeds the mini rubric's Execute row (30 of 100; mini project = 15% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>D4 Friday Sep 11 (evidence-folder link on Canvas) · D5 Friday Sep 18 at the start of class (Team 1 only: panel table to Teams 2 and 3)</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — PDF of this doc's template, filled + the evidence-folder link</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Sep 11 <em>Marketing strategy with AI + the delta method</em> → Project beat — Ask-it / Map-it builds (Block 2) → Stack layer — <strong>strategize → build</strong>.</p>
+<h2>The gist</h2>
+<p>This week your angle becomes evidence: named screenshots and a table another team can use. Execute is the heaviest rubric row, scored on what is in your folder, not on adjectives in your slides. Team 1's panel table is the class's shared dataset from Sep 18 on, so the handoff is a deadline for three teams, not one.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Set up the evidence folder</strong> (Drive or OneDrive, shared with me and the class). Name every file <code>Team&lt;N&gt;_step&lt;k&gt;_&lt;what&gt;_&lt;YYYYMMDD&gt;.png</code>, e.g. <code>Team1_step2_trapbrand_confident_20260910.png</code>. Unnamed screenshots do not count.</li>
+<li><strong>Run your angle's Execute steps 1–2 (D4)</strong>, in fresh chats each time so the AI cannot remember its last answer:
+   - <strong>Team 1 · Ask it.</strong> (1) Five separate chats, same survey prompt from the study card, same cell (Starbucks × coffee quality); record the five numbers. (2) Trap test: your invented brand gets the survey prompt (screenshot the confident number), then a fresh chat asks "Is ___ a real coffee-shop brand in China?" (screenshot). Repeat both with the smallest real brand on the card.
+   - <strong>Team 2 · Map it.</strong> (1) Use the map-builder prompt to have the AI build the interactive map as an artifact; iterate by rejecting drafts, not by coding. (2) Load the pre-run GPT-4.1 table as rehearsal data and confirm the map runs on a phone and a laptop. Then run a second placement in a fresh chat and save both maps side by side.
+   - <strong>Team 3 · Check it.</strong> (1) Treat the two pre-run AI tables as Table A and a stand-in Table B; rehearse the tally and spot-check three cells by hand. (2) Run the order-check prompt on the two tables and save the per-attribute rankings and the pair-agreement percentage next to the chance floor.</li>
+<li><strong>Team 1 only: run the panel prompt (D5).</strong> Generate the full 6 × 5 table from 20 simulated consumers, including the three cells the AI is least sure about. Compare a few cells with your five-run numbers. Enter the table in Appendix A with mean, spread, and n per cell.</li>
+<li><strong>Fill the evidence index</strong> (Appendix A): one row per file, which angle step it belongs to, what it shows, and the date.</li>
+<li><strong>Handoff, Sep 18 at the start of class (D5).</strong> Team 1 gives Teams 2 and 3 the table in the format they asked for; each receiving team signs the confirmation line. Teams 2 and 3 then swap in the real table.</li>
+<li><strong>Whoever is not at the keyboard drafts the Explain beat on paper.</strong></li>
+<li><strong>Export to PDF</strong> and upload with the folder link by Sep 11; Team 1 re-uploads with the table and signatures by Sep 18.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Evidence-folder link (shared with the instructor), files named per the convention</li>
+<li>[ ] Evidence index (Appendix A) covering every file in the folder</li>
+<li>[ ] Team 1: five-run spread, both trap-brand screenshot pairs, the 6 × 5 panel table with mean · spread · n</li>
+<li>[ ] Team 2: running map artifact (link or file), two-run side-by-side screenshot, first-pass axis names</li>
+<li>[ ] Team 3: rehearsal tally with three hand-checked cells, order-check output with the chance floor stated</li>
+<li>[ ] D5 handoff confirmation signed by Teams 2 and 3 (Team 1's re-upload)</li>
+<li>[ ] AI disclosure: tools, the prompts that mattered, transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recipe fidelity (→ Execute)</td>
+<td>30%</td>
+<td>Study-card prompts used as written; fresh chat per repeat; scope caps respected</td>
+</tr>
+<tr>
+<td>Evidence quality (→ Execute)</td>
+<td>30%</td>
+<td>Every claim you will make on Sep 25 already has a named screenshot; the spread, the trap pair, the two maps, or the floor is visible in the file, not described</td>
+</tr>
+<tr>
+<td>Handoff and reuse (→ Execute)</td>
+<td>20%</td>
+<td>Team 1's table arrives on time in a form Teams 2 and 3 can paste; receiving teams confirm; rehearsal data clearly labeled as simulated</td>
+</tr>
+<tr>
+<td>Index accuracy</td>
+<td>10%</td>
+<td>Every folder file appears in the index with step and date; nothing recycled from the instructor's demos</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team / angle</td>
+<td></td>
+</tr>
+<tr>
+<td>Members</td>
+<td></td>
+</tr>
+<tr>
+<td>Chat model(s) + version</td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence-folder link</td>
+<td></td>
+</tr>
+<tr>
+<td>Transcript link(s)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--landscape-->
+<p><strong>Evidence index.</strong> One row per file in the folder. Angle step = the numbered Execute step from the brief (Team 1: 1 five-run, 2 trap, 3 panel; Team 2: 1 build, 2 rehearsal load, 3 two-run; Team 3: 1 tally, 2 order-check).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>File name</th>
+<th>Angle step</th>
+<th>What it shows</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Team 1 — panel table (D5).</strong> Mean = average across the 20 simulated consumers, one decimal. Spread = range (min–max) or SD across the 20. n = number of simulated consumers who answered the cell (20 unless the AI dropped any). Mark the three least-confident cells with an asterisk.</p>
+<table>
+<thead>
+<tr>
+<th>Brand</th>
+<th>Quality mean · spread · n</th>
+<th>Value mean · spread · n</th>
+<th>Speed mean · spread · n</th>
+<th>Place to sit mean · spread · n</th>
+<th>Trendy mean · spread · n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starbucks</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Luckin</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Manner</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cotti</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>%Arabica</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tims</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Provenance</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Panel prompt version and date run</td>
+<td></td>
+</tr>
+<tr>
+<td>Model + version</td>
+<td></td>
+</tr>
+<tr>
+<td>Five-run cell (Starbucks × quality): the five numbers</td>
+<td></td>
+</tr>
+<tr>
+<td>Three least-confident cells, with the AI's reason</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Handoff confirmation (D5, Sep 18 start of class).</strong> Each receiving team writes one member's name and the time received.</p>
+<table>
+<thead>
+<tr>
+<th>Receiving team</th>
+<th>Received the table in usable form (name + time)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team 2 · Map it</td>
+<td></td>
+</tr>
+<tr>
+<td>Team 3 · Check it</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment</h2>
+<p>An index row that counts: <code>Team1_step2_trapbrand_confident_20260910.png</code> · step 2 · "Survey prompt for [trap brand] × value returns 8 with no hedge" · 2026-09-10. An index row that does not: <code>Screenshot 2026-09-10 at 9.14.02 PM.png</code> · step 2 · "trap test". The first tells the judge what to look for before opening the file; the second makes them guess.</p></div></details><details id="minid6-d7"><summary><span>MiniD6-D7 — Six-slide deck + 10 + 3 presentation</span><span class="due">15% of course · Fri Sep 25</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/MiniD6-D7.docx" download>Download the fillable Word version</a></strong></p><h1>Mini D6–D7 — Six-slide deck + 10 + 3 presentation</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>The Mini project's 100-pt rubric is scored here (= 15% of the course); D1–D5 feed into it</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Sep 25, 7:00 PM — deck + evidence folder; presentation in class that evening, pipeline order (Ask, Map, Check)</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — deck PDF + PDF of this doc's template, filled + the evidence-folder link</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Sep 25 <em>Custom AI assistants</em> → Project beat — mini presentations → Stack layer — <strong>learn → strategize</strong>.</p>
+<h2>The gist</h2>
+<p>Three ten-minute talks that chain into one synthetic-plus-human study for Copper Lane Coffee: Team 1's table feeds Team 2's map, and Team 3 judges both against the class's blind survey. You teach the idea, prove two cautions with your own screenshots, show the thing working live, and tell the client what to trust. The floor is about a 70: recipe run, one honest screenshot of the AI being wrong, one clear sentence for Copper Lane. Everything above that comes from evidence quality, not polish.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Finish Execute steps 3–5</strong> on the real data (Team 1's table from Sep 18; Team 3's class survey responses). Every number on a slide must trace to a file in the evidence folder; the class survey is marked "real data, n = __" wherever it appears.</li>
+<li><strong>Build six slides, no more:</strong> (1) title + the question your angle answers; (2) Teach: your analogy and the rung-3 misunderstanding; (3) Warn: caution one with screenshot; (4) Warn: caution two with screenshot; (5) Show: the live moment's result, with the paper's number beside yours; (6) Advise: what Copper Lane should do, trust, and still test.</li>
+<li><strong>Script the four beats</strong> to about 700 words total (Teach 3 min ≈ 220 · Warn 3 min ≈ 220 · Show 3 min ≈ 220 · Advise 2 min ≈ 150). Fill Appendix A's beat table with a speaker per beat; nobody carries more than about 250 words and every member speaks.</li>
+<li><strong>Prepare the live moment with an understudy.</strong> Trap test live (Team 1), table pasted into the artifact live (Team 2), class-vs-AI reveal row by row (Team 3). Rehearse with wifi off; the screenshot backup counts if the live run fails.</li>
+<li><strong>Optional second-AI bonus (+5).</strong> Run any part of your recipe on a second AI and report where the two disagree; the pre-run Gemini panel is a sanctioned second witness. Disagreement is the evidence, so show it, do not average it away.</li>
+<li><strong>Check the penalty and caps.</strong> −5 for any instructor demo screenshot or example presented as your own evidence (your evidence is coffee). Caps: 20 simulated consumers, two cautions, one white-space claim, six slides.</li>
+<li><strong>Two timed rehearsals</strong>, then export the deck to PDF, fill the checklists, and upload deck + template + folder link by 7:00 PM. Be ready for Q&amp;A without slides; "we don't know that yet; what we do know is ___" is a legitimate answer.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Deck PDF, six slides, every number traceable to the evidence folder</li>
+<li>[ ] Evidence folder: all named screenshots, the table(s), the artifact link or file, the class-survey tally (Team 3), transcript links</li>
+<li>[ ] Appendix A: slide checklist, beat script table with speakers and word counts, folder checklist</li>
+<li>[ ] Second-AI comparison (optional, +5): which part, which two models, where they disagreed</li>
+<li>[ ] AI disclosure: tools, the prompts that mattered, transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explain</td>
+<td>25%</td>
+<td>A smart outsider could re-explain your idea afterward; your own analogy; the rung-3 misunderstanding taught; which of the paper's checks you replicated, with its number</td>
+</tr>
+<tr>
+<td>Critique</td>
+<td>20%</td>
+<td>Two cautions, each proven with your own screenshot or numbers, applied to your own results, not only to the paper</td>
+</tr>
+<tr>
+<td>Execute</td>
+<td>30%</td>
+<td>The thing works and is yours: panel table with spread and trap test; interactive map with named axes; class-vs-AI check with the floor stated; live moment lands (backup counts)</td>
+</tr>
+<tr>
+<td>Advise</td>
+<td>15%</td>
+<td>A recommendation Copper Lane could act on, with an honest boundary: trust this now, test that with real data</td>
+</tr>
+<tr>
+<td>Deliver — incl. Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Under 10 minutes; every member spoke; one question answered without slides; human-first work documented and the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<p>Judges use a tick-sheet with three to five observable boxes per row; each unticked box drops the row about one band. Bonus +5 second-AI disagreement; penalty −5 recycled demo evidence. Late team deliverables −10% per day.</p>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team / angle</td>
+<td></td>
+</tr>
+<tr>
+<td>Members</td>
+<td></td>
+</tr>
+<tr>
+<td>Model(s) + version (primary; second AI if bonus attempted)</td>
+<td></td>
+</tr>
+<tr>
+<td>Evidence-folder link</td>
+<td></td>
+</tr>
+<tr>
+<td>Class-survey n (Team 3; all teams quote it)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Slide-by-slide checklist.</strong> Tick when the slide meets the line.</p>
+<table>
+<thead>
+<tr>
+<th>Slide</th>
+<th>Must contain</th>
+<th>Done</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · Title</td>
+<td>Angle, team, the one question your part answers</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>2 · Teach</td>
+<td>Your own analogy; the rung-3 misunderstanding; the paper's check you replicated + its number</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>3 · Warn 1</td>
+<td>Caution stated in one line + your screenshot, applied to your results</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>4 · Warn 2</td>
+<td>Second caution + your screenshot; not the same failure twice</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>5 · Show</td>
+<td>The live moment's result; your number beside the paper's; "real data, n = __" marked where the survey appears</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>6 · Advise</td>
+<td>Do this · trust this now · test this with real consumers before spending</td>
+<td>- [ ]</td>
+</tr>
+</tbody>
+</table>
+<!--landscape-->
+<p><strong>Beat script table.</strong> Fill words after the final rehearsal; keep the total near 700.</p>
+<table>
+<thead>
+<tr>
+<th>Beat</th>
+<th>Minutes</th>
+<th>Words (target)</th>
+<th>Words (actual)</th>
+<th>Speaker</th>
+<th>Opening stem you will use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · Teach</td>
+<td>3</td>
+<td>≈220</td>
+<td></td>
+<td></td>
+<td>"Our part of the study answers one question: ___"</td>
+</tr>
+<tr>
+<td>2 · Warn</td>
+<td>3</td>
+<td>≈220</td>
+<td></td>
+<td></td>
+<td>"This method has limits. First: ___; this screenshot proves it."</td>
+</tr>
+<tr>
+<td>3 · Show</td>
+<td>3</td>
+<td>≈220</td>
+<td></td>
+<td></td>
+<td>"Now watch it happen. We will ___."</td>
+</tr>
+<tr>
+<td>Client · Advise</td>
+<td>2</td>
+<td>≈150</td>
+<td></td>
+<td></td>
+<td>"For Copper Lane: we recommend ___."</td>
+</tr>
+<tr>
+<td>Q&amp;A</td>
+<td>3</td>
+<td>—</td>
+<td></td>
+<td>all</td>
+<td>"May I answer in two parts?"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Live moment plan.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What happens live (one sentence)</td>
+<td></td>
+</tr>
+<tr>
+<td>Backup screenshot file name</td>
+<td></td>
+</tr>
+<tr>
+<td>Rehearsed with wifi off on (date)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Evidence-folder checklist.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Present</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every screenshot named <code>Team&lt;N&gt;_step&lt;k&gt;_&lt;what&gt;_&lt;YYYYMMDD&gt;</code></td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Team 1: five-run numbers · trap-brand pair · panel table (mean · spread · n)</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Team 2: artifact link or file · two-run side-by-side · axis-naming note citing attributes</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Team 3: class tally with X-rate per brand · order-check output with floor · miss explanations</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Second-AI comparison files (if bonus attempted)</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Transcript links, tested in a private window</td>
+<td>- [ ]</td>
+</tr>
+<tr>
+<td>Nothing from the instructor's demos</td>
+<td>- [ ]</td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment</h2>
+<p>An Advise slide that earns the row (Team 3 style): "Copper Lane can trust the AI on Starbucks and Luckin today; the class and the AI ordered them the same way on four of five attributes. It cannot trust the AI on Manner or Cotti, where the class's X-rate was high and the AI still answered confidently. Before signing a lease, survey 30 consumers in the target city on those two brands." Do, trust, test: three sentences, one boundary each.</p></div></details>
+
+<h2 id="stamp">STAMP project — replicate, experiment, extend, ship</h2>
+<p>40% of the course on a 100-point rubric: M0 ground truth (25, above) · S1 chat-window lab (5) · M1 agentic setup (5) · M2 replication ladder (20) · M3 pre-registered experiment (15) · M4 extension + app (15) · F final presentation + package (10) · T peer evaluation (5). Every memo carries a provenance line for every number.</p>
+<details id="s1"><summary><span>S1 — Chat-window coding lab</span><span class="due">5 pts · Fri Oct 16</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/S1.docx" download>Download the fillable Word version</a></strong></p><h1>S1 — Chat-window coding lab</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>5 of the STAMP project's 100 (= 2% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Oct 16, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Individual</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's template, filled</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Oct 9 <em>The STAMP method</em> → Project beat — chat-window lab, started live in class → Stack layer — <strong>replicate</strong>.</p>
+<h2>The gist</h2>
+<p>For seven weeks you were the measuring instrument; the class benchmark you built locked on Oct 9. Now you hand a chat model the <em>bare</em> Solving Work definition and 30 of the rows you coded, and measure how often it agrees with the class ground truth. The number matters less than the disagreements: reading three of them closely is your first look at what a definition-only prompt cannot see — the gap the whole replication ladder (M2) exists to close.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Take your slice.</strong> Use the 30-row Solving Work slice assigned to you in class (IDs listed on the Course Hub). Any other rows score zero on the Agreement category.</li>
+<li><strong>Paste the definition-only prompt</strong> from Appendix B into ChatGPT or Claude, verbatim, followed by your 30 rows (ID, Turn text). Record the model, date, and prompt version in the template header. Do not add examples, hints, or your own labels — that is the point.</li>
+<li><strong>Record the model's 0/1 per row</strong> in the Appendix A table next to the class GT label. If the model refuses or hedges on a row, mark it 0 and note it.</li>
+<li><strong>Compute agreement:</strong> % agreement = agreeing rows ÷ 30, and fill the 2×2 confusion table (class GT × model). Check that the four cells sum to 30.</li>
+<li><strong>Pick three disagreement rows</strong> and reread the turn with the codebook open. For each, write which rule the class applied and what the definition alone gave the model no way to know.</li>
+<li><strong>Write the paragraph "what definition-only missed"</strong> (120–200 words): the pattern across your three rows, and one sentence on what you would add to the prompt first.</li>
+<li><strong>Export to PDF</strong> and upload to Canvas.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Template header: model, date, prompt version, slice ID</li>
+<li>[ ] 30-row table with class GT, model label, agree?, note</li>
+<li>[ ] % agreement and the 2×2 confusion table (cells sum to 30)</li>
+<li>[ ] Three disagreement-row readings citing a codebook rule</li>
+<li>[ ] The "what definition-only missed" paragraph</li>
+<li>[ ] AI disclosure: the exact prompt used + transcript link</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup fidelity</td>
+<td>20%</td>
+<td>Assigned slice, verbatim definition-only prompt, model/date/version recorded; no examples or labels leaked into the prompt</td>
+</tr>
+<tr>
+<td>Agreement computed correctly</td>
+<td>25%</td>
+<td>% agreement matches the table; 2×2 cells sum to 30; a hedged answer handled and noted, not silently dropped</td>
+</tr>
+<tr>
+<td>Disagreement readings</td>
+<td>35%</td>
+<td>Three rows read against the codebook, each naming the rule the class applied and the cue the definition alone could not supply; not "the model was wrong"</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>10%</td>
+<td>The paragraph states a pattern, not a list; one concrete prompt addition proposed</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<p>Here the AI use <em>is</em> the assignment, so the disclosure is the exact prompt and the transcript link — the human-first artifact is your own class GT, coded before any model saw the rows.</p>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourself before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What I asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What I kept</strong> — the change I accepted, and why it was an improvement.
+(c) <strong>What I overrode</strong> — the AI suggestion I rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Slice ID (from class)</td>
+<td></td>
+</tr>
+<tr>
+<td>Chat model + version (e.g., Claude Sonnet 4.5, GPT-5)</td>
+<td></td>
+</tr>
+<tr>
+<td>Date run</td>
+<td></td>
+</tr>
+<tr>
+<td>Prompt version</td>
+<td>S1-def-v1 (Appendix B, verbatim)</td>
+</tr>
+<tr>
+<td>Transcript link</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--landscape-->
+<p><strong>30-row table.</strong> Class GT and model label are 0/1; <em>agree?</em> is Y/N; <em>note</em> is for hedges, refusals, or anything odd.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>ID</th>
+<th>Turn (first ~8 words)</th>
+<th>Class GT</th>
+<th>Model label</th>
+<th>Agree?</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Agreement.</strong> % agreement = (agreeing rows ÷ 30) × 100 = ______ %</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Model = 1</th>
+<th>Model = 0</th>
+<th>Row total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class GT = 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT = 0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Column total</td>
+<td></td>
+<td></td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Three disagreement rows.</strong> One box each.</p>
+<table>
+<thead>
+<tr>
+<th>Disagreement row 1</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT / model label</td>
+<td></td>
+</tr>
+<tr>
+<td>Codebook rule the class applied</td>
+<td></td>
+</tr>
+<tr>
+<td>What the definition alone could not tell the model</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Disagreement row 2</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT / model label</td>
+<td></td>
+</tr>
+<tr>
+<td>Codebook rule the class applied</td>
+<td></td>
+</tr>
+<tr>
+<td>What the definition alone could not tell the model</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Disagreement row 3</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT / model label</td>
+<td></td>
+</tr>
+<tr>
+<td>Codebook rule the class applied</td>
+<td></td>
+</tr>
+<tr>
+<td>What the definition alone could not tell the model</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>What definition-only missed</strong> (120–200 words: the pattern across your three rows + the one thing you would add to the prompt first).</p>
+<table>
+<thead>
+<tr>
+<th>Write here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(replace this text)</td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — The definition-only prompt (paste verbatim)</h2>
+<blockquote>
+<p>You are classifying airline frontline-employee turns from service chats. For each turn, decide whether the employee exhibits HIGH Solving Work (1) as opposed to moderate or low (0).</p>
+<p>Definition of Solving Work: verbal cues that indicate the frontline employee's competence (knowledge, skills) and action orientation (engaged, proactive) toward effective problem solving. Operationally: the employee displays knowledge or skills, or takes or commits to action, toward resolving the customer's query.</p>
+<p>Use only the turn text. Output one line per row in the form <code>ID, label</code> with label 0 or 1 and nothing else. Do not explain.</p>
+<p>Rows:
+[paste your 30 rows here as <code>ID | Turn text</code>]</p>
+</blockquote>
+<p>Use exactly this text — no inclusion or exclusion rules, no examples, no context turns. The whole lab is about what happens when the model has only the definition. If the model asks a clarifying question, answer "use the definition as given" and continue.</p></div></details><details id="m1"><summary><span>M1 — Agentic setup — Claude Code / Codex, repo, smoke test</span><span class="due">5 pts · Fri Oct 16</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/M1.docx" download>Download the fillable Word version</a></strong></p><h1>M1 — Agentic setup</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>5 of the STAMP project's 100 (= 2% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Oct 16, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's template, filled + the helper script (.py)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Oct 2 <em>Agentic coding foundations</em> → Project beat — repo cloned in class, finished as a team → Stack layer — <strong>replicate</strong>.</p>
+<h2>The gist</h2>
+<p>Before any model classifies a row, every member of your team needs a working copy of the pipeline and the habit that makes it safe: preview the cost, then spend. You drive Claude Code or Codex through the setup rather than typing it yourself, and you keep the record of what the agent did and where you stepped in. The green smoke test is the proof; the human-in-the-loop log is the deliverable — it is the first draft of the AI-reflection section your final package will need.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Assign the hats.</strong> Pipeline Lead holds the team's OpenRouter key (never committed, never pasted in chat); QA Lead owns the dry-run log; the M1 PM writes this memo.</li>
+<li><strong>Clone and install through the agent.</strong> Open Claude Code or Codex in an empty folder and ask it to clone the course repo, create a Python 3.11 venv, and install requirements — with every shell command approved by a human (Quickstart §0–1 on the Course Hub). The agent may not modify any repo file.</li>
+<li><strong>Smoke test green on every member's machine.</strong> Each member runs the smoke test locally (or in Colab), screenshots the green output, and pastes it into their slot in Appendix A with OS and Python version. One member's screenshot does not cover the team.</li>
+<li><strong>Dry-run the replication cell.</strong> Run the <code>--dry-run</code> for <code>SolvingWork:def</code> with the default model and have the agent explain every line of the cost preview. Copy the estimated-cost line into the template. Nothing paid runs in M1.</li>
+<li><strong>Commission one helper script.</strong> Ask the agent to write a small tool you will actually use — a run-log appender or a stats-to-markdown formatter are the usual choices. Run it; confirm it works; describe it in Appendix A. The agent may not touch the ignore rules.</li>
+<li><strong>Keep the human-in-the-loop log as you go</strong>, not afterward: what we asked · what it did · what we overrode. "Reviewed the output" is not a row; "it hard-coded the key in a config file; we moved it to an environment variable" is.</li>
+<li><strong>Export to PDF</strong>, attach the script, and upload.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Per-member smoke-test slots, all green, with name, OS, Python version, screenshot</li>
+<li>[ ] Dry-run cost line for <code>SolvingWork:def</code>, copied verbatim, with a one-line reading</li>
+<li>[ ] Helper-script description (what it does, how to run it) + the <code>.py</code> file</li>
+<li>[ ] Human-in-the-loop log, ≥ 4 specific rows</li>
+<li>[ ] AI disclosure with tools and transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every member green</td>
+<td>30%</td>
+<td>One green screenshot per member, each labeled with whose machine; a red result fixed and the fix noted</td>
+</tr>
+<tr>
+<td>Dry-run + cost logged</td>
+<td>20%</td>
+<td>The cost line is verbatim from the preview and read correctly (rows × model → dollars); no paid run anywhere in M1</td>
+</tr>
+<tr>
+<td>Helper script works</td>
+<td>20%</td>
+<td>Runs as described from a clean shell; does one useful thing the team will reuse at M2; leaves data and keys out of the repo</td>
+</tr>
+<tr>
+<td>HITL log specificity</td>
+<td>20%</td>
+<td>Rows name concrete actions and overrides — a file, a command, a permission decision — not ceremony</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team</td>
+<td></td>
+</tr>
+<tr>
+<td>M1 PM (writes this memo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Prompt Lead / QA Lead / Pipeline Lead</td>
+<td></td>
+</tr>
+<tr>
+<td>Agent used (Claude Code / Codex, version)</td>
+<td></td>
+</tr>
+<tr>
+<td>Transcript link(s)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Smoke-test slots.</strong> One row per member; paste the screenshot of the green output below each row (or in the cell).</p>
+<!--landscape-->
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>OS + version</th>
+<th>Python version</th>
+<th>Local or Colab</th>
+<th>Smoke test result (green / red → fixed how)</th>
+<th>Screenshot pasted?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Dry-run cost line.</strong> Paste the preview line for <code>SolvingWork:def</code> verbatim, then read it in one sentence.</p>
+<table>
+<thead>
+<tr>
+<th>Dry-run (<code>SolvingWork:def</code>)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command run</td>
+<td></td>
+</tr>
+<tr>
+<td>Cost line, verbatim</td>
+<td></td>
+</tr>
+<tr>
+<td>Our reading (rows × model → estimated $)</td>
+<td></td>
+</tr>
+<tr>
+<td>Who ran it / date</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Helper script.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Helper script</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File name</td>
+<td></td>
+</tr>
+<tr>
+<td>What it does (2–3 sentences)</td>
+<td></td>
+</tr>
+<tr>
+<td>How to run it (exact command)</td>
+<td></td>
+</tr>
+<tr>
+<td>Output it produces (file / lines)</td>
+<td></td>
+</tr>
+<tr>
+<td>One thing we changed after the agent's first draft</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Human-in-the-loop log.</strong> Fill as you go. At least four rows must name a concrete action or override.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>What we asked</th>
+<th>What it did</th>
+<th>What we overrode (and why)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked log fragment</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>What we asked</th>
+<th>What it did</th>
+<th>What we overrode (and why)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>"Clone the course repo, create a 3.11 venv, install requirements, run the smoke test. Do not modify any file."</td>
+<td>Cloned; installed; smoke test failed on a path with spaces; proposed moving the folder</td>
+<td>Accepted the move. Then it offered to edit the test to "skip the path check" — refused; the test is the contract</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>"Write a run-log appender: timestamp, command, rows, estimated cost, actual cost, one line per run."</td>
+<td>Wrote the script but read the key from a hard-coded string it added to a config file</td>
+<td>Moved the key back to an environment variable; deleted the config line; re-ran to confirm the log still appends</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern to copy: every override names a file or command and the reason. That is the level of detail the final AI-reflection section is graded on.</p></div></details><details id="m2"><summary><span>M2 — Replication-ladder memo — four designs, one table</span><span class="due">20 pts · Fri Oct 30</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/M2.docx" download>Download the fillable Word version</a></strong></p><h1>M2 — Replication-ladder memo</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>20 of the STAMP project's 100 (= 8% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Oct 30, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's template, filled + the α/F1 table as xlsx (same columns)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lectures — Oct 16 <em>LLM/NLP essentials</em> + Oct 23 <em>Marketing Analytics I</em> → Project beat — replication-ladder runs → Stack layer — <strong>replicate</strong>.</p>
+<h2>The gist</h2>
+<p>You climb four rungs of the STAMP ladder on the same Solving Work rows against the benchmark the class built: one model, three models voting, two coders plus a judge, and an auto-revision loop. One table carries the whole memo — agreement (α) <em>and</em> accuracy against the class GT (F1) for every design and every loop iteration — next to the published numbers on the reference card from Oct 9. Missing the reference is the expected result and scores full marks when reported honestly; the memo is graded on whether you can explain the gap and defend which design you would ship.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Dry-run first, every run.</strong> Preview cost for each command before it spends (Quickstart §4 on the Course Hub); log estimate and actual in the cost table. A paid run with no dry-run is −5 per occurrence.</li>
+<li><strong>Run the four designs on <code>SolvingWork:def</code>:</strong> (a) single model — F1 only, α is undefined with one coder; (b) three-model majority vote — majority label vs GT; (c) the dual pair + judge; (d) the auto-revision loop, at most two iterations, re-running (c) on each revised prompt version.</li>
+<li><strong>Fill the one table</strong> as you go: Design · Models · α · F1 vs class GT · Positive rate · Provenance (the exact command + the stats file it wrote). Every number traces or it does not count.</li>
+<li><strong>Check the tripwire per loop iteration.</strong> For each revision, record α and F1 before and after and write the verdict: <em>improved</em>, <em>no change</em>, or <em>tripped</em> (agreement up, accuracy down). Catching a trip and saying so scores higher than a clean run.</li>
+<li><strong>Read the judge output before the revised prompt</strong>, then compare against the reference card: where is the gap, and what explains it (classroom GT, ~135 rows, definition-only prompt)? Interpret; do not massage.</li>
+<li><strong>Read three wrong rows closely.</strong> Pick rows the best design still misses; quote the text, give GT and model labels, and say what the model saw and what the class saw.</li>
+<li><strong>Make the ship call:</strong> which design you would put into a study, weighing cost per 1,000 rows against F1, not just the top score. Export the PDF; save the table as xlsx.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] The one α/F1 table (PDF + xlsx): four designs, every loop iteration, positive rates, provenance per row</li>
+<li>[ ] Tripwire verdict table, one row per iteration</li>
+<li>[ ] Gap-to-reference interpretation (one paragraph)</li>
+<li>[ ] Three wrong-row readings</li>
+<li>[ ] Ship-call box with the cost-vs-accuracy argument</li>
+<li>[ ] Cost log: run · dry-run estimate · actual</li>
+<li>[ ] AI disclosure with tools and transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All four designs run + provenance</td>
+<td>30%</td>
+<td>Every rung completed end-to-end on the class GT; each number sits next to its command and output file; a stranger could re-run it</td>
+</tr>
+<tr>
+<td>Both metrics everywhere + tripwire verdict</td>
+<td>25%</td>
+<td>α (where defined) and F1 for every design and iteration; the verdict per iteration is stated and the gap to the reference card is interpreted, not explained away</td>
+</tr>
+<tr>
+<td>Wrong-row readings</td>
+<td>20%</td>
+<td>Three rows quoted and read against the codebook; the reading names the cue the model used and the rule the class used</td>
+</tr>
+<tr>
+<td>Ship decision defended</td>
+<td>15%</td>
+<td>The choice weighs cost against accuracy and names what it gives up; not simply the highest F1</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<p>Caps from the project rubric on the Course Hub: reporting only α caps the memo at 10; a missing design caps it at 14; a documented tripwire catch in rung (d), reasoned correctly, is an automatic top band.</p>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team</td>
+<td></td>
+</tr>
+<tr>
+<td>M2 PM (writes this memo)</td>
+<td></td>
+</tr>
+<tr>
+<td>Benchmark file used (name + row count)</td>
+<td></td>
+</tr>
+<tr>
+<td>Reference card version (from Oct 9)</td>
+<td></td>
+</tr>
+<tr>
+<td>Transcript link(s)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--landscape-->
+<p><strong>The one table.</strong> One row per design; the loop gets one row per iteration. α is blank for (a) — write "n/a (one coder)". Provenance = the exact command + the stats file it wrote. Save the same columns as xlsx.</p>
+<table>
+<thead>
+<tr>
+<th>Design</th>
+<th>Models</th>
+<th>α (inter-model)</th>
+<th>F1 vs class GT</th>
+<th>Positive rate</th>
+<th>Provenance (command + output file)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(a) Single model</td>
+<td></td>
+<td>n/a (one coder)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(b) Three-model majority vote</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(c) Dual coders + judge</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(d) Loop — iteration 1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(d) Loop — iteration 2 (if run)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Reference card (published SW)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>reference card, Oct 9</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tripwire verdict.</strong> One row per loop iteration. Verdict vocabulary is fixed: <strong>improved</strong> (F1 up) · <strong>no change</strong> · <strong>tripped</strong> (α up, F1 down).</p>
+<table>
+<thead>
+<tr>
+<th>Iteration</th>
+<th>Prompt version (before → after)</th>
+<th>α before</th>
+<th>α after</th>
+<th>F1 before</th>
+<th>F1 after</th>
+<th>Verdict</th>
+<th>One-line reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Gap to the reference card</strong> (one paragraph: where the gap is, and what explains it).</p>
+<table>
+<thead>
+<tr>
+<th>Write here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(replace this text)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three wrong rows.</strong> Rows the best design still misses.</p>
+<table>
+<thead>
+<tr>
+<th>Wrong row 1</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Text excerpt</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT</td>
+<td></td>
+</tr>
+<tr>
+<td>Model label (which design)</td>
+<td></td>
+</tr>
+<tr>
+<td>Our reading: what the model saw vs what the class saw</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Wrong row 2</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Text excerpt</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT</td>
+<td></td>
+</tr>
+<tr>
+<td>Model label (which design)</td>
+<td></td>
+</tr>
+<tr>
+<td>Our reading: what the model saw vs what the class saw</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Wrong row 3</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td></td>
+</tr>
+<tr>
+<td>Text excerpt</td>
+<td></td>
+</tr>
+<tr>
+<td>Class GT</td>
+<td></td>
+</tr>
+<tr>
+<td>Model label (which design)</td>
+<td></td>
+</tr>
+<tr>
+<td>Our reading: what the model saw vs what the class saw</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ship call.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Ship call</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design we would ship</td>
+<td></td>
+</tr>
+<tr>
+<td>F1 it delivers / cost per 1,000 rows</td>
+<td></td>
+</tr>
+<tr>
+<td>What it gives up vs the best-F1 design</td>
+<td></td>
+</tr>
+<tr>
+<td>Why (3–5 sentences)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cost log.</strong> One row per paid run; the dry-run estimate comes first.</p>
+<table>
+<thead>
+<tr>
+<th>Run (cell + models + route)</th>
+<th>Dry-run estimate ($)</th>
+<th>Actual ($)</th>
+<th>Date</th>
+<th>Who ran it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment: a tripwire row read correctly</h2>
+<table>
+<thead>
+<tr>
+<th>Iteration</th>
+<th>Prompt version</th>
+<th>α before</th>
+<th>α after</th>
+<th>F1 before</th>
+<th>F1 after</th>
+<th>Verdict</th>
+<th>One-line reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>def → rt1</td>
+<td>.52</td>
+<td>.81</td>
+<td>.74</td>
+<td>.61</td>
+<td><strong>tripped</strong></td>
+<td>The reviser added "any offer of help counts as 1"; both coders now agree on rows the class coded 0 (policy restated as help), so agreement rose while accuracy fell</td>
+</tr>
+</tbody>
+</table>
+<p>Illustrative numbers, not a target. The point is the shape of the reading: it names the prompt change, the rows it moved, and why the two coders converged on the wrong idea together. A row like this, found in your own loop, is worth more than a clean run.</p></div></details><details id="m3"><summary><span>M3 — Pre-registered codebook experiment</span><span class="due">15 pts · prereg Nov 6 · report Fri Nov 13</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/M3.docx" download>Download the fillable Word version</a></strong></p><h1>M3 — Pre-registered codebook experiment</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>15 of the STAMP project's 100 (= 6% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Nov 13, 11:59 PM — pre-registration block committed by Friday Nov 6</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's template, filled + the link and commit hash of your committed PREREG</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Oct 30 <em>Analytics II — experiments + STAMP hypothesis design</em> → Project beat — experiment runs → Stack layer — <strong>experiment</strong>.</p>
+<h2>The gist</h2>
+<p>M2 asked which pipeline design to ship. M3 asks a research question about the codebook itself, and answers it the way the research program does: hypothesis and decision rule written down before any paid run, one manipulation per arm, a paired-bootstrap confidence interval, and a verdict you are bound to by your own rule. A null result honestly reported earns full credit; a hypothesis rewritten after the numbers came in earns the bottom band. Done well, M3 gives your final report its cleanest section and gives your extension a method to reuse.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Choose one sanctioned cell</strong> from the Experiment Design Guide on the Course Hub: <strong>A</strong> definition-variant grid (starting prompt only, no loop), <strong>B</strong> component ablation of your own M2 codebook (<code>noinc</code> / <code>nodef</code>, byte-identical otherwise), or <strong>C</strong> seed → loop (does the starting seed change the loop's gain?). If you can't decide, take B — cheapest and no reviser noise.</li>
+<li><strong>Fill the pre-registration block (Appendix A, Table 1) BEFORE any paid run.</strong> Directional hypothesis, exact arms and version tags, primary metric (F1 vs class GT, per coder), the decision rule, cost preview, stop condition. Commit it to your team repo as <code>experiments/m3/PREREG.md</code> by <strong>Fri Nov 6</strong> and keep the commit hash — runs made before the commit don't count.</li>
+<li><strong>Dry-run every arm</strong> and paste the <code>--dry-run</code> lines verbatim into the cost preview. M3 budget is under $1.00 in every cell; Cell C needs the one-coder-first trim described in the guide, stated in the block.</li>
+<li><strong>Run the arms</strong> with both coders, same rows, same seed. Edit exactly one thing per arm; the diff of each prompt against its parent goes in your appendix.</li>
+<li><strong>Compute the paired bootstrap</strong> on the row-level F1 difference, B = 5000, seed 42, per coder; α per arm alongside (α without F1 is the tripwire you learned in M2). Fill Table 2 with a provenance line under every number: <code>command → output file → field</code>.</li>
+<li><strong>Deliver the verdict by the pre-registered rule</strong> — supported / refuted / null — then two or three sentences on mechanism (did precision or recall move, and why) and one sentence placing your direction next to the published result for the same cell. Compare shape and direction, never digits.</li>
+<li><strong>Say what you'd run next</strong>: one experiment, one sentence, with its cost. Log any post-commit change in the amendment log with a date and reason.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Pre-registration block (Table 1) filled, with the repo link and commit hash dated on or before Nov 6</li>
+<li>[ ] Results table (Table 2): every arm × coder with F1, ΔF1, 95% CI, α, and a provenance line per number</li>
+<li>[ ] Verdict box: supported / refuted / null by your own rule, mechanism, placement vs the published direction</li>
+<li>[ ] Next-step box: one experiment, one sentence, one cost</li>
+<li>[ ] Appendix: diff of every prompt arm vs its parent; dry-run estimate vs actual spend</li>
+<li>[ ] AI disclosure (below), with tools, actual prompts, and transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pre-registration complete before runs</td>
+<td>25%</td>
+<td>Directional H, arms, metric, decision rule, cost preview, and stop condition all filled and committed by Nov 6; the hash checks out; amendment log is honest</td>
+</tr>
+<tr>
+<td>Design executed as registered</td>
+<td>25%</td>
+<td>Exactly one manipulation per arm (the diff shows one section); dry-run logged before every paid run; same rows, seed, and coders across arms</td>
+</tr>
+<tr>
+<td>Statistics + CI correct</td>
+<td>20%</td>
+<td>Paired bootstrap B = 5000, seed 42, per coder; α reported beside F1; every number carries a command → output file → field line</td>
+</tr>
+<tr>
+<td>Honest verdict (null = full credit)</td>
+<td>20%</td>
+<td>Verdict follows the pre-registered rule even when the result is null; mechanism argued from precision/recall movement; "what we'd run next" is something a researcher could actually run</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<p><strong>Table 1 — Pre-registration block.</strong> Fill every row before your first paid run; the same content goes into <code>experiments/m3/PREREG.md</code> in your team repo. Team: <strong><em>_</em>_ · Committed on: </strong><strong><em>_ · Commit hash: </em></strong><strong><em> · Repo link: </em></strong>___</p>
+<!--landscape-->
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hypothesis (H1, directional, one sentence: arm <strong><em> will have higher / lower / the same F1 than arm </em></strong> because ___)</td>
+<td></td>
+</tr>
+<tr>
+<td>Optional H2 on α (same form)</td>
+<td></td>
+</tr>
+<tr>
+<td>Cell (A def-variant / B component ablation / C seed → loop)</td>
+<td></td>
+</tr>
+<tr>
+<td>Construct + benchmark size (Solving Work, class GT, n = <strong><em>, positives = </em></strong> %)</td>
+<td></td>
+</tr>
+<tr>
+<td>Prompt arms + exact version tags (<code>SolvingWork:___</code> vs <code>SolvingWork:___</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>Coders (both arms, both coders) · judge / reviser if the cell loops · reviser draws per seed</td>
+<td></td>
+</tr>
+<tr>
+<td>Metric — primary (F1 vs class GT, per coder) · secondary (inter-model α; positive rate vs base rate)</td>
+<td></td>
+</tr>
+<tr>
+<td>Decision rule (paired bootstrap on row-level ΔF1, B = 5000, seed 42 — state your supported / refuted / null conditions)</td>
+<td></td>
+</tr>
+<tr>
+<td>Cost preview (paste the <code>--dry-run</code> lines verbatim: arm 1 $<strong><em> · arm 2 $</em></strong> · loop/judge $<strong><em> · total $</em></strong> · cap $1.00)</td>
+<td></td>
+</tr>
+<tr>
+<td>Stop condition (spend reaches $___; invalid-prediction rate &gt; 5% after one retry; reviser draw fails the format check)</td>
+<td></td>
+</tr>
+<tr>
+<td>Amendment log (date · change · reason; empty = no changes)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2 — Results.</strong> One row per arm × coder; the parent / baseline arm sits in the same table. A provenance line is required for every numeric cell.</p>
+<table>
+<thead>
+<tr>
+<th>Arm (version tag)</th>
+<th>Coder</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Positive rate</th>
+<th>F1</th>
+<th>ΔF1 vs baseline</th>
+<th>95% CI (B = 5000, seed 42)</th>
+<th>α (per arm)</th>
+<th>Provenance: command → output file → field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Verdict box</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verdict by the pre-registered rule (supported / refuted / null)</td>
+<td></td>
+</tr>
+<tr>
+<td>Mechanism (what moved — precision or recall — and why, 2–3 sentences)</td>
+<td></td>
+</tr>
+<tr>
+<td>Placement vs the published result for this cell (direction and shape, one sentence)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dry-run estimate vs actual spend</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Next-step box</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The one experiment we'd run next (one sentence)</td>
+<td></td>
+</tr>
+<tr>
+<td>Its estimated cost</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked example (illustrative only — placeholder numbers, not a reference result)</h2>
+<p>A Cell B team pre-registered: <em>"H1: on Solving Work vs the class GT, <code>noinc</code> will have lower F1 than the parent <code>rt4</code> codebook because the inclusion criteria carry the content; <code>nodef</code> will be the same as <code>rt4</code>."</em> Decision rule as in Table 1. Dry-run: $0.44 + $0.44 = $0.88. Illustrative results, coder 1 only:</p>
+<table>
+<thead>
+<tr>
+<th>Arm</th>
+<th>Coder</th>
+<th>P</th>
+<th>R</th>
+<th>F1</th>
+<th>ΔF1</th>
+<th>95% CI</th>
+<th>α</th>
+<th>Provenance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rt4 (parent)</td>
+<td>coder 1</td>
+<td>.79</td>
+<td>.88</td>
+<td>.83</td>
+<td>—</td>
+<td>—</td>
+<td>.71</td>
+<td><code>run_predictions.py --cell SolvingWork:rt4 … --stats → reports/SolvingWork_rt4_stats.json → f1[coder 1]</code></td>
+</tr>
+<tr>
+<td>noinc</td>
+<td>coder 1</td>
+<td>.66</td>
+<td>.95</td>
+<td>.78</td>
+<td>−.05</td>
+<td>[−.12, +.01]</td>
+<td>.74</td>
+<td><code>… SolvingWork:noinc … → reports/SolvingWork_noinc_stats.json → f1[coder 1]</code></td>
+</tr>
+<tr>
+<td>nodef</td>
+<td>coder 1</td>
+<td>.80</td>
+<td>.87</td>
+<td>.83</td>
+<td>.00</td>
+<td>[−.05, +.06]</td>
+<td>.70</td>
+<td><code>… SolvingWork:nodef … → reports/SolvingWork_nodef_stats.json → f1[coder 1]</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verdict:</strong> <em>null</em> on H1's first clause — the <code>noinc</code> CI straddles 0, so by our rule we cannot call it supported, even though precision fell (.79 → .66) while recall rose, which is the direction the published SW ablation reports. The <code>nodef</code> clause is consistent with "the definition costs nothing." At n ≈ 135 a −.05 sits inside the noise; we say what the CI says. <strong>Next:</strong> rerun <code>noinc</code> on the second coder and pool ($0.44) to see whether the precision effect clears 0.</p></div></details><details id="m4"><summary><span>M4 — Extension draft + app demo</span><span class="due">15 pts · Fri Nov 20</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/M4.docx" download>Download the fillable Word version</a></strong></p><h1>M4 — Extension draft + app demo</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>15 of the STAMP project's 100 (= 6% of the course; extension 7 · app 8)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Nov 20, 11:59 PM — demo in class that evening</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's template, filled + your public app URL or repo link + a demo recording link if you are not demoing live</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Nov 13 <em>AI app creation &amp; hosting</em> → Project beat — extension + app → Stack layer — <strong>ship</strong>.</p>
+<h2>The gist</h2>
+<p>Two things ship together. The <strong>extension</strong> is one small, scoped question from the menu — a completed small extension always outscores an abandoned big one, and every track ends with the same two sentences: <em>What we found. What a researcher should do next.</em> The <strong>app</strong> is the headless-to-app conversion real research software goes through: a three-page Streamlit wizard over the same pipeline functions your memos used, with a keyless demo mode anyone can tour. Done well, M4 hands the final presentation its live moment and the final report its Extension and App sections.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Choose a track by Fri Nov 6</strong> (one Canvas message: track + one sentence of scope). Caps are tiny on purpose. <strong>X-A</strong> Tier-3 human input on Relational Work — one loop, one human channel (RT5 directions or hand-edit), one construct. <strong>X-B</strong> Tripwire replication on Recommendation — two seeds (def-only vs operational), one iteration each; the default if you can't decide. <strong>X-C</strong> Coder-pair swap — one shipped SW prompt, two model pairs, no re-tuning. <strong>X-D</strong> GT-quality audit — ≤30 rows, blind re-judgment by two teammates, benchmark stays frozen. <strong>X-E</strong> App feature — one new capability, demoable in 3 minutes, keyless, no logins or databases.</li>
+<li><strong>Execute to your track's "done when"</strong> and nothing past the scope cap. Dry-run before every paid run; every number gets a provenance line, as in M3.</li>
+<li><strong>Write the extension worksheet</strong> (Appendix A): what you found and what a researcher should do next, in terms a researcher could act on — not "more research is needed."</li>
+<li><strong>Build the three-page Streamlit app</strong>: <strong>Define</strong> (the SW definition, the prompt you shipped at M2, a provenance line), <strong>Results</strong> (your ladder outputs — α, F1, confusion matrix per design, a browsable disagreement table with model reasoning), <strong>Try it</strong> (paste one statement → both coders classify it live with a session-only pasted key → five canned examples when keyless). Copy the guardrails: row cap 100, cost line printed before the run button activates, seed fixed. The app never forks the science — if app and CLI can disagree on the same input, the app is wrong.</li>
+<li><strong>Deploy.</strong> Streamlit Community Cloud earns the deploy point; local <code>streamlit run</code> is acceptable. Push code only — the <code>.gitignore</code> stays, nothing goes into Secrets, and you verify the public URL from a phone with no key anywhere.</li>
+<li><strong>Rehearse the 3-minute demo</strong> to the run-of-show in Appendix A: 30s what it is → 90s the live moment → 30s what breaks (one honest limitation) → 30s what you'd build next. Keyless mode is the rehearsed path; the live call is the bonus, because wifi dies during demos every year.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Extension worksheet (Appendix A): track, scope cap, done-when checklist ticked, result table with provenance, what we found / what's next</li>
+<li>[ ] App checklist (Appendix A) fully ticked, with the public URL (or "local" + repo link)</li>
+<li>[ ] Demo run-of-show table filled; recording link if not live</li>
+<li>[ ] Dry-run estimate vs actual spend for the extension runs</li>
+<li>[ ] AI disclosure (below), with tools, actual prompts, and transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extension done-when met</td>
+<td>30%</td>
+<td>Your track's done-when table is complete and within the scope cap; runs dry-run first; every number traces to a command and an output file</td>
+</tr>
+<tr>
+<td>Extension verdict actionable</td>
+<td>15%</td>
+<td>"What we found / what a researcher should do next" names a specific next run, channel, or rule — something the research program could act on</td>
+</tr>
+<tr>
+<td>App works + keyless</td>
+<td>30%</td>
+<td>Three pages load; Results shows your real ladder outputs; Try it works with no key present (canned examples) and with a session-only key; row cap, cost line, and fixed seed visible</td>
+</tr>
+<tr>
+<td>Demo discipline + honest limitation</td>
+<td>15%</td>
+<td>Lands in 3 minutes on the 30/90/30/30 structure; the live moment is real; the limitation named is the actual one</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<p><strong>Extension worksheet.</strong> Team: <strong><em>_</em>_ · Track chosen (Nov 6 message): </strong>____</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Track (X-A / X-B / X-C / X-D / X-E) and one-sentence scope</td>
+<td></td>
+</tr>
+<tr>
+<td>Scope cap for this track (copy it from the menu)</td>
+<td></td>
+</tr>
+<tr>
+<td>Done-when, as stated in the menu</td>
+<td></td>
+</tr>
+<tr>
+<td>Done-when met? (Yes / partially — say what is missing)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dry-run estimate vs actual spend</td>
+<td></td>
+</tr>
+<tr>
+<td>What we found (2–4 sentences)</td>
+<td></td>
+</tr>
+<tr>
+<td>What a researcher should do next (one specific action)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Extension result table.</strong> Use the row shape your track's done-when calls for (X-A three rows; X-B four rows; X-C two pairs; X-D audited rows with verdict + reason; X-E: describe the feature and the keyless data it runs on instead).</p>
+<!--landscape-->
+<table>
+<thead>
+<tr>
+<th>Row (arm / seed / pair / audited row)</th>
+<th>Construct</th>
+<th>Coder or judge</th>
+<th>α</th>
+<th>F1</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>Verdict or note</th>
+<th>Provenance: command → output file → field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>App checklist</strong></p>
+<ul>
+<li>[ ] Repo contains code only; benchmark CSVs and predictions live in the team Drive folder</li>
+<li>[ ] <code>.gitignore</code> tested — a dry commit of a data file is refused</li>
+<li>[ ] Keyless mode verified from a phone with no key present (Try it shows the five canned examples; live controls hidden)</li>
+<li>[ ] Hard row cap (100) on any live run</li>
+<li>[ ] Cost line printed before the run button activates</li>
+<li>[ ] Seed fixed; app and CLI give the same number for the same input</li>
+<li>[ ] Page 1 Define: definition, shipped prompt version, provenance line</li>
+<li>[ ] Page 2 Results: α, F1, confusion matrix per design; disagreement browser with reasoning</li>
+<li>[ ] Page 3 Try it: BYOK password field, session-only; falls back when keyless</li>
+<li>[ ] Public URL: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><em> (or "local" + repo link: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></em>)</li>
+</ul>
+<p><strong>Demo run-of-show</strong> (3 minutes)</p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Time</th>
+<th>Who speaks</th>
+<th>What is on screen</th>
+<th>What we say (one line)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it is</td>
+<td>0:00–0:30</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>The live moment (a real classification or a real disagreement browsed)</td>
+<td>0:30–2:00</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>What breaks (one honest limitation)</td>
+<td>2:00–2:30</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>What we'd build next</td>
+<td>2:30–3:00</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment (illustrative only — placeholder numbers)</h2>
+<p>An X-B team's done-when table, with made-up values to show the shape:</p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Construct</th>
+<th>Coder</th>
+<th>α</th>
+<th>F1</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>defonly, before loop</td>
+<td>Recommendation</td>
+<td>coder 1</td>
+<td>.49</td>
+<td>.58</td>
+<td>—</td>
+</tr>
+<tr>
+<td>defonly, after 1 iteration</td>
+<td>Recommendation</td>
+<td>coder 1</td>
+<td>.81</td>
+<td>.41</td>
+<td>tripwire: α up, F1 down</td>
+</tr>
+<tr>
+<td>operational seed, before</td>
+<td>Recommendation</td>
+<td>coder 1</td>
+<td>.62</td>
+<td>.70</td>
+<td>—</td>
+</tr>
+<tr>
+<td>operational seed, after 1 iteration</td>
+<td>Recommendation</td>
+<td>coder 1</td>
+<td>.79</td>
+<td>.78</td>
+<td>safe to loop</td>
+</tr>
+</tbody>
+</table>
+<p><em>What we found:</em> the definition-only seed reproduced the agreement-up/accuracy-down pattern on classroom GT; the operational seed did not. <em>What a researcher should do next:</em> loop only from operational seeds on Recommendation, and add a positive-rate check after every iteration.</p></div></details><details id="f"><summary><span>F — Final presentation (Dec 4) + final package</span><span class="due">10 pts · Wed Dec 9</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/F.docx" download>Download the fillable Word version</a></strong></p><h1>F — Final presentation + package</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>10 of the STAMP project's 100 (= 4% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Presentation Friday Dec 4 in class (13 min + 5 Q&amp;A) · Package Wednesday Dec 9, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Team</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — slides (PDF) + report (PDF export of this doc's template, filled) + reproducibility package (zip or repo link)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Nov 6 <em>AI for writing</em> → Project beat — presentations → Stack layer — <strong>write → ship</strong>.</p>
+<h2>The gist</h2>
+<p>You have five memos. The final package is not five memos stapled together — it is one study: a benchmark you built, a pipeline you replicated against it, an experiment, an extension, and an app, told as one argument with one thread of numbers. The test of the package is a stranger with your repo and your Drive folder regenerating any number you report from a named command; the instructor will try one. The AI-reflection section is judged on specificity, not virtue.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Outline the study as one argument before you open any memo.</strong> Problem → the benchmark we built → ladder results → experiment → extension → app → limitations → stack. Then pull from the memos; don't paste them. Word budgets are in Appendix A.</li>
+<li><strong>Build the reproducibility package.</strong> A README that lists, for every number in the report, the command that produces it and the output file and field it lives in. Code in the repo; data in the team Drive folder; nothing else needed. Test it: one teammate who did not run the pipeline regenerates one number cold.</li>
+<li><strong>Write the AI-reflection section</strong> (Appendix A table): the consequential uses across M1–M4 and the report itself, each with what we kept and what we overrode, and why. Two or three rows that name actual changes beat ten rows of "helped with clarity."</li>
+<li><strong>Run the AI-marker audit from the Nov 6 writing lecture on your own draft</strong> — the emphatic adjectives, cleft sentences, colon chains, "rather than" scaffolds, rule-of-three padding. Record what it flagged and what you changed. Memos from M3 on were already expected to pass; the report must.</li>
+<li><strong>Write the stack page</strong>: the one-person research/business stack you actually used this semester — layer by layer (learn / strategize / research / build / replicate / write / ship), the tool, the workflow, and what you'd automate next.</li>
+<li><strong>Build the 13-minute presentation</strong> with the ladder table and the experiment verdict on screen, the app's live moment (keyless path rehearsed), and one honest limitation. Rehearse to time. Answer Q&amp;A questions with numbers, and name the command behind a number when asked.</li>
+<li><strong>Assemble and check</strong>: slides PDF, report PDF, package link; every number in the report has a provenance line; the README's commands run.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Slides (PDF) — presented Dec 4; ladder table and experiment verdict visible</li>
+<li>[ ] Report (PDF of the filled template): the eight sections within their word budgets, every number with a provenance line</li>
+<li>[ ] Reproducibility package (zip or repo link) with the README checklist in Appendix A complete</li>
+<li>[ ] AI-reflection table and the AI-marker audit record</li>
+<li>[ ] Stack table</li>
+<li>[ ] AI disclosure (below), with tools, actual prompts, and transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One coherent study</td>
+<td>30%</td>
+<td>The report reads as one argument from problem to stack; sections cite each other's numbers; the tripwire and the ship decision are the spine, not an afterthought; limitations are the real ones</td>
+</tr>
+<tr>
+<td>Reproducibility (a stranger can regenerate a number)</td>
+<td>30%</td>
+<td>README maps every reported number to command → output file → field; the instructor's spot-check regenerates it; code and data separated; no key or data in any commit</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>20%</td>
+<td>13 + 5 on time; one study on screen; the live moment works on the keyless path; Q&amp;A answered with numbers and the command behind them</td>
+</tr>
+<tr>
+<td>AI reflection + marker audit</td>
+<td>10%</td>
+<td>Consequential uses logged with kept vs overrode and a reason each; the marker audit names what was flagged and what changed</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourselves before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What we asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What we kept</strong> — the change we accepted, and why it was an improvement.
+(c) <strong>What we overrode</strong> — the AI suggestion we rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<p><strong>Report skeleton.</strong> Write under these headings in this order; the budget is a ceiling, not a target. Every number carries a <code>command → output file → field</code> line.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Section</th>
+<th>Word budget</th>
+<th>What it must contain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Problem</td>
+<td>≤150</td>
+<td>The construct, why classifying it matters for marketing research, the question this study answers</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Benchmark we built</td>
+<td>≤200</td>
+<td>How the class GT was coded and locked; n, positive rate, reliability as revealed at lock; "classroom copy, do not cite"</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ladder results</td>
+<td>≤300</td>
+<td>The one α/F1 table across designs (a)–(d) vs class GT with the published numbers alongside; tripwire verdict per iteration; the ship decision</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Experiment</td>
+<td>≤300</td>
+<td>Pre-registered H, arms, decision rule, CI, verdict by rule, mechanism, placement vs the published direction</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Extension</td>
+<td>≤250</td>
+<td>Track, done-when table, what we found, what a researcher should do next</td>
+</tr>
+<tr>
+<td>6</td>
+<td>App</td>
+<td>≤150</td>
+<td>Three pages, keyless mode, guardrails, public URL, the one honest limitation</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Limitations</td>
+<td>≤150</td>
+<td>Classroom GT, n ≈ 135, definition-only seeds, single reviser draws — the actual ones</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Stack</td>
+<td>≤200</td>
+<td>The one-person research/business stack, from the stack table below</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reproducibility README checklist</strong></p>
+<ul>
+<li>[ ] One-paragraph statement of what the package regenerates and what it needs (repo + team Drive folder + a key only for live runs)</li>
+<li>[ ] Environment: Python version, install command, smoke-test command and its expected output</li>
+<li>[ ] Number map: every reported number → command → output file → field (one row each)</li>
+<li>[ ] Data location stated (team Drive folder), with the row count and lock date of the benchmark</li>
+<li>[ ] Prompt versions listed with their tags and parents; diffs for every experiment and extension arm</li>
+<li>[ ] Run log: dry-run estimate vs actual spend per milestone</li>
+<li>[ ] Cold test: teammate who did not run it regenerated <strong><em>_</em>_ (which number) on </strong>____ (date)</li>
+<li>[ ] No key, no data, no benchmark in any commit (checked with a repo scan)</li>
+</ul>
+<p><strong>AI-reflection table</strong> — consequential uses only, across the whole project.</p>
+<!--landscape-->
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Milestone</th>
+<th>Use (what we asked, one line)</th>
+<th>Tag (evidence / structure / counterargument / math check / wording)</th>
+<th>What we kept, and why</th>
+<th>What we overrode, and why</th>
+<th>Tool + transcript link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>AI-marker audit record</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Draft audited (date, version)</td>
+<td></td>
+</tr>
+<tr>
+<td>Markers flagged (list them, with one example each)</td>
+<td></td>
+</tr>
+<tr>
+<td>What we changed</td>
+<td></td>
+</tr>
+<tr>
+<td>What we kept anyway, and why</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Stack table</strong> — the one-person research/business stack you actually used.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Tool(s)</th>
+<th>Workflow (one line: input → what the tool does → output)</th>
+<th>What we'd automate next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learn</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Strategize</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Research</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Build</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Replicate</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Write</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ship</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment (illustrative only — placeholder text)</h2>
+<p>One number-map row and one reflection row, to show the standard:</p>
+<table>
+<thead>
+<tr>
+<th>Reported number</th>
+<th>Command</th>
+<th>Output file</th>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design (c) F1 = .81, coder 1</td>
+<td><code>python run_predictions.py --cell SolvingWork:def --models … --stats</code> then <code>python analyze.py --construct SolvingWork --version def --judge</code></td>
+<td><code>reports/SolvingWork_def_judge_stats.json</code></td>
+<td><code>f1["coder 1"]</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>Use</th>
+<th>Tag</th>
+<th>Kept</th>
+<th>Overrode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M2</td>
+<td>"Read our three wrong rows and say what the definition misses"</td>
+<td>counterargument</td>
+<td>Its point that two rows were routine politeness the prompt lacked an exclusion for — we added that reading to the memo</td>
+<td>Its proposal to relabel one GT row — the benchmark is frozen; we logged it as GT-audit evidence instead</td>
+</tr>
+</tbody>
+</table></div></details><details id="t"><summary><span>T — Peer evaluation</span><span class="due">5 pts · Wed Dec 9</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/T.docx" download>Download the fillable Word version</a></strong></p><h1>T — Peer evaluation</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>5 of the STAMP project's 100 (= 2% of the course)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Wednesday Dec 9, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Individual — confidential, instructor only</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — one PDF export of this doc's form, filled</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Nov 6 <em>AI for writing</em> → Project beat — final package → Stack layer — <strong>ship</strong>.</p>
+<h2>The gist</h2>
+<p>Rate each teammate on four criteria with one specific example per rating, rate yourself the same way, and account for your standing duty (Prompt / QA / Pipeline) and your PM rotation. Ratings are confidential — instructor only — and inform every member's teamwork points, including yours. Specificity is the grade: "reliable" scores nothing; "ran the dry-run before every M3 arm and posted the log by Tuesday" scores full.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Rate each teammate</strong> on reliability, quality, collaboration, and AI-use integrity, 1–5 each (scale in Appendix A).</li>
+<li><strong>Give one specific example per rating</strong> — a milestone, a date, a thing that happened. No example, no credit for that row.</li>
+<li><strong>Rate yourself</strong> on the same four criteria, same standard.</li>
+<li><strong>Account for your duty</strong>: what it owed the team, what you delivered, what you dropped; same for your PM milestone.</li>
+<li><strong>Submit honestly.</strong> Uniform ratings without examples score in the bottom band.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Three teammate blocks, four ratings each, one example per rating</li>
+<li>[ ] Self-rating block, same four criteria with examples</li>
+<li>[ ] Duty follow-through block (standing duty + PM rotation)</li>
+<li>[ ] AI disclosure (below)</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specificity of examples</td>
+<td>40%</td>
+<td>Every rating carries a concrete, dated example a teammate would recognize</td>
+</tr>
+<tr>
+<td>Complete + on time</td>
+<td>30%</td>
+<td>All blocks filled; submitted by Dec 9</td>
+</tr>
+<tr>
+<td>Honest self-assessment</td>
+<td>20%</td>
+<td>Self-ratings match the record; dropped duties named, not hidden</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>AI for wording only; ratings and examples are yours — name any wording change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourself before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What I asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What I kept</strong> — the change I accepted, and why it was an improvement.
+(c) <strong>What I overrode</strong> — the AI suggestion I rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<!--appendix-->
+<h2>Appendix A — Peer evaluation form (fill this out)</h2>
+<p>Your name: <strong><em>_</em>_ · Team: </strong><strong><em>_ · Your standing duty (Prompt / QA / Pipeline): </em></strong><strong><em> · Milestone(s) where you held the PM hat: </em></strong>___</p>
+<p>Scale: 5 = I'd choose them again without hesitation · 4 = strong · 3 = did the job · 2 = needed reminding · 1 = the team carried them.</p>
+<p><strong>Teammate 1:</strong> ______</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Rating (1–5)</th>
+<th>One specific example (milestone, date, what happened)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliability (showed up, delivered on time, kept commitments)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Quality (work was right, checked, and usable as delivered)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Collaboration (communicated, shared credit, unblocked others)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AI-use integrity (no AI in GT coding before lock; AI uses logged honestly after)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teammate 2:</strong> ______</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Rating (1–5)</th>
+<th>One specific example (milestone, date, what happened)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Quality</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Collaboration</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AI-use integrity</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Teammate 3:</strong> ______ (leave blank if your team has three members)</p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Rating (1–5)</th>
+<th>One specific example (milestone, date, what happened)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Quality</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Collaboration</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AI-use integrity</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Self-rating</strong></p>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Rating (1–5)</th>
+<th>One specific example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Quality</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Collaboration</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AI-use integrity</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Duty follow-through</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What my standing duty owed the team at each milestone (M1–M4, F)</td>
+<td></td>
+</tr>
+<tr>
+<td>What I delivered</td>
+<td></td>
+</tr>
+<tr>
+<td>What I dropped or delivered late, and what I did about it</td>
+<td></td>
+</tr>
+<tr>
+<td>PM rotation: which milestone, what I did as PM of record (memo authored, debrief led)</td>
+<td></td>
+</tr>
+<tr>
+<td>One thing I would do differently on the next team</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Confidentiality.</strong> This form is read only by the instructor. Teammates never see your ratings or examples.</p>
+<h2>Appendix B — Worked row (illustrative only)</h2>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Rating</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliability</td>
+<td>4</td>
+<td>Posted the M3 dry-run log for both arms on Nov 9, two days before we ran; missed the Nov 6 track message and the PM sent it instead</td>
+</tr>
+</tbody>
+</table></div></details>
+
+<h2 id="labs">Labs &amp; cases</h2>
+<p>The weekly-labs strand (15% of the course). Two items carry their own brief; in-class exercises are announced on Canvas.</p>
+<details id="lab5"><summary><span>Lab5 — Literature-review table + source audit</span><span class="due">5 pts · Fri Sep 25</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Lab5.docx" download>Download the fillable Word version</a></strong></p><h1>Lab 5 — Literature-review table + source audit</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points</td>
+<td>5 (weekly labs strand, 15% of the course; late −10% per day)</td>
+</tr>
+<tr>
+<td>Due</td>
+<td>Friday Sep 25, 11:59 PM</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Individual</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Canvas — PDF of this doc's template, filled + your Zotero <code>.bib</code> export (two files)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where this fits:</strong> Lecture — Sep 18 <em>AI-powered literature review + secondary research</em> → Project beat — feeds the mini Teach beat (Sep 25) and, later, the STAMP related-work section → Stack layer — <strong>research</strong>.</p>
+<h2>The gist</h2>
+<p>Two parts, one skill: AI drafts, you audit. You build a three-paper literature-review table on LLMs as synthetic survey respondents, anchored on Li et al. (2024), with Zotero records saved from checkable pages. Then you take one Copper Lane claim about China's coffee-shop market and audit it across six rows until something breaks. Plan about two hours over the weekend of Sep 19–20.</p>
+<h2>Steps</h2>
+<ol>
+<li><strong>Build the Zotero collection</strong> <code>AI in Marketing – synthetic respondents</code>: Li, Castelo, Katona &amp; Sarvary (2024, <em>Marketing Science</em> 43(2), 254–266) plus at least two more papers on silicon samples / simulated consumers / LLM-as-respondent, each saved from a publisher, journal, or preprint page with the connector, never by hand. No DOI, no citation; preprints carry the SSRN/arXiv/NBER URL, the date accessed, and the label "preprint." Export the collection as <code>.bib</code>.</li>
+<li><strong>Run a deep-research pass</strong> with at least two scoped prompts (adapt the Sep 18 templates: a DOI for every paper, "no reliable source found" instead of guessing). Its output is a candidate list; the seed set on the slides (Brand, Israeli &amp; Ngwe; Argyle et al.; Horton) is a starting point, not a bibliography. Save transcript links.</li>
+<li><strong>Fill the 8-column lit-review table</strong> (Appendix A) from the papers themselves: abstract, method, results tables, limitations. A cell filled from an AI summary alone counts as empty. The last column says <em>extends · contradicts · different construct · same method</em>, and why.</li>
+<li><strong>Write the catch note</strong> (3–5 sentences): one thing the AI got wrong or could not find (a citation that did not resolve, a claim the paper never made, a wrong venue). If you caught nothing, say what you checked.</li>
+<li><strong>Pick one Copper Lane claim</strong> about the China coffee-shop market (a store-count comparison between two study-card brands, a market-size figure, a "fastest-growing chain" line, a typical latte price) and run at least two scoped deep-research prompts on it.</li>
+<li><strong>Audit it across six rows</strong>: the claim as the AI first stated it, the source(s) it cited, and the corroborating or contradicting sources you found yourself. At least one row from a licensed library report (Mintel / IBISWorld / Statista via the CPP Library portal), or one line on what the portal search found. Verdicts use only <strong>Verified · Partially verified · Unverified · Contradicted</strong>; an AI summary is not a source, so audit what it cites. Vendor price or count rows state what the headline excludes. <strong>At least one row must be Unverified or Contradicted, with a real action</strong> (claim cut, ranged, or downgraded to "vendor-claimed"). A clean audit is a failed audit.</li>
+<li><strong>Close with one sentence</strong>: what Copper Lane can trust about this claim today, and what needs a person on the ground in China. Export to PDF; upload with the <code>.bib</code>.</li>
+</ol>
+<h2>What to submit</h2>
+<ul>
+<li>[ ] Lit-review table: three papers, eight columns, DOI or preprint URL + date for each</li>
+<li>[ ] Catch note, 3–5 sentences, naming a concrete miss or check</li>
+<li>[ ] Zotero <code>.bib</code> export from the named collection, three or more records</li>
+<li>[ ] Six-row source audit, ≥ 1 Unverified/Contradicted with action, library-portal row or line</li>
+<li>[ ] Closing trust sentence for Copper Lane</li>
+<li>[ ] AI disclosure: tools, verbatim prompts (≥ 2 per part), tested transcript links</li>
+</ul>
+<h2>How you'll be graded</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Weight</th>
+<th>Strong work looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lit-review table accuracy</td>
+<td>35%</td>
+<td>Three real papers; all eight columns filled from the papers, with each paper's own number in the headline cell; the Li et al. column says something specific</td>
+</tr>
+<tr>
+<td>Source audit rigor</td>
+<td>35%</td>
+<td>Six rows on one claim family; verdicts justified by the who/why/when/how columns, not decorative; ≥ 1 Unverified/Contradicted with a real action; closing sentence draws the trust boundary</td>
+</tr>
+<tr>
+<td>Zotero hygiene (DOI, .bib)</td>
+<td>10%</td>
+<td><code>.bib</code> from the named collection; records saved from checkable pages with DOI or preprint URL + date; records match the table</td>
+</tr>
+<tr>
+<td>Writing</td>
+<td>10%</td>
+<td>Catch note names a concrete miss or check; cells are verifiable sentences, not adjectives</td>
+</tr>
+<tr>
+<td>Process &amp; AI disclosure</td>
+<td>10%</td>
+<td>Human-first work documented; the disclosure answers name the actual change</td>
+</tr>
+</tbody>
+</table>
+<h2>AI disclosure (required)</h2>
+<p><strong>Human first.</strong> Draft or plan this yourself before any AI touches it; that order is the only way to
+see what AI actually adds — or quietly subtracts. Then use AI freely and log the consequential uses
+in the delta style you learned with the Kindle Fire case (tags: evidence / structure / counterargument /
+math check / wording):</p>
+<p>(a) <strong>What I asked</strong> — the two or three prompts that mattered, in one line each.
+(b) <strong>What I kept</strong> — the change I accepted, and why it was an improvement.
+(c) <strong>What I overrode</strong> — the AI suggestion I rejected or rewrote, and why.</p>
+<p>List the tools used and paste the transcript link(s). Generic answers ("AI helped with clarity") score
+zero on this category; name the actual change.</p>
+<p>Here the AI use is the assignment: the human-first artifact is your search question and claim choice, written before the deep-research run; include verbatim prompts, at least two per part.</p>
+<!--appendix-->
+<h2>Appendix A — Template (fill this out)</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Your entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Tools used (deep-research mode, chat, Zotero connector)</td>
+<td></td>
+</tr>
+<tr>
+<td>Transcript link(s), tested in a private window</td>
+<td></td>
+</tr>
+<tr>
+<td>Library portal searched (database + what you found, one line)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--landscape-->
+<p><strong>Part 1 — Lit-review table.</strong> Row 1 = Li et al. 2024. LLM role: respondent · judge · generator · coder. Relation: extends · contradicts · different construct · same method, plus one sentence why.</p>
+<table>
+<thead>
+<tr>
+<th>Paper (author-year, venue, DOI or preprint URL + date)</th>
+<th>Question</th>
+<th>Sample / data (n)</th>
+<th>LLM role</th>
+<th>Validity check (against what, how)</th>
+<th>Headline finding (with the paper's number)</th>
+<th>Limitation (stated by the authors)</th>
+<th>How it relates to Li et al. 2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Li, Castelo, Katona &amp; Sarvary (2024), <em>Marketing Science</em> 43(2), DOI:</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>— (anchor paper)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Catch note (3–5 sentences).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Write here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(replace this text)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Part 2 — Source audit.</strong> One claim, six rows. Publisher type: gov / trade assoc. / research firm / vendor / news / blog / AI-summary. Verdicts: Verified · Partially verified · Unverified · Contradicted.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Claim (as stated)</th>
+<th>Source (name + URL)</th>
+<th>Publisher type · Date</th>
+<th>Who collected it &amp; why (their incentive)</th>
+<th>Method behind the number</th>
+<th>Corroborating source (or "none found")</th>
+<th>Verdict</th>
+<th>Action taken</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!--/landscape-->
+
+<p><strong>Closing sentence.</strong> What Copper Lane can trust about this claim today, and what needs a person on the ground in China.</p>
+<table>
+<thead>
+<tr>
+<th>Write here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(replace this text)</td>
+</tr>
+</tbody>
+</table>
+<h2>Appendix B — Worked fragment</h2>
+<p><strong>An audit row to the standard.</strong> Claim: "Luckin has more stores in China than Starbucks." Source: a news roundup citing the company's quarterly report. Publisher type: news → vendor (company filing), dated. Who and why: the company reports its own count and has an incentive to headline growth. Method: company-reported store count; the roundup does not say whether the figure includes franchised (partnership) stores or only company-operated ones, and the two brands define "store" differently. Corroboration: the other brand's investor release for the same quarter, which uses a different cutoff date. Verdict: <strong>Partially verified</strong>. Action: memo reports the comparison as a range with both definitions and the two dates, and never as a single headline gap.</p>
+<p><strong>A lit-review cell that counts as empty.</strong> "Validity check: the authors compared AI and human results and found them similar." No criterion, no method, no number. Rewrite from the results table: what was compared, against which human data, and what agreement figure they report.</p></div></details><details id="hw10"><summary><span>HW10 — Amazon Kindle Fire case — the three-box delta method (voice mode)</span><span class="due">10 pts · Fri Sep 25</span></summary><div class="pa-body"><p><strong>⬇ <a href="files/Amazon_Kindle_Fire_Case_Assignment.docx" download>Download the Word document: Amazon_Kindle_Fire_Case_Assignment.docx</a></strong></p><p>Box A — your first take, no AI (100–200 words). Box B — your AI-assisted answer (250–500 words) after a voice-mode session with the case tutor. Box C — the delta log: 3–5 bullets, each improvement tagged <em>evidence / structure / counterargument / math check / wording</em>, at least one rejected AI suggestion with a reason, and the transcript link. Fill the Word document (download above), export to PDF, upload on Canvas. The Skill Guide is on Canvas with the assignment; model answers are released after grading.</p></div></details>
+
+<h2 id="resources">Resources</h2>
+<div class="card"><h3>Downloads</h3><ul><li><a href="files/00_GT_Coding_Playbook.docx" download>00 GT Coding Playbook</a></li><li><a href="files/01_Student_Brief_STAMP.docx" download>01 Student Brief STAMP</a></li><li><a href="files/03_Rubric_STAMP.docx" download>03 Rubric STAMP</a></li><li><a href="files/04_Pipeline_Quickstart.docx" download>04 Pipeline Quickstart</a></li><li><a href="files/05_Extension_Menu.docx" download>05 Extension Menu</a></li><li><a href="files/06_App_Track_Guide.docx" download>06 App Track Guide</a></li><li><a href="files/07_Experiment_Design_Guide.docx" download>07 Experiment Design Guide</a></li><li><a href="files/01_Student_Brief_MiniProject.docx" download>01 Student Brief MiniProject</a></li><li><a href="files/03_Rubric_MiniProject.docx" download>03 Rubric MiniProject</a></li><li><a href="files/IBM6450_IBM2990_AI_in_Marketing_Syllabus_2026_Fall.docx" download>IBM6450 IBM2990 AI in Marketing Syllabus 2026 Fall</a></li></ul></div><div class="card"><h3>Course documents</h3><ul><li>Syllabus (Word)</li><li>GT Coding Playbook</li><li>STAMP student brief + rubric</li><li>Mini project student brief + rubric</li></ul><p>→ Documents <em>(on Canvas)</em></p></div><div class="card"><h3>STAMP project guides</h3><ul><li>Pipeline Quickstart — setup, smoke test, the four-design ladder commands</li><li>Extension Menu — tracks X-A … X-E with scope caps and "done when"</li><li>App Track Guide — the 3-page Streamlit floor, keyless demo, hosting</li><li>Experiment Design Guide — pre-registration template + worked exemplars</li></ul><p>→ Guides <em>(on Canvas)</em></p></div><div class="card"><h3>Slides</h3><ul><li>Every session's deck (HTML + PPTX) — pre-class recordings are flagged in the schedule</li></ul><p>→ Slides <em>(on Canvas)</em></p></div><div class="card"><h3>Mini project companion page</h3><ul><li>Illustrated Li et al. (2024) replication page with copy-button prompts and the pre-run two-model dataset — its dates and its "17 respondents" belong to a summer cohort; this hub's calendar and your own class survey govern</li></ul><p>→ <a href="https://claude.ai/code/artifact/1d4e2e35-f168-4fe4-8ae6-24838ca130ee">Companion page</a></p></div>
+
+<h2 id="released">Released after grading</h2>
+<p>Posted to Canvas after the corresponding assignment is graded — study them; they are the standard your next deliverable is graded against.</p>
+<ul><li>Kindle Fire model answers (after HW10 is graded)</li><li>Mini project: instructor&#x27;s own ladder conversations and the class-survey tally</li><li>STAMP reference-numbers card (revealed at the Oct 9 lock) and M2 exemplar table</li></ul>
+</main>
+<footer>IBM 6450 / IBM 2990 · Cal Poly Pomona · generated 2026-08-28 from the course source of record — report broken links to Dr. Lin</footer>
+<script>
+function hubOpenHash(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;
+var el=document.getElementById(h);if(!el)return;
+var d=el.closest("details");if(d)d.setAttribute("open","");
+el.scrollIntoView({block:"start"});}
+window.addEventListener("hashchange",hubOpenHash);hubOpenHash();
+</script>
+</body></html>
