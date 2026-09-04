@@ -209,6 +209,7 @@ blockquote.v{border-left-color:var(--real); font-size:14.5px}
     <li><a href="#study">The study card</a></li>
     <li><a href="#extend">Go further</a></li>
     <li><a href="#blocks">Your four weeks</a></li>
+    <li><a href="#deliverables">Deliverables</a></li>
     <li><a href="#final">The final</a></li>
     <li><a href="#grading">How you're graded</a></li>
     <li><a href="#words">Words you need</a></li>
@@ -257,6 +258,14 @@ blockquote.v{border-left-color:var(--real); font-size:14.5px}
     what is wrong, what to trust, what the client should do — must be yours, and judges will ask you to
     defend them without slides. <strong>Never fake data.</strong> A real answer from ten people beats an
     invented answer from 200, and invented numbers are easy to catch.</p>
+  </div>
+
+  <div class="callout">
+    <p class="clabel">This page is the brief</p>
+    <p>Everything graded in the mini project is defined here — the study card, the recipes, the
+    deliverables, the rubric. The Canvas assignments (Mini D1–D3, D4–D5, D6–D7) are the upload templates
+    and point back to this page. If a Canvas page and this page ever disagree, this page wins; tell your
+    instructor.</p>
   </div>
 </section>
 
@@ -478,8 +487,7 @@ blockquote.v{border-left-color:var(--real); font-size:14.5px}
       <div class="ibody">
         <p><span class="lbl">The idea you explain</span> A beautiful map from fake respondents is worth
         nothing until something real checks it. The paper&rsquo;s trick: compare <em>orders</em>, not
-        numbers. Two surveys can use different scales and moods, but if both say Dunkin' beats Starbucks on
-            value, they agree where it matters. Your Explain must cover: why compare orders instead of raw
+        numbers. Two surveys can use different scales and moods, but if both say Dunkin' is cheaper than Starbucks, they agree where it matters. Your Explain must cover: why compare orders instead of raw
         numbers, why 50% agreement is free (flip a coin and you match half the time), and why even two
         <em>human</em> surveys never agree 100%.</p>
         <p><span class="lbl">Critique bank — pick 2, prove each with evidence</span></p>
@@ -542,7 +550,7 @@ blockquote.v{border-left-color:var(--real); font-size:14.5px}
       <thead><tr><th>Brands (6)</th><th>Attributes (5)</th></tr></thead>
       <tbody>
         <tr><td>Starbucks</td><td>coffee quality and craft</td></tr>
-        <tr><td>Dunkin'</td><td>low prices and good value</td></tr>
+        <tr><td>Dunkin'</td><td>low prices</td></tr>
         <tr><td>Dutch Bros</td><td>speed and convenience</td></tr>
         <tr><td>Peet's Coffee</td><td>a nice place to sit and stay</td></tr>
         <tr><td>The Coffee Bean &amp; Tea Leaf</td><td>trendy and popular on social media</td></tr>
@@ -567,7 +575,7 @@ blockquote.v{border-left-color:var(--real); font-size:14.5px}
     <pre><code>Simulate a market research panel of 20 different coffee consumers in the United States in 2026 — different ages, regions, and coffee habits. Each consumer rates each brand on each attribute from 0 (does not describe it at all) to 10 (describes it perfectly), answering as themselves, not as an expert.
 
 Brands: Starbucks, Dunkin', Dutch Bros, Peet's Coffee, The Coffee Bean &amp; Tea Leaf, Blue Bottle Coffee
-Attributes: coffee quality and craft; low prices and good value; speed and convenience; a nice place to sit and stay; trendy and popular on social media
+Attributes: coffee quality and craft; low prices; speed and convenience; a nice place to sit and stay; trendy and popular on social media
 
 Output:
 1. One table — rows = brands, columns = attributes, each cell = the average across the 20 consumers, one decimal.
@@ -630,42 +638,43 @@ Table B (class survey):
   <div class="tw">
     <table>
       <caption>AI panel 1 — GPT-4.1 · mean of 10 synthetic answers per cell · simulated data</caption>
-      <thead><tr><th>Brand</th><th class="num">Quality</th><th class="num">Value</th><th class="num">Speed</th><th class="num">Place to sit</th><th class="num">Trendy</th></tr></thead>
+      <thead><tr><th>Brand</th><th class="num">Quality</th><th class="num">Low prices</th><th class="num">Speed</th><th class="num">Place to sit</th><th class="num">Trendy</th></tr></thead>
       <tbody>
-        <tr><td>Starbucks</td><td class="num">8.0</td><td class="num">2.0</td><td class="num">7.0</td><td class="num">8.6</td><td class="num">8.2</td></tr>
-        <tr><td>Dunkin'</td><td class="num">5.4</td><td class="num">8.2</td><td class="num">9.1</td><td class="num">3.6</td><td class="num">4.0</td></tr>
-        <tr><td>Dutch Bros</td><td class="num">5.4</td><td class="num">6.2</td><td class="num">8.8</td><td class="num">2.1</td><td class="num">8.7</td></tr>
-        <tr><td>Peet's Coffee</td><td class="num">8.0</td><td class="num">3.0</td><td class="num">4.6</td><td class="num">6.1</td><td class="num">3.0</td></tr>
-        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">6.3</td><td class="num">4.0</td><td class="num">6.0</td><td class="num">7.6</td><td class="num">4.0</td></tr>
-        <tr><td>Blue Bottle Coffee</td><td class="num">9.0</td><td class="num">2.0</td><td class="num">3.2</td><td class="num">7.4</td><td class="num">7.3</td></tr>
+        <tr><td>Starbucks</td><td class="num">8.0</td><td class="num">1.0</td><td class="num">7.1</td><td class="num">8.9</td><td class="num">8.4</td></tr>
+        <tr><td>Dunkin'</td><td class="num">5.2</td><td class="num">7.8</td><td class="num">9.0</td><td class="num">3.6</td><td class="num">4.0</td></tr>
+        <tr><td>Dutch Bros</td><td class="num">5.2</td><td class="num">3.5</td><td class="num">8.9</td><td class="num">2.0</td><td class="num">8.8</td></tr>
+        <tr><td>Peet's Coffee</td><td class="num">8.0</td><td class="num">2.0</td><td class="num">4.5</td><td class="num">6.3</td><td class="num">3.0</td></tr>
+        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">6.3</td><td class="num">2.9</td><td class="num">6.0</td><td class="num">7.4</td><td class="num">4.0</td></tr>
+        <tr><td>Blue Bottle Coffee</td><td class="num">9.0</td><td class="num">1.0</td><td class="num">3.8</td><td class="num">7.7</td><td class="num">7.5</td></tr>
       </tbody>
     </table>
   </div>
   <div class="tw">
     <table>
       <caption>AI panel 2 — Gemini 2.5 Flash · mean of 10 synthetic answers per cell · simulated data</caption>
-      <thead><tr><th>Brand</th><th class="num">Quality</th><th class="num">Value</th><th class="num">Speed</th><th class="num">Place to sit</th><th class="num">Trendy</th></tr></thead>
+      <thead><tr><th>Brand</th><th class="num">Quality</th><th class="num">Low prices</th><th class="num">Speed</th><th class="num">Place to sit</th><th class="num">Trendy</th></tr></thead>
       <tbody>
-        <tr><td>Starbucks</td><td class="num">6.2</td><td class="num">0.0</td><td class="num">8.3</td><td class="num">7.7</td><td class="num">8.1</td></tr>
-        <tr><td>Dunkin'</td><td class="num">3.3</td><td class="num">7.5</td><td class="num">9.2</td><td class="num">2.5</td><td class="num">7.1</td></tr>
-        <tr><td>Dutch Bros</td><td class="num">3.3</td><td class="num">2.8</td><td class="num">9.1</td><td class="num">2.0</td><td class="num">8.8</td></tr>
-        <tr><td>Peet's Coffee</td><td class="num">8.8</td><td class="num">1.9</td><td class="num">3.3</td><td class="num">6.3</td><td class="num">2.9</td></tr>
-        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">6.5</td><td class="num">2.8</td><td class="num">3.2</td><td class="num">6.9</td><td class="num">3.3</td></tr>
-        <tr><td>Blue Bottle Coffee</td><td class="num">8.8</td><td class="num">0.1</td><td class="num">1.9</td><td class="num">8.3</td><td class="num">7.1</td></tr>
+        <tr><td>Starbucks</td><td class="num">6.5</td><td class="num">0.0</td><td class="num">8.4</td><td class="num">7.8</td><td class="num">8.5</td></tr>
+        <tr><td>Dunkin'</td><td class="num">3.5</td><td class="num">7.5</td><td class="num">9.1</td><td class="num">2.4</td><td class="num">7.0</td></tr>
+        <tr><td>Dutch Bros</td><td class="num">3.4</td><td class="num">1.6</td><td class="num">9.2</td><td class="num">1.8</td><td class="num">8.9</td></tr>
+        <tr><td>Peet's Coffee</td><td class="num">8.5</td><td class="num">0.2</td><td class="num">2.9</td><td class="num">6.6</td><td class="num">2.7</td></tr>
+        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">6.2</td><td class="num">1.5</td><td class="num">3.6</td><td class="num">7.1</td><td class="num">3.3</td></tr>
+        <tr><td>Blue Bottle Coffee</td><td class="num">8.9</td><td class="num">0.0</td><td class="num">2.0</td><td class="num">7.9</td><td class="num">7.3</td></tr>
       </tbody>
     </table>
   </div>
   <div class="callout warn">
     <p class="clabel">Three things hiding in these tables</p>
-        <p>Look before you use them. (1) The two AIs mostly agree on <em>orderings</em> — both put Blue Bottle
-    and Peet's top on quality, Dunkin' top on value, Dunkin' and Dutch Bros top on speed, Dutch Bros top on
-    trendy — but their <em>numbers</em> disagree: Dutch Bros&rsquo; value is 6.2 to one witness and 2.8 to
-    the other, and Dunkin&rsquo;s trendiness is 4.0 to one and 7.1 to the other. Which team&rsquo;s idea does
-    that prove? (2) Behind each average sit 10 answers — and for these well-documented US brands the spread
-    is narrow: no cell moved more than 2 points across ten identical asks (widest: Starbucks × trendy,
-    panel&nbsp;2, 7 to 9). Narrow is not the same as right — the same prompt rated a brand that does not
-    exist a confident 7, twice. (3) Every cell has a number; no cell says &ldquo;I don&rsquo;t know.&rdquo;
-    Your class survey has an X option. The AI never used one.</p>
+            <p>Look before you use them. (1) The two AIs mostly agree on <em>orderings</em> — both put Blue Bottle
+    top on quality, Dunkin' top on low prices, Dunkin' and Dutch Bros top on speed, Dutch Bros top on
+    trendy — but their <em>numbers</em> disagree: Dunkin&rsquo;s trendiness is 4.0 to one witness and 7.0
+    to the other, The Coffee Bean &amp; Tea Leaf&rsquo;s speed is 6.0 to one and 3.6 to the other, and Dutch
+    Bros&rsquo; quality is 5.2 to one and 3.4 to the other. Which team&rsquo;s idea does that prove?
+    (2) Behind each average sit 10 answers — and for these well-documented US brands the spread is
+    narrow: no cell moved more than 2 points across ten identical asks (widest: The Coffee Bean &amp; Tea
+    Leaf × quality, panel&nbsp;2, 5 to 7). Narrow is not the same as right — the same prompt rated a brand
+    that does not exist a confident 7, twice. (3) Every cell has a number; no cell says &ldquo;I don&rsquo;t
+    know.&rdquo; Your class survey has an X option. The AI never used one.</p>
   </div>
 
   <div class="callout real">
@@ -742,7 +751,7 @@ Table B (class survey):
     <div class="prompt-bar"><span class="prompt-title">The description-rating prompt (secondary data → ratings)</span><button class="copy" type="button">Copy</button></div>
     <pre><code>Below is text a coffee company published about itself. Based ONLY on this text — not on anything else you know about the brand — rate how well each attribute describes the brand, 0 (no evidence at all) to 10 (strongly supported by the text).
 
-Attributes: coffee quality and craft; low prices and good value; speed and convenience; a nice place to sit and stay; trendy and popular on social media
+Attributes: coffee quality and craft; low prices; speed and convenience; a nice place to sit and stay; trendy and popular on social media
 
 Output a table with one row per attribute: rating, plus the exact phrase from the text that justifies it. If the text gives no real evidence for an attribute, write "no evidence" instead of guessing a middle number.
 
@@ -803,8 +812,8 @@ Text:
   <div class="steps">
     <div class="step"><div class="step-n">1</div><h4>Learn · Aug 28 – Sep 4</h4>
       <p>Climb the six-prompt ladder for your angle. On paper: your 3 beliefs and 2 questions <em>before</em>
-      asking the AI, then what rung 3 corrected. Photo of that paper is a deliverable; the Commitment Card
-      is read aloud Sep&nbsp;4.</p></div>
+      asking the AI, then what rung 3 corrected. Photo of that paper is D1, the rung-3 screenshot is D2, and the Commitment Card (D3)
+      is read aloud Sep&nbsp;4 — see Deliverables below.</p></div>
     <div class="step"><div class="step-n">2</div><h4>First build · Sep 4 – 11</h4>
       <p>Blind class survey done in the first minutes of Sep&nbsp;4; now Execute steps 1–2. Whoever is not at
       the keyboard drafts the Explain segment on paper.</p></div>
@@ -825,6 +834,40 @@ Text:
 </section>
 
 <!-- 8 -->
+<section id="deliverables">
+  <p class="eyebrow">What you hand in</p>
+  <h2>Deliverables D1–D7</h2>
+  <div class="prose">
+    <p class="lead">Seven deliverables, three Canvas uploads. D1–D3 are the Learn block, D4–D5 the build,
+    D6–D7 the final. Each Canvas assignment has a one-page fillable template; export it to PDF with your
+    photos and screenshots pasted in. Nothing here carries separate points — everything feeds the
+    100-point rubric below.</p>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>What</th><th>Who</th><th>Due</th><th>Where it counts</th></tr></thead>
+      <tbody>
+        <tr><td><strong>D1</strong></td><td><strong>Paper-before-AI photo.</strong> On paper, <em>before your first AI conversation about this project</em>, write three beliefs and two questions about your team&rsquo;s angle. Photograph the sheet. After Q3 of the ladder, add by hand what the AI corrected.</td><td>Individual</td><td>Fri Sep 4, before class</td><td>Explain (25)</td></tr>
+        <tr><td><strong>D2</strong></td><td><strong>Ladder-rung-3 screenshot.</strong> Your own restatement pasted into a fresh chat with &ldquo;What did I get wrong or miss?&rdquo; and the AI&rsquo;s correction, plus one sentence naming what it corrected. The restatement must be yours, not an AI summary pasted back.</td><td>Individual</td><td>Fri Sep 4, before class</td><td>Explain (25)</td></tr>
+        <tr><td><strong>D3</strong></td><td><strong>Commitment Card.</strong> One card per team, read aloud in 90 seconds: your angle · which of the paper&rsquo;s validity checks you replicate, with the paper&rsquo;s own number · the live moment you will stage · who speaks which beat · <em>Team 1 only:</em> your trap-brand name, handed to the instructor, not read aloud.</td><td>Team</td><td>Fri Sep 4, in class</td><td>Deliver (10)</td></tr>
+        <tr><td><strong>D4</strong></td><td><strong>Execute steps 1–2 evidence.</strong> Named screenshots in the team folder (<code>Team&lt;N&gt;_step&lt;k&gt;_&lt;what&gt;_&lt;YYYYMMDD&gt;.png</code>) plus the folder link on Canvas.</td><td>Team</td><td>Fri Sep 11</td><td>Execute (30)</td></tr>
+        <tr><td><strong>D5</strong></td><td><strong>Panel-table handoff.</strong> Team 1&rsquo;s 6 × 5 table (mean · spread · n per cell, three least-confident cells starred) delivered to Teams 2 and 3, who sign the confirmation line.</td><td>Team 1</td><td>Fri Sep 18, start of class</td><td>Execute (30)</td></tr>
+        <tr><td><strong>D6</strong></td><td><strong>Six-slide deck + evidence folder.</strong> Title · Teach · Warn 1 · Warn 2 · Show · Advise, plus every screenshot, the table(s), the artifact link or file, and (Team 3) the class-survey tally.</td><td>Team</td><td>Fri Sep 25, 7:00 PM</td><td>All rows</td></tr>
+        <tr><td><strong>D7</strong></td><td><strong>The presentation.</strong> 10 minutes + 3 of questions, pipeline order, every member speaks.</td><td>Team</td><td>Fri Sep 25, in class</td><td>All rows</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p class="clabel">AI disclosure, on every upload</p>
+    <p><strong>Human first:</strong> draft or plan it yourself before any AI touches it. Then log the uses
+    that mattered in three lines — <em>what I asked</em> (the two or three prompts), <em>what I kept</em>
+    (the change you accepted and why), <em>what I overrode</em> (the suggestion you rejected and why) —
+    list the tools, and paste the transcript links. &ldquo;AI helped with clarity&rdquo; scores zero; name
+    the actual change.</p>
+  </div>
+</section>
+
+<!-- 9 -->
 <section id="final">
   <p class="eyebrow">Fri Sep 25 · 7:00 PM</p>
   <h2>The final: one study, told in three parts</h2>
@@ -866,7 +909,7 @@ Text:
   </div>
 </section>
 
-<!-- 9 -->
+<!-- 10 -->
 <section id="grading">
   <p class="eyebrow">Grading</p>
   <h2>How you&rsquo;re graded — 100 points</h2>
@@ -891,7 +934,7 @@ Text:
   </div>
 </section>
 
-<!-- 10 -->
+<!-- 11 -->
 <section id="words">
   <p class="eyebrow">Vocabulary</p>
   <h2>Words you need</h2>
@@ -900,7 +943,7 @@ Text:
       <thead><tr><th>Term</th><th>Plain meaning</th></tr></thead>
       <tbody>
         <tr><td>perceptual map</td><td>A picture of a market where similar-seeming brands sit close together.</td></tr>
-        <tr><td>attribute</td><td>A quality consumers judge brands on — value, speed, atmosphere.</td></tr>
+        <tr><td>attribute</td><td>A quality consumers judge brands on — price, speed, atmosphere.</td></tr>
         <tr><td>white space</td><td>A position on the map no strong brand owns. A hypothesis, not proof of demand.</td></tr>
         <tr><td>synthetic respondent</td><td>An AI role-playing a consumer and answering a survey.</td></tr>
         <tr><td>simulated data</td><td>Data generated by AI — cheap, fast, useful for drafts; never the final word.</td></tr>
