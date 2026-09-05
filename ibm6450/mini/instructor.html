@@ -490,41 +490,49 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     oxblood styling on every page for a reason.</p>
   </div>
 
-  <h3>The tally — instructor&rsquo;s answer key <span class="pill real">real data · fill after Sep 4</span></h3>
+  <h3>The tally — instructor&rsquo;s answer key <span class="pill real">real data · filled Sep 4</span></h3>
   <div class="prose">
-    <p><em>Template — fill in after the Form closes.</em> Clean on <strong>[date]</strong> from the response
-    Sheet export (<strong>[N]</strong> responses, Sep&nbsp;4, [HH:MM–HH:MM]) per the rule above: X excluded
+    <p>Cleaned on <strong>2026-09-04</strong> from the response Sheet export (<strong>8</strong> responses,
+    Sep&nbsp;4, 7:18–7:23 PM; two enrolled students had not answered by the close) per the rule above: X excluded
     from each cell&rsquo;s average, nothing edited or dropped. Use this to check the teams&rsquo; tallies —
-    <strong>do not hand it to them</strong>; the tally is their Stage-3 step&nbsp;2. Run the summer cleaning
-    script against the new export: <code>$CPGE/Reference/clean_class_survey.py</code>, after changing its
-    <code>BRANDS</code> list to the six US spellings and dropping the regex that strips the Chinese suffix
-    from the Form column names; it writes the same four files (<code>class_survey_long.csv</code>,
-    <code>class_survey_means.csv</code>, <code>class_survey_x_counts.csv</code>, QC notes). Keep the outputs
-    in <code>companion/class_survey/</code>, never in any student-visible folder.</p>
+    <strong>do not hand it to them</strong>; the tally is their Stage-3 step&nbsp;2. The cleaning script of record is
+    <code>companion/class_survey/clean_class_survey.py</code> (US spellings; writes the long file, the means,
+    the X counts, the pair-order agreement vs. both pre-run AI tables, the QC notes, and a timestamp-free
+    <code>release/</code> copy of the raw ratings for the teams). Instructor-only folder; only the release
+    copy or the Sheet itself goes to students.</p>
   </div>
   <div class="tw gt">
     <table>
-      <caption>CLASS SURVEY — mean rating per cell, X excluded · real data · to be filled</caption>
+      <caption>CLASS SURVEY — mean rating per cell, X excluded · real data · n = 8 · cleaned 2026-09-04</caption>
       <thead><tr><th>Brand</th><th class="num">Quality</th><th class="num">Low prices</th><th class="num">Speed</th><th class="num">Place to sit</th><th class="num">Trendy</th><th class="num">n (of N)</th></tr></thead>
       <tbody>
-        <tr><td>Starbucks</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>Dunkin'</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>Dutch Bros</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>Peet's Coffee</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>Blue Bottle Coffee</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>Starbucks</td><td class="num">6.8</td><td class="num">5.2</td><td class="num">8.4</td><td class="num">7.0</td><td class="num">9.0</td><td class="num">8 of 8</td></tr>
+        <tr><td>Dunkin'</td><td class="num">5.5</td><td class="num">6.8</td><td class="num">8.6</td><td class="num">4.7</td><td class="num">6.9</td><td class="num">5–7 of 8</td></tr>
+        <tr><td>Dutch Bros</td><td class="num">8.7</td><td class="num">7.0</td><td class="num">8.0</td><td class="num">1.2</td><td class="num">9.2</td><td class="num">6 of 8</td></tr>
+        <tr><td>Peet's Coffee</td><td class="num">7.5</td><td class="num">5.2</td><td class="num">5.2</td><td class="num">6.8</td><td class="num">4.2</td><td class="num">4–5 of 8</td></tr>
+        <tr><td>The Coffee Bean &amp; Tea Leaf</td><td class="num">7.2</td><td class="num">5.7</td><td class="num">7.2</td><td class="num">7.7</td><td class="num">2.6</td><td class="num">5–7 of 8</td></tr>
+        <tr><td>Blue Bottle Coffee</td><td class="num">9.0</td><td class="num">6.0</td><td class="num">6.5</td><td class="num">8.0</td><td class="num">4.2</td><td class="num">2–4 of 8</td></tr>
       </tbody>
     </table>
   </div>
   <div class="callout warn">
     <p class="clabel">What to watch for in the teams&rsquo; read (fill the brackets after cleaning)</p>
     <p>(1) <strong>The X story is the headline.</strong> X&rsquo;s come in respondent-level blocks — a
-    student who doesn&rsquo;t know a brand X&rsquo;s all five of its rows. Don&rsquo;t-know rates per brand:
-    [fill]. In the summer run the corpus-thin brand drew a 52% X-rate while both AI panels rated it 9.0 on
+    student who doesn&rsquo;t know a brand X&rsquo;s all five of its rows. Don&rsquo;t-know rates per brand (X&rsquo;s of 40 cells): <strong>Blue Bottle 65%</strong>, Peet&rsquo;s 48%,
+    Dunkin&rsquo; 25%, Dutch Bros 25%, Coffee Bean 22%, Starbucks 0%. Blue Bottle&rsquo;s 9.0 on quality rests on
+    <em>two</em> respondents — the AI panels gave it 9.0 and 8.9 with no X at all. In the summer run the corpus-thin brand drew a 52% X-rate while both AI panels rated it 9.0 on
     quality with zero X&rsquo;s; here the candidates are Blue Bottle (no store near campus) and Dunkin&rsquo;
     (thin in Southern California) — the AI panels rated both confidently. (2) <strong>The big order flips
-    vs. both AI panels:</strong> [fill — compare against the two means tables on the student page; the AIs put Blue Bottle top on quality, Dunkin&rsquo; top on low prices, Dutch Bros top on trendy]. (3) <strong>QC flags, kept per the no-edits rule:</strong> [fill — straight-liners, a
-    respondent who never leaves 3–4, the instructor&rsquo;s own test row if any]. If a team&rsquo;s
+    vs. both AI panels:</strong> overall pair-order agreement is <strong>81% vs. GPT-4.1 and 81% vs. Gemini</strong>
+    (chance ≈ 50%; the two AIs agree with each other 97%). Agreement is high on speed, place-to-sit, and trendy
+    (80–93%) and lowest on <strong>quality (67–69%)</strong>. The flips to chase: the class rates <strong>Dutch Bros
+    quality 8.7</strong> where the AIs said 5.2 / 3.4 — the regional-brand blur, exactly as predicted; the class
+    puts <strong>Dutch Bros top on low prices (7.0)</strong> and Starbucks at 5.2 where both AIs put Starbucks at
+    1.0 / 0.0 and Dunkin&rsquo; top; and the class gives Blue Bottle the top place-to-sit (8.0, n = 2) where
+    GPT-4.1 said Starbucks. Tops that match: Blue Bottle on quality, Dunkin&rsquo; on speed (GPT-4.1), Dutch Bros
+    on trendy. (3) <strong>QC flags, kept per the no-edits rule:</strong> no straight-liners and no test row; three respondents gave a brand a number on some attributes
+    and X on others (partial X on Dunkin&rsquo;/Peet&rsquo;s/Blue Bottle, Dunkin&rsquo;/Coffee Bean, Coffee Bean) —
+    kept as answered; the cell n therefore varies within a brand (Blue Bottle 2–4, Peet&rsquo;s 4–5). If a team&rsquo;s
     means differ from this table, first ask whether they dropped rows or averaged X as 0 — both violate
     the rule.</p>
   </div>
