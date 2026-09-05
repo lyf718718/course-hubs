@@ -176,7 +176,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <ol>
     <li><a href="#glance">At a glance</a></li>
     <li><a href="#wk23">Wk2–3 · Aug 28 + Sep 4</a></li>
-    <li><a href="#wk45">Wk4–5 · Sep 11 + 18</a></li>
+    <li><a href="#wk45">Wk4–5 · Sep 11 lab + Sep 18</a></li>
     <li><a href="#demos">The demos, in full</a></li>
     <li><a href="#kit">Data &amp; survey kit</a></li>
     <li><a href="#wk6">Sep 25 + judging</a></li>
@@ -194,24 +194,33 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <p class="eyebrow">Orientation</p>
   <h2>At a glance</h2>
   <div class="prose">
-    <p class="lead"><strong>The design in one sentence:</strong> the whole class runs Li, Castelo, Katona
-    &amp; Sarvary (2024) at workshop scale on the US coffee-shop market — Team&nbsp;1 generates the
-    synthetic data, Team&nbsp;2 turns it into an interactive map artifact, Team&nbsp;3 validates it against
-    a blind survey of the students themselves (collected in the first minutes of the Sep&nbsp;4 session) — and each team must <em>explain</em> its stage,
-    <em>critique</em> it with proof, and <em>execute</em> it by directing an AI to build the real thing.</p>
-    <p><strong>Why this shape.</strong> One shared study means the three presentations chain into a single
-    completed consulting engagement on Sep&nbsp;25 — no team presents an orphan. The class-as-panel move
-    gives real validation data for free, in a category the students are genuine experts in. And
-    artifact-building is where the &ldquo;AI as builder, human as judge&rdquo; lesson actually lands —
-    the no-programming rule holds because students write requirements and reject
-    drafts; the AI writes every line of code.</p>
+    <p class="lead"><strong>The design in one sentence:</strong> every team runs Li, Castelo, Katona
+    &amp; Sarvary (2024) at workshop scale on the US coffee-shop market in <strong>one evening</strong>
+    (Sep&nbsp;11) — generate the synthetic data, turn it into an interactive map artifact, validate it
+    against the blind survey of the students themselves (collected in the first minutes of Sep&nbsp;4) —
+    then repeats the whole pipeline as its <strong>own study</strong> on a category of its choosing, checked
+    against respondents it recruits (friends and family, n&nbsp;≥&nbsp;15). Each team must <em>explain</em>
+    the method, <em>critique</em> it with proof, and <em>execute</em> it twice by directing an AI to build
+    the real thing.</p>
+    <p><strong>Why this shape (v2.3, decided 2026-09-04).</strong> The summer&rsquo;s one-stage-per-team
+    pipeline was built for a larger summer cohort with teaching assistants and a hand-off week. With ten students, no TA, and two
+    pre-run AI tables plus a closed class survey already in hand, every stage is short enough that one
+    110-minute session covers all three — so every student touches every stage, and the Sep&nbsp;18
+    hand-off (the old single point of failure) disappears. The freed week buys the own study: replicate
+    on the shared card, then extend on your own, which is the same replicate-then-extend shape as the
+    STAMP project. The class-as-panel move still gives real validation data for free; the own study makes
+    each team recruit its own. Artifact-building remains where the &ldquo;AI as builder, human as
+    judge&rdquo; lesson lands — students write requirements and reject drafts; the AI writes every line
+    of code.</p>
         <p><strong>Class constraints:</strong> IBM 6450 / IBM 2990, Fridays 7:00–8:50 PM; 10 graduate students in
     3 teams (3/3/4); own ChatGPT Edu or Claude accounts; no TA — teams self-run and the instructor
-    circulates; four weekly blocks of team time outside class plus 25–40 in-class minutes per Friday, next
-    to the STAMP M0 coding homework; no programming, no system building. Graded on the CPGE 100-point rubric
+    circulates; one full-session lab (Sep&nbsp;11) plus three blocks of team time outside class and 25–40
+    in-class minutes on the other Fridays, next to the STAMP M0 coding homework; no programming, no system building. Graded on the CPGE 100-point rubric
     verbatim (Explain 25 · Critique 20 · Execute 30 · Advise 15 · Deliver 10). The story is reversed from
     the summer run: the client is a Shanghai roaster, <strong>Jade Lane Coffee</strong>, entering the US, and
-    the class is the panel of real US coffee consumers.</p>
+    the class is the panel of real US coffee consumers for the lab; for its own study each team names its
+    own client (an entrant asking the same white-space question in the team&rsquo;s category) and recruits
+    its own respondents.</p>
   </div>
   <div class="callout warn">
     <p class="clabel">Anti-copy architecture</p>
@@ -231,8 +240,9 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <h2>Kickoff, story, and the ladder</h2>
   <div class="prose"><p class="lead">The Aug&nbsp;28 kickoff ran on the summer storyline. The switch to
   the US market and the reversed client happens on Sep&nbsp;4: same paper, same pipeline, new study card.
-  Nothing the students did in Weeks 2–3 is wasted — the ladder, the paper-before-AI sheet, and the angle
-  assignments carry over unchanged.</p></div>
+  Nothing the students did in Weeks 2–3 is wasted — the ladder and the paper-before-AI sheet carry over
+  unchanged; the kickoff angle assignments survive as each student&rsquo;s D1/D2 focus only, because from
+  Sep&nbsp;11 every team runs all three stages (v2.3).</p></div>
   <div class="tw">
     <table>
       <thead><tr><th class="num">Min</th><th>Segment · Sep 4 (about 40 min of the session)</th><th>What happens</th></tr></thead>
@@ -240,7 +250,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
         <tr><td class="num">8</td><td><strong>Class survey</strong> <span class="pill real">real data</span></td><td><strong>First thing, before any slide with a coffee number on it.</strong> QR on screen → the Google Form (spec in the kit section): 6 US brands × 5 attributes, 0–10 or X, anonymous, phones out, no discussion. Guests answer too. Close the Form when the last phone goes down. Paper grids as wifi backup.</td></tr>
         <tr><td class="num">5</td><td><strong>The new brief</strong></td><td>Jade Lane Coffee: a Shanghai small-batch roaster with $200, four weeks, and one question — where is the open space in the US coffee-shop market? Announce the six US brands and that the class is now the validation panel. Say-line below. Only after the survey above is closed: post the hub link (companion page + updated brief) and say the floor (about 70) out loud.</td></tr>
         <tr><td class="num">8</td><td><strong>Collect D1 + D2</strong></td><td>Paper-before-AI photo and Question-3 screenshot. Pick one Question-3 correction per team and read it aloud — that is the Explain segment forming in public.</td></tr>
-        <tr><td class="num">5</td><td><strong>Commitment Cards</strong></td><td>90 seconds each, read aloud: angle, the paper&rsquo;s check they replicate and its number, live moment, duty split. Team&nbsp;1 writes its trap brand on the card — you keep it; the class does not hear it.</td></tr>
+        <tr><td class="num">5</td><td><strong>Announce the shape</strong></td><td>Sep&nbsp;11 is a lab: every team runs all three stages on the coffee card in one evening, then takes the method to a category of its own with respondents it recruits — friends and family, 15 or more. Commitment Cards move to the end of the Sep&nbsp;11 lab. Homework before Sep&nbsp;11: build the map artifact on the pre-run table; bring two candidate categories. Say-line below.</td></tr>
         <tr><td class="num">15</td><td><strong>Paper discussion</strong></td><td>Study-guide Q2 (the Ford problem) and Q3 (the CEO&rsquo;s &ldquo;75% is a C&rdquo; line). Board the number line: 50% floor, raw agreement, self-consistency ceiling, 100%, then the 89.3% human-vs-human tick. Crib sheet at the bottom of this page.</td></tr>
         <tr><td class="num">7</td><td><strong>Demo 1 — the survey of one</strong></td><td>Live, on your own account: the US RTF prompt on McDonald&rsquo;s, three fresh chats, then Franklin Coffee. Full script below with the pre-run numbers as backup. Still never the six real brands — the −5 anti-copy rule.</td></tr>
         <tr><td class="num">rest</td><td><strong>Questions 4–6</strong></td><td>Teams climb the last three questions in their own accounts, on the US category. Circulate; do not type for anyone.</td></tr>
@@ -254,43 +264,51 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <div class="say"><b>Say — closing the Jade Lane brief</b>&ldquo;Notice what makes you dangerous here:
   the AI will spend the next three weeks pretending to be American coffee drinkers. You <em>are</em>
   American coffee drinkers. By Sep&nbsp;25 you will know exactly how good its impression of you is.&rdquo;</div>
+  <div class="say"><b>Say — announcing the lab</b>&ldquo;Next Friday you run the whole paper in one evening:
+  make the data, draw the map, check it against the ten of you. Then you do it again on something you
+  choose — sneakers, groceries, boba, whatever your friends and family can actually rate. The coffee is the
+  rehearsal. Your category is the show.&rdquo;</div>
 </section>
 
 <!-- 3 -->
 <section id="wk45">
-  <p class="eyebrow">Wk4 · Fri Sep 11 and Wk5 · Fri Sep 18</p>
-  <h2>Blind survey, first build, real data</h2>
+  <p class="eyebrow">Wk4 · Fri Sep 11 (the lab, full session) and Wk5 · Fri Sep 18</p>
+  <h2>The lab, then the own study</h2>
   <div class="tw">
     <table>
-      <thead><tr><th class="num">Min</th><th>Segment · Sep 11 (about 35 min)</th><th>What happens</th></tr></thead>
+      <thead><tr><th class="num">Min</th><th>Segment · Sep 11 (about 75 min of the session)</th><th>What happens</th></tr></thead>
       <tbody>
-        <tr><td class="num">3</td><td><strong>Late adds</strong> <span class="pill real">real data</span></td><td>Anyone who missed Sep&nbsp;4 rates the six brands on a paper grid <em>before</em> touching a table or the hub; date their rows so Team&nbsp;3 can report them.</td></tr>
-        <tr><td class="num">12</td><td><strong>Demo 2 — build the instrument</strong></td><td>Live artifact build from the map-builder prompt on the practice table; first draft in ~2 min; reject one thing and make it fix it. Pre-built backup ready. Skip if Team&nbsp;2 already has a running artifact from the summer-storyline rehearsal.</td></tr>
-        <tr><td class="num">6</td><td><strong>Demo 3 — check the order</strong></td><td>Two AIs vs. each other: the pre-run GPT-4.1 and Gemini tables into the order-check prompt, narrowed to low prices and quality. Read the side-by-side rankings, circle one agreement and one clash, point at the chance line.</td></tr>
-        <tr><td class="num">rest</td><td><strong>Hands-on</strong></td><td>Check D4 evidence folders as teams work: Team&nbsp;1 five-run spread + both trap screenshots; Team&nbsp;2 a running artifact on the pre-run GPT-4.1 table and a two-run comparison; Team&nbsp;3 the order-check rehearsed on GPT-4.1 vs. Gemini as two witnesses. Remind Team&nbsp;1: handoff table due at the <strong>start</strong> of Sep&nbsp;18.</td></tr>
+        <tr><td class="num">5</td><td><strong>Sheet release</strong> <span class="pill real">real data</span></td><td>Share the response Sheet with all three teams, view-only. Anyone who missed Sep&nbsp;4 rates the six brands on a paper grid <em>before</em> touching a table or the hub; date their rows.</td></tr>
+        <tr><td class="num">5</td><td><strong>Demo 3, compressed</strong></td><td>The artifact was homework, so skip Demo 2 unless a team has none (then: first draft in ~2 min, reject one thing, make it fix it). The order check: pre-run GPT-4.1 vs. Gemini into the order-check prompt, narrowed to low prices and quality; circle one agreement, one clash, point at the chance line. Pre-built backups for both.</td></tr>
+        <tr><td class="num">15</td><td><strong>Stage 1 · Ask it</strong></td><td>Circulate. Five chats, not one; a trap brand invented per team (you keep the names off the record); panel table pasted into the team folder as plain text — check the apostrophes and the ampersand before anyone moves on.</td></tr>
+        <tr><td class="num">20</td><td><strong>Stage 2 · Map it</strong></td><td>The artifact should already exist (homework). Own panel table pasted in; second draw in a fresh chat; side-by-side saved; axes named from attributes. Cap at three reject-and-fix rounds, then ship.</td></tr>
+        <tr><td class="num">15</td><td><strong>Stage 3 · Check it</strong></td><td>Tally the Sheet with X excluded from averages and counted per brand; order check of the team&rsquo;s own AI table vs. the class table; the floor printed next to the number. Watch for X averaged as zero.</td></tr>
+        <tr><td class="num">5</td><td><strong>Compare</strong></td><td>Three panel tables on the projector, same prompt, three runs. Circle the cells that disagree most (expect the regional chains). That is the paper&rsquo;s reliability point, made by the class with its own hands.</td></tr>
+        <tr><td class="num">10</td><td><strong>Commit</strong> <span class="pill">D3</span></td><td>Each team chooses its category and client. Check the one rule aloud: can they reach 15 real people who know all six brands? Steer away from categories their friends cannot rate. Commitment Cards read, 90 seconds each: category and client · six brands, five attributes · respondent source and target n · direction · live moment · duty split.</td></tr>
+        <tr><td class="num">—</td><td><strong>Close (30 s)</strong></td><td>Form live by Sun Sep&nbsp;13 (link in the team folder). D4 folder tonight. Sep&nbsp;18: bring the responses so far. The remaining ~35 min of the session carry a compressed strategy-with-AI lecture (Kindle Fire three-box moves to the pre-class recording).</td></tr>
       </tbody>
     </table>
   </div>
   <div class="tw">
     <table>
-      <thead><tr><th class="num">Min</th><th>Segment · Sep 18 (about 35 min)</th><th>What happens</th></tr></thead>
+      <thead><tr><th class="num">Min</th><th>Segment · Sep 18 (about 35 min; the lecture is the lit-review session)</th><th>What happens</th></tr></thead>
       <tbody>
-        <tr><td class="num">5</td><td><strong>Handoff</strong></td><td>Team&nbsp;1 posts its panel table as plain text to the team folders and walks a copy to each team. You check the brand spellings (apostrophes, ampersand) before anyone pastes.</td></tr>
-        <tr><td class="num">3</td><td><strong>Sheet release</strong> <span class="pill real">real data</span></td><td>Share the response Sheet with Team&nbsp;3, view-only. Any late add who has not rated the brands rates first, on paper, before touching a table; their rows are dated so Team&nbsp;3 can report them.</td></tr>
-        <tr><td class="num">rest</td><td><strong>Execute 3–5</strong></td><td>Teams finish steps 3–5. Watch for the summer failure modes: Team&nbsp;3 averaging X as zero; Team&nbsp;2 axis names that are adjectives; Team&nbsp;1 running repeats in one chat. Read the three &ldquo;what good looks like&rdquo; cards (below) to the room — there is no answer key to protect here, only calibration.</td></tr>
+        <tr><td class="num">5</td><td><strong>Form check</strong> <span class="pill real">real data</span></td><td>Each team shows its Form link and n so far. Ask how the link was sent and confirm no respondent has seen an AI number. A team under 8 responses needs a recruiting plan today, not on Sep&nbsp;23.</td></tr>
+        <tr><td class="num">10</td><td><strong>Own AI panel</strong></td><td>Panel prompt with the team&rsquo;s own brand and attribute lists, fresh chat, 20 simulated consumers. Second AI for the +5. Spellings must match the Form exactly — the order check breaks silently otherwise.</td></tr>
+        <tr><td class="num">rest</td><td><strong>Map + first check</strong></td><td>New table into the artifact; axes renamed; order check on the responses so far. Remind: Form closes Wed Sep&nbsp;23, D5 package 11:59 PM that night. Failure modes to catch now: attributes changed after the Form went out (tables no longer match); X averaged as zero; n under 10 with no plan to reach 15; a direction started before the panel exists.</td></tr>
       </tbody>
     </table>
   </div>
   <div class="callout real">
-    <p class="clabel">The one unmissable sequencing rule</p>
-    <p>The class survey is only blind once, and it happens in the <strong>first eight minutes of
-    Sep&nbsp;4</strong> — before the hub link goes out, because the companion page and the updated brief
-    carry the pre-run AI tables for the six US brands and the hub is public from that day. Run the Form
-    before any US brand number appears on a screen, no exceptions. Fallback: if the survey cannot run
-    Sep&nbsp;4, blank <code>mini_companion_url</code> in <code>links.json</code>, redeploy, and run it at the
-    start of Sep&nbsp;11 — Team&nbsp;3 loses a week of real data, but the check stays honest. The demos still use McDonald&rsquo;s, Franklin, grips, Luckin, and the practice table — no
-    longer only to protect the blind, but to protect the −5 anti-copy rule: teams must produce their own
-    coffee evidence.</p>
+    <p class="clabel">The two unmissable sequencing rules</p>
+    <p><strong>(1) The class survey is only blind once</strong>, and it happened in the first eight minutes of
+    Sep&nbsp;4 — before the hub link went out, because the companion page carries the pre-run AI tables for
+    the six US brands. If it slipped, the lab&rsquo;s Stage&nbsp;3 runs on paper grids collected at the start
+    of the lab from anyone who has not seen the tables — weaker, but honest. <strong>(2) Own-study
+    respondents answer before they see any AI number.</strong> The Form goes out by Sep&nbsp;13; the AI
+    panel runs Sep&nbsp;18; nobody shares an AI table with a respondent, ever. The demos still use
+    McDonald&rsquo;s, Franklin, grips, Luckin, and the practice table — to protect the −5 anti-copy rule:
+    teams must produce their own evidence.</p>
   </div>
 </section>
 
@@ -306,7 +324,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
 
   <div class="acc">
     <details class="item" open>
-      <summary><span class="tid">D1</span><span class="ttitle">The survey of one — and Franklin Coffee</span><span class="ttag">12 min · feeds Team 1</span></summary>
+      <summary><span class="tid">D1</span><span class="ttitle">The survey of one — and Franklin Coffee</span><span class="ttag">12 min · feeds Stage 1</span></summary>
       <div class="ibody">
                 <p><span class="lbl">Setup</span> Your own account on the projector. The exact student-page RTF
         prompt (US consumer, 2026), with McDonald&rsquo;s as the brand — coffee-adjacent, deliberately off
@@ -332,14 +350,14 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
         <div class="say"><b>Say — after Franklin</b>&ldquo;It rated a brand that does not exist, instantly,
         with no warning. It will always answer. Knowing when the answer is <em>empty</em> — that is your
         job, and no prompt fully fixes it.&rdquo;</div>
-        <p><span class="lbl">Residual flaw → Team 1</span> &ldquo;How would a client, who cannot invent
+        <p><span class="lbl">Residual flaw → Stage 1</span> &ldquo;How would a client, who cannot invent
         fake brands all day, know <em>which</em> real answers are Franklins? That question belongs to
-        Team&nbsp;1.&rdquo; (Their recipe: invent their own trap brand + interrogate the smallest real brand.)</p>
+        Stage&nbsp;1.&rdquo; (Their recipe: invent their own trap brand + interrogate the smallest real brand.)</p>
       </div>
     </details>
 
     <details class="item">
-      <summary><span class="tid">D2</span><span class="ttitle">Build the instrument — a map artifact, live</span><span class="ttag">15 min · feeds Team 2</span></summary>
+      <summary><span class="tid">D2</span><span class="ttitle">Build the instrument — a map artifact, live</span><span class="ttag">15 min · feeds Stage 2</span></summary>
       <div class="ibody">
         <p><span class="lbl">Setup</span> Paste the student-page map-builder prompt with the practice table
         (below) into ChatGPT Canvas — or Claude if you prefer Artifacts; showing students that <em>both</em>
@@ -359,8 +377,8 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
         superpower.&rdquo;</div>
         <div class="say"><b>Say — at the side-by-side</b>&ldquo;Same data, two maps, brands moved. Neither
         map is wrong — each is one draw from a distribution. What repeats across draws is what you can
-        trust. Team&nbsp;2, that sentence is your critique segment.&rdquo;</div>
-        <p><span class="lbl">Residual flaw → Team 2</span> The axes still have no business meaning until a
+        trust. That sentence is a critique segment.&rdquo;</div>
+        <p><span class="lbl">Residual flaw → Stage 2</span> The axes still have no business meaning until a
         human names them from the attributes — and naming them badly misleads the client more than no map
         at all.</p>
         <p><span class="lbl">Backup</span> A pre-built artifact saved on the laptop + screenshots of both
@@ -370,23 +388,23 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     </details>
 
     <details class="item">
-      <summary><span class="tid">D3</span><span class="ttitle">Check the order — two AIs vs. each other</span><span class="ttag">8 min · feeds Team 3</span></summary>
+      <summary><span class="tid">D3</span><span class="ttitle">Check the order — two AIs vs. each other</span><span class="ttag">8 min · feeds Stage 3</span></summary>
       <div class="ibody">
                 <p><span class="lbl">Setup</span> There are no TAs to rate anything, and the students are the
         panel — so the second witness is the second AI. Take the two pre-run means tables (GPT-4.1 and
         Gemini 2.5 Flash, on the student page) narrowed to two attributes only (low prices, quality).</p>
         <ol style="font-size:14.5px">
           <li>Paste the GPT-4.1 table as Table A and the Gemini table as Table B into the order-check
-          prompt (student page, Team&nbsp;3), narrowed to the two attributes. Expect agreement on the low-prices ordering (Dunkin&rsquo; first, Starbucks and Blue Bottle last) and a clash on Dutch Bros&rsquo; quality (5.2 vs. 3.4) and on Starbucks vs. Peet&rsquo;s for second place on quality.</li>
+          prompt (student page, Stage&nbsp;3), narrowed to the two attributes. Expect agreement on the low-prices ordering (Dunkin&rsquo; first, Starbucks and Blue Bottle last) and a clash on Dutch Bros&rsquo; quality (5.2 vs. 3.4) and on Starbucks vs. Peet&rsquo;s for second place on quality.</li>
           <li>Read the side-by-side rankings out loud. Circle one agreement and one clash.</li>
           <li>Point at the reported pair-agreement percentage — and then at the chance line.</li>
         </ol>
         <div class="say"><b>Say</b>&ldquo;Before you cheer any agreement number, remember: two tables of
         <em>random</em> numbers agree on about half of all pair orderings. Half is free. The question is
         never &lsquo;do they agree?&rsquo; — it is &lsquo;how far above a coin flip, and where exactly do
-        they clash, and why?&rsquo; Team&nbsp;3 owns that question with ten real respondents instead of a
-        second AI.&rdquo;</div>
-        <p><span class="lbl">Residual flaw → Team 3</span> Order agreement says nothing about the <em>size</em>
+        they clash, and why?&rsquo; Stage&nbsp;3 answers that question with ten real respondents instead of a
+        second AI — and your own study answers it again with people you recruited.&rdquo;</div>
+        <p><span class="lbl">Residual flaw → Stage 3</span> Order agreement says nothing about the <em>size</em>
         of gaps — and ten respondents in one room are themselves a biased sample. Their verdict slide has
         to carry both caveats.</p>
       </div>
@@ -421,10 +439,10 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <h2>Data &amp; survey kit</h2>
 
   <h3>The practice table (rehearsal data — never presentable as findings)</h3>
-  <div class="prose"><p>Hand this to Team&nbsp;2 (and Team&nbsp;3 for dry runs) so nobody waits on
-  Team&nbsp;1. It is labeled fake in every cell&rsquo;s favor: plausible shape, invented values. Teams must
-  swap in Team&nbsp;1&rsquo;s real synthetic table on Sep&nbsp;18; presenting practice numbers on Sep&nbsp;25
-  is an automatic evidence failure.</p></div>
+  <div class="prose"><p>Rehearsal data for the D2 demo and for teams building their artifact before the
+  lab. It is labeled fake in every cell&rsquo;s favor: plausible shape, invented values. In the lab every
+  team pastes its own Stage-1 table; presenting practice numbers on Sep&nbsp;25 is an automatic evidence
+  failure.</p></div>
   <div class="tw">
     <table>
       <caption>PRACTICE ONLY — invented by the instructor for rehearsal</caption>
@@ -444,7 +462,8 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <div class="prose">
         <p>Build it once (~5 minutes, spec below — or run <code>companion/build_form.gs</code> in Apps Script,
     which builds it in one shot), collect by QR in the first eight minutes of Sep&nbsp;4, and the responses
-    land in a Google Sheet that goes to Team&nbsp;3 on Sep&nbsp;18 — no typing from paper forms.</p>
+    land in a Google Sheet that goes to all three teams at the start of the Sep&nbsp;11 lab — no typing
+    from paper forms.</p>
     <ul>
             <li><strong>Title:</strong> Coffee Brand Survey · description: <em>&ldquo;Answer from your own
       experience. Anonymous — no names.&rdquo;</em></li>
@@ -454,17 +473,18 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       all · 10 = describes it perfectly · X = I have never heard of this brand (do not guess).&rdquo;</em>
       Require a response in each row.</li>
             <li><strong>Settings:</strong> do <em>not</em> collect email addresses; no sign-in required (keep the
-      barrier at zero); responses → linked Sheet; share the Sheet with Team&nbsp;3 view-only on
-      Sep&nbsp;18. Optional hidden &ldquo;guest&rdquo; column if colleagues or family answer to lift n.</li>
+      barrier at zero); responses → linked Sheet; share the Sheet with all three teams view-only at the
+      start of the Sep&nbsp;11 lab. Optional hidden &ldquo;guest&rdquo; column if colleagues or family answer to lift n.</li>
       <li><strong>Delivery:</strong> Send → link → QR code on a slide. Print ~12 paper grids as the wifi
       backup; if paper is used, you photograph and type them into the same Sheet that day.</li>
     </ul>
-    <p>The X option matters: it gives Team&nbsp;3 a real don&rsquo;t-know rate to compare against the AI,
-    which never says X. That contrast is a gift; make sure Team&nbsp;3 notices it.</p>
+    <p>The X option matters: it gives Stage&nbsp;3 a real don&rsquo;t-know rate to compare against the AI,
+    which never says X. That contrast is a gift; make sure every team notices it — and carries the X
+    column into its own Form.</p>
   </div>
   <div class="callout real">
     <p class="clabel">Handling the real data</p>
-    <p>The response Sheet goes to Team&nbsp;3 untouched. Averages reported to one decimal, X&rsquo;s
+    <p>The response Sheet goes to the teams untouched. Averages reported to one decimal, X&rsquo;s
     excluded from that cell&rsquo;s average and counted separately per brand. Nobody edits, drops, or
     &ldquo;fixes&rdquo; a rating — the class table is the project&rsquo;s only ground truth and it gets
     oxblood styling on every page for a reason.</p>
@@ -474,8 +494,8 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <div class="prose">
     <p><em>Template — fill in after the Form closes.</em> Clean on <strong>[date]</strong> from the response
     Sheet export (<strong>[N]</strong> responses, Sep&nbsp;4, [HH:MM–HH:MM]) per the rule above: X excluded
-    from each cell&rsquo;s average, nothing edited or dropped. Use this to check Team&nbsp;3&rsquo;s tally —
-    <strong>do not hand it to them</strong>; the tally is their Execute step&nbsp;1. Run the summer cleaning
+    from each cell&rsquo;s average, nothing edited or dropped. Use this to check the teams&rsquo; tallies —
+    <strong>do not hand it to them</strong>; the tally is their Stage-3 step&nbsp;2. Run the summer cleaning
     script against the new export: <code>$CPGE/Reference/clean_class_survey.py</code>, after changing its
     <code>BRANDS</code> list to the six US spellings and dropping the regex that strips the Chinese suffix
     from the Form column names; it writes the same four files (<code>class_survey_long.csv</code>,
@@ -497,14 +517,14 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     </table>
   </div>
   <div class="callout warn">
-    <p class="clabel">What to watch for in Team 3&rsquo;s read (fill the brackets after cleaning)</p>
+    <p class="clabel">What to watch for in the teams&rsquo; read (fill the brackets after cleaning)</p>
     <p>(1) <strong>The X story is the headline.</strong> X&rsquo;s come in respondent-level blocks — a
     student who doesn&rsquo;t know a brand X&rsquo;s all five of its rows. Don&rsquo;t-know rates per brand:
     [fill]. In the summer run the corpus-thin brand drew a 52% X-rate while both AI panels rated it 9.0 on
     quality with zero X&rsquo;s; here the candidates are Blue Bottle (no store near campus) and Dunkin&rsquo;
     (thin in Southern California) — the AI panels rated both confidently. (2) <strong>The big order flips
     vs. both AI panels:</strong> [fill — compare against the two means tables on the student page; the AIs put Blue Bottle top on quality, Dunkin&rsquo; top on low prices, Dutch Bros top on trendy]. (3) <strong>QC flags, kept per the no-edits rule:</strong> [fill — straight-liners, a
-    respondent who never leaves 3–4, the instructor&rsquo;s own test row if any]. If Team&nbsp;3&rsquo;s
+    respondent who never leaves 3–4, the instructor&rsquo;s own test row if any]. If a team&rsquo;s
     means differ from this table, first ask whether they dropped rows or averaged X as 0 — both violate
     the rule.</p>
   </div>
@@ -515,20 +535,44 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     6 brands × 5 attributes × 10 reps × <strong>GPT-4.1 and Gemini 2.5 Flash</strong>, collected 2026-09-04 with
     the exact student-page survey prompt via API (script included, rerunnable; 600 calls, 0 missing). The two means tables are also
     embedded on the student page, so the student package is self-contained. Sanctioned uses, in this
-    order: rehearsal data for Teams 2–3 before Team&nbsp;1&rsquo;s handoff; the ready-made second-model
-    table for Extension&nbsp;C; and Team&nbsp;1&rsquo;s comparison baseline (&ldquo;does our panel run
-    land near the instructor&rsquo;s?&rdquo;). It does <em>not</em> replace Team&nbsp;1&rsquo;s Execute —
-    they still run the spread, the trap test, and their own panel; presenting the pre-run tables as their
+    order: rehearsal data before the lab (artifact building at home); the backup if a team&rsquo;s own
+    Stage-1 run breaks on the night; the ready-made second-model table for Direction&nbsp;C; and every
+    team&rsquo;s comparison baseline (&ldquo;does our panel run land near the instructor&rsquo;s?&rdquo;).
+    It does <em>not</em> replace a team&rsquo;s own Stage&nbsp;1 — they still run the spread, the trap
+    test, and their own panel; presenting the pre-run tables as their
     own work is the −5. The practice table above stays in service for the D2 demo and early artifact
     rehearsal.</p>
   </div>
 
-  <h3>Handoff logistics</h3>
-    <div class="prose"><p>Sep&nbsp;18 opens with Team&nbsp;1 posting its table to the team folders as plain
-  text (brand rows × attribute columns, one decimal) and walking a copy to each team. Same-shape tables are
-  the contract: 6 rows, 5 columns, exact brand spellings from the study card — Team&nbsp;3&rsquo;s comparison
-  silently breaks on mismatched names, so you check spelling at handoff. The usual casualties are the
-  apostrophes in Dunkin' and Peet's and the ampersand in The Coffee Bean &amp; Tea Leaf.</p></div>
+  <h3>Table hygiene</h3>
+  <div class="prose"><p>Every team posts its panel table to its folder as plain text (brand rows ×
+  attribute columns, one decimal) the moment it exists. Same-shape tables are the contract: 6 rows, 5
+  columns, exact brand spellings from the study card — the order check silently breaks on mismatched
+  names, so you check spelling as you circulate. The usual casualties are the apostrophes in Dunkin' and
+  Peet's and the ampersand in The Coffee Bean &amp; Tea Leaf. The same rule governs each team&rsquo;s own
+  card: the Form rows, the panel prompt, and the order-check tables must spell every brand identically.</p></div>
+
+  <h3>The teams&rsquo; own surveys <span class="pill real">real data · Sep 12 – 23</span></h3>
+  <div class="prose">
+    <p>Each team builds its own Form on the class Form&rsquo;s pattern (five grids, six brands, 0–10 + X,
+    anonymous, no sign-in). The student page carries a Form-builder prompt that makes ChatGPT write the
+    Apps Script; a team can also duplicate the structure by hand in five minutes. What you enforce:</p>
+    <ul>
+      <li><strong>Respondents:</strong> anyone outside the team who buys in the category — friends, family,
+      roommates, coworkers, classmates from other courses. Target 15 or more; 10 is the reporting minimum.
+      Not restricted to this class.</li>
+      <li><strong>Blind by construction:</strong> the Form goes out (by Sun Sep&nbsp;13) before the team runs
+      its AI panel (Sep&nbsp;18), and no respondent is ever shown an AI table.</li>
+      <li><strong>Category test:</strong> six brands the respondents can rate by name. Grocery, sportswear,
+      fast food, sneakers, phones, streaming, boba, airlines all pass; niche B2B categories and
+      &ldquo;brands my friends have never bought&rdquo; fail. Coffee is allowed only with a real change
+      (different brand list, or respondents outside Southern California).</li>
+      <li><strong>Reporting:</strong> n, the X-rate per brand, averages to one decimal with X excluded, nothing
+      edited or dropped; the Sheet link in the D5 package. A team that changes a brand or attribute after the
+      Form went out must say so on the slide — its AI and human tables no longer match by construction.</li>
+      <li><strong>Privacy:</strong> no names, no emails; the Form collects nothing but ratings.</li>
+    </ul>
+  </div>
 </section>
 
 <!-- 6 -->
@@ -539,10 +583,10 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     <table>
       <thead><tr><th class="num">Min</th><th>Segment</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td class="num">5</td><td><strong>Setup</strong></td><td>Pipeline slide up; judges seated with tick-sheets; running order fixed: Ask → Map → Check.</td></tr>
+        <tr><td class="num">5</td><td><strong>Setup</strong></td><td>Pipeline slide up; judges seated with tick-sheets; running order drawn on the night. Each talk = the method (from the lab) + the team&rsquo;s own study.</td></tr>
                 <tr><td class="num">39</td><td><strong>Three talks</strong></td><td>10 min + 3 Q&amp;A each. Timer flashes at 8 min; hard stop at 10. First judge question goes to a non-anchor speaker.</td></tr>
-        <tr><td class="num">6</td><td><strong>Transitions</strong></td><td>2 min each: next team plugs in while the professor bridges (&ldquo;Team 1 made the data — now watch it become a picture&rdquo;).</td></tr>
-        <tr><td class="num">15</td><td><strong>The assembly</strong></td><td>All three Advise slides side by side. The class drafts the final Jade Lane recommendation together on the board: the position (Team 2&rsquo;s white space), the confidence line (Team 3&rsquo;s verdict), the next test with real consumers and its rough cost. Photograph the board — it is the cohort&rsquo;s deliverable.</td></tr>
+        <tr><td class="num">6</td><td><strong>Transitions</strong></td><td>2 min each: next team plugs in while the professor bridges (&ldquo;Same method, new category — watch what holds and what breaks&rdquo;).</td></tr>
+        <tr><td class="num">15</td><td><strong>The assembly</strong></td><td>All three Advise slides side by side — three categories, one method. The class boards what held across all three studies (where the AI tracked real people: the big, heavily written-about brands) and what broke (small and regional brands, the X-rate the AI never produces), then writes the one-line rule for when synthetic data is enough. Photograph the board — it is the cohort&rsquo;s deliverable.</td></tr>
                 <tr><td class="num">10</td><td><strong>Judges deliberate</strong></td><td>Students take a break; judges convert tick-sheets to scores; professor breaks ties.</td></tr>
         <tr><td class="num">10</td><td><strong>Feedback</strong></td><td>Two specifics per team: the strongest moment, and the one thing to do differently in a real engagement.</td></tr>
         <tr><td class="num">10</td><td><strong>Recap</strong></td><td>The arc in one breath: simulated data taught you fast; real data told you the truth; the future belongs to people who know which is which. Bridge to STAMP: &ldquo;You just replicated a published paper in four weeks and found where it bends. Starting Oct&nbsp;9 you do the same to a working paper, with your own ground truth.&rdquo;</td></tr>
@@ -557,8 +601,8 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       <tbody>
         <tr><td><strong>Explain</strong></td><td class="num">25</td><td>□ outsider could re-explain it &nbsp; □ own analogy, not the instructor&rsquo;s &nbsp; □ taught their Question-3 misunderstanding &nbsp; □ named which of the paper&rsquo;s checks they replicated and the paper&rsquo;s number &nbsp; □ no formula recited without meaning</td></tr>
         <tr><td><strong>Critique</strong></td><td class="num">20</td><td>□ two cautions &nbsp; □ each proven with own screenshot/numbers &nbsp; □ applied to their own results, not only the paper</td></tr>
-        <tr><td><strong>Execute</strong></td><td class="num">30</td><td>□ the thing works &nbsp; □ evidence is coffee, not demo material &nbsp; □ live moment landed (or clean backup) &nbsp; □ spread / two-run / floor correctly shown for their stage</td></tr>
-        <tr><td><strong>Advise</strong></td><td class="num">15</td><td>□ actionable for Jade Lane &nbsp; □ explicit trust boundary (act now vs. test with real data) &nbsp; □ honest about the limits of this class&rsquo;s n</td></tr>
+        <tr><td><strong>Execute</strong></td><td class="num">30</td><td>□ the lab ran: spread, trap pair, own map, class check with floor &nbsp; □ own study ran: own panel, own map, real-respondent check with n stated &nbsp; □ evidence is their own, not demo material &nbsp; □ live moment landed (or clean backup)</td></tr>
+        <tr><td><strong>Advise</strong></td><td class="num">15</td><td>□ actionable for their client &nbsp; □ explicit trust boundary (act now vs. test with real data) &nbsp; □ honest about the limits of their n and who their respondents are</td></tr>
         <tr><td><strong>Deliver</strong></td><td class="num">10</td><td>□ ≤10 min &nbsp; □ every member spoke &nbsp; □ answered ≥1 question off-slides</td></tr>
       </tbody>
     </table>
@@ -575,7 +619,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
   <h2>What good looks like — and the predictable failures</h2>
   <div class="acc">
     <details class="item" open>
-      <summary><span class="tid">T1</span><span class="ttitle">Ask it</span><span class="ttag">expected outputs &amp; traps</span></summary>
+      <summary><span class="tid">S1</span><span class="ttitle">Stage 1 · Ask it</span><span class="ttag">expected outputs &amp; traps</span></summary>
       <div class="ibody">
         <p><span class="lbl">Expect</span> A five-run spread on one cell (numbers will vary; the point is
         that they vary) · a confident rating of their invented fake brand, plus the same model admitting
@@ -592,12 +636,12 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
         check because the table &ldquo;looks right.&rdquo;</p>
         <p><span class="lbl">Q&amp;A pushes</span> &ldquo;Your panel prompt asked one AI to pretend to be 20
         people. Is that 20 respondents or 1?&rdquo; (Right answer: 1 population sampled 20 times — and
-        that&rsquo;s exactly why Team 3&rsquo;s check matters.) &ldquo;Which humans did your synthetic
+        that&rsquo;s exactly why Stage 3&rsquo;s check matters.) &ldquo;Which humans did your synthetic
         consumers learn from?&rdquo;</p>
       </div>
     </details>
     <details class="item">
-      <summary><span class="tid">T2</span><span class="ttitle">Map it</span><span class="ttag">expected outputs &amp; traps</span></summary>
+      <summary><span class="tid">S2</span><span class="ttitle">Stage 2 · Map it</span><span class="ttag">expected outputs &amp; traps</span></summary>
       <div class="ibody">
         <p><span class="lbl">Expect</span> A working paste-and-draw artifact demoed on the projector · axes
         named from attributes (&ldquo;craft vs. convenience&rdquo;-class names, with the loading attributes
@@ -616,7 +660,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       </div>
     </details>
     <details class="item">
-      <summary><span class="tid">T3</span><span class="ttitle">Check it</span><span class="ttag">expected outputs &amp; traps</span></summary>
+      <summary><span class="tid">S3</span><span class="ttitle">Stage 3 · Check it</span><span class="ttag">expected outputs &amp; traps</span></summary>
       <div class="ibody">
         <p><span class="lbl">Expect</span> The class table, exact and oxblood-marked, with X-rates per brand ·
         agreement % with the ~50% chance floor printed beside it · misses diagnosed brand by brand —
@@ -636,15 +680,38 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
         right?&rdquo;</p>
       </div>
     </details>
+    <details class="item">
+      <summary><span class="tid">OWN</span><span class="ttitle">The team&rsquo;s own study</span><span class="ttag">expected outputs &amp; traps</span></summary>
+      <div class="ibody">
+        <p><span class="lbl">Expect</span> A category the team&rsquo;s friends and family actually buy in
+        (grocery, sportswear, fast food, sneakers, boba are the likely picks) · n between 15 and 30 ·
+        X-rates high on one or two niche brands and near zero on the big ones · order agreement somewhere
+        in the 60–80% band with the floor printed beside it · the same shape of finding as the lab: the AI
+        tracks the heavily written-about brands and blurs the small ones. Strong teams say that out loud —
+        &ldquo;the coffee result replicated in our category&rdquo; — and name the one brand where it did
+        not. Gold-standard move: describing their respondents as a segment (&ldquo;fifteen people under 30
+        in the Inland Empire&rdquo;) and saying what a fuller panel would cost.</p>
+        <p><span class="lbl">Predictable failures</span> A category respondents cannot rate by brand (X
+        everywhere, nothing to compare) · a brand or attribute changed after the Form went out (AI and human
+        tables no longer match) · n under 10 presented as if it were 30 · respondents shown the AI table
+        &ldquo;for context&rdquo; before answering · attributes phrased as judgments (&ldquo;good
+        value&rdquo;) instead of levels · a direction slide with no core (panel, map, check) behind it.</p>
+        <p><span class="lbl">Q&amp;A pushes</span> &ldquo;Your respondents are your friends. What segment
+        is that, and which brand would 30 strangers rate differently?&rdquo; &ldquo;You chose the six brands
+        — which one did you leave out, and would it have moved the map?&rdquo; &ldquo;Coffee and your category
+        both showed the AI blur on small brands. Is that the AI, or the internet?&rdquo;</p>
+      </div>
+    </details>
   </div>
 
-  <h3>The extension exercises — expected outcomes</h3>
+  <h3>The three directions — expected outcomes</h3>
   <div class="prose">
-    <p>The student page&rsquo;s &ldquo;Go further&rdquo; section holds three optional exercises, each
-    engineered to produce one strong slide. What to expect, so you can grade the reasoning rather than the
-    luck of the draw:</p>
+    <p>The student page&rsquo;s &ldquo;Your own study&rdquo; section offers three directions — suggestions,
+    not assignments; teams may mix them, port them to their category, or bring their own. Each is worked
+    out on the coffee card so the shape is visible. What to expect, so you can grade the reasoning rather
+    than the luck of the draw:</p>
     <ul>
-      <li><strong>A · Time-and-place dial (Team 1).</strong> Luckin Coffee × quality from &ldquo;Shanghai,
+      <li><strong>A · Time-and-place dial.</strong> Luckin Coffee × quality from &ldquo;Shanghai,
       2026&rdquo; should come back high and stable; from &ldquo;Ohio, 2026&rdquo; the <em>honest</em> answer is
       &ldquo;don&rsquo;t know the brand&rdquo; (Luckin has no Ohio store), but the model will often produce a
       confident number anyway — that confident answer is the finding, not a failure of the exercise. The
@@ -652,7 +719,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       a local option is answering from outside the world the prompt built. Full credit = connecting the dial
       to the client&rsquo;s question (the United States, next year) and to the paper&rsquo;s year-specification
       result; weak version = &ldquo;the numbers were different,&rdquo; no consequence drawn.</li>
-      <li><strong>B · Two ways onto the map (Team 2).</strong> Identity-vs-image gaps to expect: a
+      <li><strong>B · Two ways onto the map.</strong> Identity-vs-image gaps to expect: a
       brand&rsquo;s About page over-claims craft and community and never mentions price or speed — so the
       description row shows &ldquo;no evidence&rdquo; holes exactly where the consumer row has strong
       opinions. The quote-the-phrase rule is the graded part: no quote, no rating. Jade Lane&rsquo;s own
@@ -660,7 +727,7 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       discussion genuinely contestable: is the client&rsquo;s aspiration in open space or on top of an
       incumbent? There is no right answer; grade whether they see the tension. The failed survey route on
       Jade Lane (trap-brand emptiness) is worth one honest sentence, not a slide.</li>
-      <li><strong>C · Second opinion (Team 3, the +5).</strong> Expect the two AIs to agree on orderings
+      <li><strong>C · Second opinion (the +5).</strong> Expect the two AIs to agree on orderings
       for Starbucks, Dunkin&rsquo;, and Blue Bottle and to diverge in level on Dunkin&rsquo; (trendy) and The Coffee Bean &amp; Tea Leaf (speed) — cross-model agreement tracks corpus volume just like accuracy does. A
       DeepSeek or Qwen third witness is the graduate move: grade whether they can say which US brands the
       Chinese-corpus model has read less about. The three-outcome framing on the student page (agree+match
@@ -668,8 +735,10 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       interpretation earns the bonus; &ldquo;the second AI confirmed our results&rdquo; with no location of
       the disagreement does not.</li>
     </ul>
-    <p>Guardrail: extensions are gated behind a finished core recipe (stated on the student page). If you
-    see a team starting Extension B on Sep&nbsp;11 with no panel table yet, that is a red-flag intervention.</p>
+    <p>Guardrail: directions are gated behind a finished lab and a finished own-study core — panel, map,
+    human check (stated on the student page). If you see a team starting Direction&nbsp;B on Sep&nbsp;18
+    with no own panel table yet, that is a red-flag intervention. A team&rsquo;s own direction (not A/B/C)
+    is graded on the same test: one slide, one finding, one caution.</p>
   </div>
 </section>
 
@@ -683,19 +752,21 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
     <ul>
       <li><strong>Own accounts.</strong> Everyone runs prompts in their own ChatGPT Edu or Claude account.
       Split the recipe steps, not the thinking.</li>
-      <li><strong>Fresh-chat discipline.</strong> Team 1&rsquo;s repeats and Team 2&rsquo;s second draw are
+      <li><strong>Fresh-chat discipline.</strong> Stage 1&rsquo;s repeats and Stage 2&rsquo;s second draw are
       worthless inside one chat. New chat, every time.</li>
       <li><strong>Evidence-folder rule.</strong> Every result that could appear on a slide gets named
       (<code>Team1_step2_trapbrand_confident_20260910.png</code>) and saved to the team folder <em>the moment
       it happens</em>. End of each block: one member confirms the folder against the recipe&rsquo;s
       &ldquo;done when&rdquo; line.</li>
-      <li><strong>Block checkpoints.</strong> Sep&nbsp;4: ladder run + paper beliefs photographed + Commitment
-      Card read. Sep&nbsp;11: Execute steps 1–2 done. Sep&nbsp;18: real-table handoff completed (check brand
-      spellings), steps 3–5 done. Before Sep&nbsp;25: two timed rehearsals, wifi-off backup test.</li>
+      <li><strong>Block checkpoints.</strong> Sep&nbsp;4: ladder run + paper beliefs photographed. Before
+      Sep&nbsp;11: map artifact built on the pre-run table. Sep&nbsp;11: all three stages in the folder,
+      category chosen, Commitment Card read. Sun Sep&nbsp;13: Form live. Sep&nbsp;18: own panel + own map +
+      first check. Wed Sep&nbsp;23: Form closed, D5 package in. Before Sep&nbsp;25: two timed rehearsals,
+      wifi-off backup test.</li>
       <li><strong>Red flags — tell the instructor.</strong> Numbers on a slide with no screenshot behind
       them (fabrication tell: suspiciously smooth averages) · any team still &ldquo;improving&rdquo; its
       artifact the week of the talk · a team whose critique cautions have no evidence attached by
-      Sep&nbsp;18.</li>
+      Sep&nbsp;18 · a team under 8 respondents on Sep&nbsp;18 with no recruiting plan.</li>
       <li><strong>What the AI never does for you.</strong> Choose your axis names, your trust verdict, or your
       recommendation; write any sentence that ends up spoken on stage without you rewriting it.</li>
     </ul>
@@ -712,9 +783,12 @@ blockquote{margin:18px 0 0; padding:2px 0 2px 18px; border-left:2px solid var(--
       <tbody>
         <tr><td>Fri Sep 4 (done)</td><td>US pre-run collected (<code>companion/simulated_ratings/</code>, 600 calls) and the two means tables pasted into the student page; D1 pre-checks recorded (McDonald&rsquo;s 3-3-4, Franklin 7/8, &ldquo;is it real&rdquo; → not established). Brief, README, and the three Mini Canvas briefs switched to the US study card.</td></tr>
         <tr><td>Fri Sep 4, before 7 PM</td><td>Build the <strong>Google Form</strong> (run <code>companion/build_form.gs</code> in script.google.com — 5 minutes — or the kit spec by hand); make the QR slide; one test submission, confirm it lands in the linked Sheet, then delete the test row. Save the links to <code>companion/coffee_survey_LINKS.md</code>. Print ~12 paper backup grids.</td></tr>
-        <tr><td>Before Sep 11</td><td>Print 6 judge tick-sheets. D2: build the practice-table artifact in ChatGPT Canvas <em>and</em> once in Claude; save both + two-draw screenshots. D3: run the order-check on the GPT-4.1 vs. Gemini tables narrowed to low prices and quality; screenshot.</td></tr>
+        <tr><td>Before Sep 11</td><td>Print 6 judge tick-sheets. D2: build the practice-table artifact in ChatGPT Canvas <em>and</em> once in Claude; save both + two-draw screenshots. D3: run the order-check on the GPT-4.1 vs. Gemini tables narrowed to low prices and quality; screenshot. Open the response Sheet&rsquo;s sharing to the three team leads (view-only) so the release at 7:00 is one click. Fill the answer-key template from the cleaned export.</td></tr>
         <tr><td>Before Sep 11</td><td>Post the <code>Extra_Exercises/</code> data pack to Canvas. Confirm projector + adapter; recruit 1–2 guest judges for Sep&nbsp;25 and send them the tick-sheet.</td></tr>
-        <tr><td>Fri Sep 4, in class</td><td>Survey first (8 min) → close the Form → share the hub link (companion page + brief) → demos → Questions 4–6.</td></tr>
+        <tr><td>Fri Sep 4, in class</td><td>Survey first (8 min) → close the Form → share the hub link (companion page + brief) → demos → Questions 4–6 → announce the Sep&nbsp;11 lab and the own study.</td></tr>
+        <tr><td>Fri Sep 11, in class</td><td>The lab (run-of-show above). Keep the clock visibly; the Commit block is the one that slips. Collect the three category choices and Form owners before anyone leaves.</td></tr>
+        <tr><td>Sun Sep 13</td><td>Check each team folder for a live Form link; test-submit nothing (their n must be clean) — open the link and confirm it renders with six brands and the X column.</td></tr>
+        <tr><td>Wed Sep 23</td><td>D5 packages in: study card, Form link, own panel table, tally with n and X-rates, order check with floor. Flag any team under n = 10 for a caveat slide, not a penalty.</td></tr>
       </tbody>
     </table>
   </div>
