@@ -33,22 +33,113 @@ summary .due{color:var(--amber);font-weight:600;white-space:nowrap}
 .card h3{margin:.1rem 0 .5rem;color:var(--pine);font-size:1.02rem}
 .card ul{margin:.3rem 0 .5rem 1.2rem;padding:0}
 .note{background:#FFF6E8;border-left:4px solid var(--amber);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:1rem 0}
+.grades tbody th{background:transparent;color:var(--ink);font-weight:500;border-bottom:1px solid #ddd}
+.grades caption{text-align:left;color:var(--gray)}
+.grade-bar{height:8px;background:#e1e6e3;border-radius:4px;margin-top:.3rem;min-width:120px}
+.grade-bar span{display:block;height:100%;background:var(--pine);border-radius:4px}
 footer{color:var(--gray);font-size:.8rem;text-align:center;padding:2rem}
-@media(max-width:640px){table{display:block;overflow-x:auto}}
+@media(max-width:640px){table{display:block;overflow-x:auto}h2,details{scroll-margin-top:7rem}}
 </style></head>
 <body>
 <header>
 <h1>IBM4212 Marketing Problems — Course Hub</h1>
 <p>Fall 2026 · Mon &amp; Wed 4:00–5:15 PM · In person, Bldg 9 Rm 211 · Dr. Yufan (Frank) Lin</p>
-<p><a href="https://cpp.instructure.com/courses/143662">Canvas</a> · <em>Monday, quiz first · Wednesday — workday or a team presents · cases due Saturday night</em></p>
+<p><a href="https://cpp.instructure.com/courses/143662">Canvas</a> · <em>Monday live lecture/debrief · Wednesday quiz + team teaching, or a protected case workday · cases due Saturday night</em></p>
 </header>
-<nav><a href="#schedule">Schedule</a><a href="#cases">Case assignments</a><a href="#team">Team project</a><a href="#resources">Resources</a></nav>
+<nav><a href="#schedule">Schedule</a><a href="#quizzes">Quizzes</a><a href="#grades">Grades</a><a href="#cases">Case assignments</a><a href="#team">Team project</a><a href="#resources">Resources</a></nav>
 <main>
-<div class="note"><strong>How to use this page:</strong> this hub is the reading room — one link that always has the current schedule, every case assignment (with its fillable Word doc and Skill Guide inside), and the team-project briefs. Everything you <em>submit</em> lives on Canvas (case PDFs, quizzes, presentations, grades). Bookmark it.</div>
+<div class="note"><strong>How to use this page:</strong> this hub is the reading room — one link that always has the current schedule, every case assignment (with its fillable Word doc and Skill Guide inside), and the team-project briefs. Everything you <em>submit</em> lives on Canvas (case Word documents, quizzes, presentations, grades). Bookmark it.</div>
 
 <h2 id="schedule">Weekly schedule</h2>
-<p>Five case cycles, each pairing recorded lectures with a case. Holidays: Labor Day Mon Sep 7 · Veterans Day Wed Nov 11. <strong>Cases are due Saturdays 11:59 PM</strong>; my case discussion recording unlocks Sunday morning, and <strong>every recording gets its own 5-pt quiz at the start of the Monday class it's due</strong> (12 quizzes Aug 31 – Nov 2, taken in person 4:00–4:20 PM, best 10 of 12 count, no makeups — the Week-1 syllabus quiz is unscored practice). Final exam: <strong>Mon Nov 30, in person</strong>. The Teaching Note Report is due at the registrar's finals slot (Dec 7–13).</p>
-<table><tr><th>Wk</th><th>Monday</th><th>Wednesday</th></tr><tr><td><strong>1</strong></td><td><strong>Aug 24 —</strong> Course intro <em>(live)</em>: why this course runs on experiential learning and AI co-piloting · how the flipped format works · contact sheet · team formation + case assignments. <em>Syllabus practice quiz opens on Canvas this week.</em></td><td><strong>Aug 26 —</strong> <em>Live lecture:</em> <strong>Marketing Strategy overview — first principles framework</strong> (Chapter 1). <em>P1 recording + Amazon assignment + Skill Guide posted this week.</em></td></tr><tr><td><strong>2</strong></td><td><strong>Aug 31 —</strong> <strong>Quiz 1</strong> (P1 recording) · Discussion: All Customers Differ — favorite-retailer heterogeneity exercise, positioning-statement critique (JC Penney) · Amazon case preview</td><td><strong>Sep 2 —</strong> <strong>Voice-mode workshop:</strong> set up your AI tutor and walk the full submission workflow together on the actual <strong>Amazon Kindle Fire assignment</strong> — this is your guided workday (bring headphones; finish on your own at home in a quiet spot). <strong><em>Due Sat Sep 5, 11:59 PM;</strong> discussion recording unlocks Sun Sep 6</em></td></tr><tr><td><strong>3</strong></td><td><strong><em>Sep 7 — Labor Day, no class</strong></em> <em>(use the extra day to watch the Amazon discussion recording)</em></td><td><strong>Sep 9 —</strong> <strong>Amazon Kindle Fire debrief</strong> (its recording quiz is Mon Sep 14)</td></tr><tr><td><strong>4</strong></td><td><strong>Sep 14 —</strong> <strong>Quizzes 2 + 3</strong> (P3 recording · Amazon discussion recording) · Discussion: All Competitors React — SCA three-purchases exercise · Aldi preview · Team Teaching Project launch Q&amp;A</td><td><strong>Sep 16 —</strong> Case workday: Aldi. <strong><em>Due Sat Sep 19</strong></em></td></tr><tr><td><strong>5</strong></td><td><strong>Sep 21 —</strong> <strong>Quiz 4</strong> (Aldi discussion recording) · <strong>Aldi debrief</strong></td><td><strong>Sep 23 —</strong> <strong>TEAM 1 PRESENTS: Aldi</strong> (15 min + 10 min Q&amp;A) + class evaluation survey</td></tr><tr><td><strong>6</strong></td><td><strong>Sep 28 —</strong> <strong>Quizzes 5 + 6</strong> (P2 CLV recording · Branding recording) · Discussion: All Customers Change + Managing Branding · Under Armour preview</td><td><strong>Sep 30 —</strong> Case workday: Under Armour. <strong><em>Due Sat Oct 3</strong></em></td></tr><tr><td><strong>7</strong></td><td><strong>Oct 5 —</strong> <strong>Quiz 7</strong> (Under Armour discussion recording) · <strong>Under Armour debrief</strong></td><td><strong>Oct 7 —</strong> <strong>TEAM 2 PRESENTS: Under Armour</strong> + survey</td></tr><tr><td><strong>8</strong></td><td><strong>Oct 12 —</strong> <strong>Quizzes 8 + 9</strong> (Offering Development recording · Offering Diffusion recording) · Discussion + mid-term course evaluation · Google Glass preview</td><td><strong>Oct 14 —</strong> Case workday: Google Glass. <strong><em>Due Sat Oct 17</strong></em></td></tr><tr><td><strong>9</strong></td><td><strong>Oct 19 —</strong> <strong>Quiz 10</strong> (Google Glass discussion recording) · <strong>Google Glass debrief</strong></td><td><strong>Oct 21 —</strong> <strong>TEAM 3 PRESENTS: Google Glass</strong> + survey</td></tr><tr><td><strong>10</strong></td><td><strong>Oct 26 —</strong> <strong>Quiz 11</strong> (P4 recording) · Discussion: All Resources Are Limited · Chunlei preview</td><td><strong>Oct 28 —</strong> Case workday: Chunlei. <strong><em>Due Sat Oct 31</strong></em></td></tr><tr><td><strong>11</strong></td><td><strong>Nov 2 —</strong> <strong>Quiz 12</strong> (Chunlei discussion recording — <em>last quiz</em>) · <strong>Chunlei debrief</strong></td><td><strong>Nov 4 —</strong> <strong>TEAM 4 PRESENTS: Chunlei</strong> + survey</td></tr><tr><td><strong>12</strong></td><td><strong>Nov 9 —</strong> <em>Extension session (live):</em> <strong>perceptual maps with AI synthetic respondents</strong>, hands-on, applied to Amazon&#x27;s tablet positioning — the exact method your team now applies to its own case for the extension presentation and report</td><td><strong><em>Nov 11 — Veterans Day, no class</strong></em></td></tr><tr><td><strong>13</strong></td><td><strong>Nov 16 —</strong> <em>AI in Business Foundation (live):</em> the frameworks behind everything you&#x27;ve been doing — now that you&#x27;ve co-piloted through five cases</td><td><strong>Nov 18 —</strong> <em>Guest lecture</em> — and runway to build your extension presentation</td></tr><tr><td><strong>14</strong></td><td><strong>Nov 23 —</strong> <strong>EXTENSION PRESENTATIONS (in person):</strong> all four teams — your case × AI synthetic-respondent perceptual map + the strategy it reveals (12 min + 3 min Q&amp;A each) + class evaluation survey</td><td><strong>Nov 25 —</strong> Asynchronous (Thanksgiving week): self-paced <strong>final exam review</strong> posted on Canvas</td></tr><tr><td><strong>15</strong></td><td><strong>Nov 30 —</strong> <strong>FINAL EXAM — in person, in class</strong></td><td><strong>Dec 2 —</strong> <strong>Teaching Note instruction session:</strong> report structure walked with a worked example · outline peer swap · course wrap + end-of-term evaluation</td></tr><tr><td><strong>Finals</strong></td><td><strong>Dec 7–13 —</strong> <strong>Teaching Note Report due</strong> at the registrar-scheduled final-exam slot (announced on Canvas)</td><td></td></tr></table>
+<p><strong>Live lectures, effective September 14 following student feedback.</strong> Monday has the full lecture or live case debrief; recordings support review. <strong>Under Armour focuses on branding; Google Glass focuses on offering diffusion.</strong> Wednesday quizzes test the <strong>previous week’s material</strong>, not that same Monday’s lecture. Case workdays have no quiz: the deferred quiz moves to the following Wednesday alongside the next quiz.</p>
+<p>Holidays: Labor Day Mon Sep 7 · Veterans Day Wed Nov 11. <strong>Cases are due Saturdays 11:59 PM</strong> (Kindle Fire had its one-time Sep 6 extension); case discussion recordings unlock after submission deadlines to prepare for the live debrief. Final exam: <strong>Mon Nov 30, in person</strong>. Teaching Note Report: registrar’s finals slot (Dec 7–13).</p>
+<table><tr><th>Wk</th><th>Monday</th><th>Wednesday</th></tr><tr><td><strong>1</strong></td><td><strong>Aug 24 —</strong> Course intro <em>(live)</em>: why this course runs on experiential learning and AI co-piloting · how the flipped format works · contact sheet · team formation + case assignments. <em>Syllabus practice quiz opens on Canvas this week.</em></td><td><strong>Aug 26 —</strong> <em>Live lecture:</em> <strong>Marketing Strategy overview — first principles framework</strong> (Chapter 1). <em>P1 recording + Amazon assignment + Skill Guide posted this week.</em></td></tr><tr><td><strong>2</strong></td><td><strong>Aug 31 —</strong> <strong>Quiz 1</strong> (P1 recording) · Discussion: All Customers Differ — favorite-retailer heterogeneity exercise, positioning-statement critique (JC Penney) · Amazon case preview</td><td><strong>Sep 2 —</strong> <strong>Voice-mode workshop:</strong> set up your AI tutor and walk the full submission workflow together on the actual <strong>Amazon Kindle Fire assignment</strong> — this is your guided workday (bring headphones; finish on your own at home in a quiet spot). <strong><em>Due Sat Sep 5, 11:59 PM;</strong> discussion recording unlocks Sun Sep 6</em></td></tr><tr><td><strong>3</strong></td><td><strong><em>Sep 7 — Labor Day, no class</strong></em> <em>(use the extra day to watch the Amazon discussion recording)</em></td><td><strong>Sep 9 —</strong> <strong>Amazon Kindle Fire debrief</strong> (Quiz 2 on Sep 23; Sep 16 is a protected case workday)</td></tr><tr><td><strong>4</strong></td><td><strong>Sep 14 — Live lecture:</strong> <strong>All Competitors React (P3)</strong> — sustainable competitive advantage; three-purchases exercise · Aldi preview · Team Teaching Project Q&amp;A. <strong>No quiz.</strong></td><td><strong>Sep 16 — Case workday: Aldi. No quiz.</strong> Quiz 2 carries to Sep 23. <strong><em>Due Sat Sep 19</strong></em></td></tr><tr><td><strong>5</strong></td><td><strong>Sep 21 — Aldi live debrief</strong> · compare answers and work the numbers</td><td><strong>Sep 23 — Quizzes 2 + 3:</strong> Amazon debrief (Sep 9; deferred) + P3 live lecture (Sep 14). Then <strong>TEAM 1 PRESENTS: Aldi</strong> (15 min + 10 min Q&amp;A) + survey. Aldi debrief is quizzed Oct 7.</td></tr><tr><td><strong>6</strong></td><td><strong>Sep 28 — Live lecture: Managing Branding</strong> · brand meaning, positioning, and growth · <strong>Under Armour</strong> preview. Branding is this cycle’s lecture focus.</td><td><strong>Sep 30 — Case workday: Under Armour. No quiz.</strong> Quiz 4 carries to Oct 7. <strong><em>Due Sat Oct 3</strong></em></td></tr><tr><td><strong>7</strong></td><td><strong>Oct 5 — Under Armour live debrief</strong> · apply the branding lecture</td><td><strong>Oct 7 — Quizzes 4 + 5:</strong> Aldi debrief (Sep 21; deferred) + Branding lecture (Sep 28). Then <strong>TEAM 2 PRESENTS: Under Armour</strong> + survey. Under Armour debrief is quizzed Oct 21.</td></tr><tr><td><strong>8</strong></td><td><strong>Oct 12 — Live lecture: Offering Diffusion</strong> · adoption, barriers, and market acceptance · <strong>Google Glass</strong> preview + mid-term course evaluation</td><td><strong>Oct 14 — Case workday: Google Glass. No quiz.</strong> Quiz 6 carries to Oct 21. <strong><em>Due Sat Oct 17</strong></em></td></tr><tr><td><strong>9</strong></td><td><strong>Oct 19 — Google Glass live debrief</strong> · apply offering diffusion</td><td><strong>Oct 21 — Quizzes 6 + 7:</strong> Under Armour debrief (Oct 5; deferred) + Offering Diffusion lecture (Oct 12). Then <strong>TEAM 3 PRESENTS: Google Glass</strong> + survey. Google Glass debrief is quizzed Nov 4.</td></tr><tr><td><strong>10</strong></td><td><strong>Oct 26 — Live lecture: All Resources Are Limited (P4)</strong> · applications + Chunlei preview</td><td><strong>Oct 28 — Case workday: Chunlei. No quiz.</strong> Quiz 8 carries to Nov 4. <strong><em>Due Sat Oct 31</strong></em></td></tr><tr><td><strong>11</strong></td><td><strong>Nov 2 — Chunlei live debrief</strong></td><td><strong>Nov 4 — Quizzes 8 + 9:</strong> Google Glass debrief (Oct 19; deferred) + P4 lecture (Oct 26). Then <strong>TEAM 4 PRESENTS: Chunlei</strong> + survey. Chunlei debrief is quizzed Nov 18.</td></tr><tr><td><strong>12</strong></td><td><strong>Nov 9 — Live extension session:</strong> <strong>perceptual maps with AI synthetic respondents</strong>, hands-on, applied to Amazon’s tablet positioning; apply the method to your own case</td><td><strong><em>Nov 11 — Veterans Day, no class.</strong></em> Quiz 10 (Chunlei debrief) carries to Nov 18.</td></tr><tr><td><strong>13</strong></td><td><strong>Nov 16 — Live lecture: AI in Business Foundation</strong> — connect the frameworks to your work across five cases</td><td><strong>Nov 18 — Quizzes 10 + 11:</strong> Chunlei debrief (Nov 2; holiday deferral) + perceptual-map extension (Nov 9). <strong>Guest lecture follows the quizzes</strong> + extension preparation time.</td></tr><tr><td><strong>14</strong></td><td><strong>Nov 23 — EXTENSION PRESENTATIONS (in person):</strong> all four teams (12 min + 3 min Q&amp;A each) + class evaluation survey</td><td><strong>Nov 25 — Asynchronous:</strong> <strong>Quiz 12 online, 4:05–4:15 PM</strong>, on the Nov 16 AI Foundation lecture. Then self-paced <strong>final exam review</strong>. No campus meeting.</td></tr><tr><td><strong>15</strong></td><td><strong>Nov 30 —</strong> <strong>FINAL EXAM — in person, in class</strong></td><td><strong>Dec 2 —</strong> <strong>Teaching Note instruction session:</strong> report structure walked with a worked example · outline peer swap · course wrap + end-of-term evaluation</td></tr><tr><td><strong>Finals</strong></td><td><strong>Dec 7–13 —</strong> <strong>Teaching Note Report due</strong> at the registrar-scheduled final-exam slot (announced on Canvas)</td><td></td></tr></table>
+
+<h2 id="quizzes">Wednesday quiz calendar</h2><p><strong>12 quizzes × 5 points; best 10 count = 50 points.</strong> Q1 is the completed Monday quiz. Q2–Q12 move to Wednesdays. A deferred quiz keeps its original scope; it does not test the same Monday’s new material.</p><p><strong>Single quiz:</strong> 4:05–4:15 PM. <strong>Double quiz:</strong> 4:05–4:15 and 4:15–4:25 PM, then team teaching or the guest. Closed book, no AI, no notes; one attempt, no makeups. <strong>Q12 on Nov 25 is online, 4:05–4:15 PM</strong>, during the scheduled asynchronous review day; all other future quizzes are in person.</p><table>
+<thead>
+<tr>
+<th>Quiz</th>
+<th>Date (2026)</th>
+<th>Content / teaching date</th>
+<th>Scheduling note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>Mon Aug 31</td>
+<td>P1 / All Customers Differ</td>
+<td>Completed before the format change</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>Wed Sep 23</td>
+<td>Amazon debrief — Sep 9</td>
+<td>Sep 16 case workday</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>Wed Sep 23</td>
+<td>P3 / All Competitors React — Sep 14</td>
+<td>Previous week</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td>Wed Oct 7</td>
+<td>Aldi debrief — Sep 21</td>
+<td>Sep 30 case workday</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td>Wed Oct 7</td>
+<td>Branding — Sep 28</td>
+<td>Previous week</td>
+</tr>
+<tr>
+<td>Q6</td>
+<td>Wed Oct 21</td>
+<td>Under Armour debrief — Oct 5</td>
+<td>Oct 14 case workday</td>
+</tr>
+<tr>
+<td>Q7</td>
+<td>Wed Oct 21</td>
+<td>Offering Diffusion — Oct 12</td>
+<td>Previous week</td>
+</tr>
+<tr>
+<td>Q8</td>
+<td>Wed Nov 4</td>
+<td>Google Glass debrief — Oct 19</td>
+<td>Oct 28 case workday</td>
+</tr>
+<tr>
+<td>Q9</td>
+<td>Wed Nov 4</td>
+<td>P4 / All Resources Are Limited — Oct 26</td>
+<td>Previous week</td>
+</tr>
+<tr>
+<td>Q10</td>
+<td>Wed Nov 18</td>
+<td>Chunlei debrief — Nov 2</td>
+<td>Nov 11 holiday</td>
+</tr>
+<tr>
+<td>Q11</td>
+<td>Wed Nov 18</td>
+<td>AI synthetic-respondent perceptual maps — Nov 9</td>
+<td>Previous week</td>
+</tr>
+<tr>
+<td>Q12</td>
+<td>Wed Nov 25 (online)</td>
+<td>AI in Business Foundation — Nov 16</td>
+<td>Previous week; asynchronous review day</td>
+</tr>
+</tbody>
+</table><p>Branding and offering diffusion replace the prior paired-recording quiz topics. P2/CLV and offering development have no separate quiz in this revised schedule. The live extension and AI Foundation sessions are now included, as listed above. The syllabus quiz remains unscored practice.</p>
+<h2 id="grades">Grade distribution — 200 points</h2><p>These are the course component weights. Quiz points use your best 10 of 12; the two lowest scores are dropped.</p><table class="grades"><caption>Points and percentage of the final course grade</caption><thead><tr><th scope="col">Component</th><th scope="col">Points</th><th scope="col">Share of course grade</th></tr></thead><tbody><tr><th scope="row">Business Case Discussions (5 × 10)</th><td>50</td><td>25%<div class="grade-bar" aria-hidden="true"><span style="width:25%"></span></div></td></tr><tr><th scope="row">Weekly Quizzes (best 10 of 12 × 5)</th><td>50</td><td>25%<div class="grade-bar" aria-hidden="true"><span style="width:25%"></span></div></td></tr><tr><th scope="row">Team Presentations (class-survey graded: case presentation 12 + extension presentation 8)</th><td>20</td><td>10%<div class="grade-bar" aria-hidden="true"><span style="width:10%"></span></div></td></tr><tr><th scope="row">Teaching Note Report (team capstone)</th><td>20</td><td>10%<div class="grade-bar" aria-hidden="true"><span style="width:10%"></span></div></td></tr><tr><th scope="row">Final Exam</th><td>50</td><td>25%<div class="grade-bar" aria-hidden="true"><span style="width:25%"></span></div></td></tr><tr><th scope="row">Attendance &amp; Participation (iClicker check-in)</th><td>10</td><td>5%<div class="grade-bar" aria-hidden="true"><span style="width:5%"></span></div></td></tr><tr><th scope="row">Total</th><td><strong>200</strong></td><td><strong>100%</strong></td></tr></tbody></table><p>Team presentations comprise the case presentation (12 points, 6%) and the AI-extension presentation (8 points, 4%). Each of the five individual case submissions is worth 10 points (5%). Canvas is the gradebook of record; see the syllabus for grading policies.</p>
 
 <h2 id="cases">Case assignments</h2>
 <p>Five Harvard cases, <strong>10 Canvas points each (5 × 10 = 50)</strong>, individual. The workflow is identical every cycle: voice-mode AI tutoring session → fill the Word document → upload the .docx (not a PDF — feedback comes back as margin comments on it) on Canvas by <strong>Saturday 11:59 PM</strong>. Each card below has the full assignment, the fillable Word doc, and that case's Skill Guide; model answers are released on Canvas after grading.</p>
@@ -1065,13 +1156,13 @@ How your team used AI to build this note, following the course disclosure norms:
 </table></div></details>
 
 <h2 id="resources">Resources</h2>
-<div class="card"><h3>Downloads</h3><ul><li><a href="files/IBM4212_Marketing_Problems_Syllabus_2026_Fall.pdf" download>Syllabus (PDF)</a></li><li><a href="files/AI_Disclosure_Guidance.docx" download>AI Disclosure Guidance (Word)</a></li><li><a href="files/Voice_Mode_Tutoring_Guide.docx" download>Voice-Mode Tutoring Guide, step by step with screenshots (Word)</a></li></ul></div><div class="card"><h3>Optional: learn the concept first</h3><p>Before the graded boxes, you may run a separate <em>study-partner</em> voice session with the textbook chapter and the case attached. Unlike the graded starter prompt, the AI may explain the concept here; your homework questions stay off limits, and you stop when you can explain the concept back in your own words. Mention it in one line of your synthesis; do not link its transcript. Attach the chapter as <strong>text</strong> (paste it from the e-textbook into a Word file); VitalSource's printed PDF is page images with no text layer, and neither format has page numbers, so ask for section headings.</p><p class="prompt">Be my study partner for the attached textbook chapter and the attached case, &quot;&lt;case title&gt;.&quot; Explain the chapter&#x27;s idea of &lt;the concept&gt; in two minutes. Then ask me how it applies to &lt;one thing the case does&gt;, and push back on my answer. Point me to the case page as &quot;case p. X&quot; and the textbook section by its heading as &quot;section Y&quot; (the chapter file has no page numbers). Do not discuss my homework questions; if I bring one up, tell me to save it for the graded session. When I say I have enough, stop.</p><p>⬇ <a href="files/Study_Partner_Worked_Example_Aldi.docx" download>Worked example: Aldi + the &quot;All Competitors React&quot; chapter (Word)</a></p></div><div class="card"><h3>Recordings & decks</h3><ul><li>Lecture recordings (P1–P4, branding, offering development/diffusion) — each gets its own Monday quiz</li><li>Case discussion recordings — unlock Sunday morning after each case's Saturday deadline</li><li>Concept decks for the recorded lectures</li></ul><p>→ Recordings folder <em>(on Canvas)</em></p></div>
+<div class="card"><h3>Downloads</h3><ul><li><a href="files/IBM4212_Marketing_Problems_Syllabus_2026_Fall.pdf" download>Syllabus (PDF)</a></li><li><a href="files/AI_Disclosure_Guidance.docx" download>AI Disclosure Guidance (Word)</a></li><li><a href="files/Voice_Mode_Tutoring_Guide.docx" download>Voice-Mode Tutoring Guide, step by step with screenshots (Word)</a></li></ul></div><div class="card"><h3>Optional: learn the concept first</h3><p>Before the graded boxes, you may run a separate <em>study-partner</em> voice session with the textbook chapter and the case attached. Unlike the graded starter prompt, the AI may explain the concept here; your homework questions stay off limits, and you stop when you can explain the concept back in your own words. Mention it in one line of your synthesis; do not link its transcript. Attach the chapter as <strong>text</strong> (paste it from the e-textbook into a Word file); VitalSource's printed PDF is page images with no text layer, and neither format has page numbers, so ask for section headings.</p><p class="prompt">Be my study partner for the attached textbook chapter and the attached case, &quot;&lt;case title&gt;.&quot; Explain the chapter&#x27;s idea of &lt;the concept&gt; in two minutes. Then ask me how it applies to &lt;one thing the case does&gt;, and push back on my answer. Point me to the case page as &quot;case p. X&quot; and the textbook section by its heading as &quot;section Y&quot; (the chapter file has no page numbers). Do not discuss my homework questions; if I bring one up, tell me to save it for the graded session. When I say I have enough, stop.</p><p>⬇ <a href="files/Study_Partner_Worked_Example_Aldi.docx" download>Worked example: Aldi + the &quot;All Competitors React&quot; chapter (Word)</a></p></div><div class="card"><h3>Recordings & decks</h3><ul><li>Live lecture recordings — review resources; quiz scope and teaching dates are listed in the quiz calendar</li><li>Case discussion recordings — unlock Sunday morning after each case's Saturday deadline</li><li>Concept decks for live lectures: Aldi — competitive advantage; Under Armour — branding; Google Glass — offering diffusion; Chunlei — resource allocation</li></ul><p>→ Recordings folder <em>(on Canvas)</em></p></div>
 
 <h2 id="released">Released after grading</h2>
 <p>Posted on the password-protected <a href="released/"><strong>Released materials</strong></a> page after the corresponding work is graded; the password is posted on Canvas after each due date ("remember me" keeps it on your browser). Study them; they are the standard your next submission is graded against.</p>
 <ul><li>Model answers for each case (Amazon, Aldi, Under Armour, Google Glass, Chunlei) — released after that case is graded</li><li>Teaching-note worked example — walked in the Dec 2 instruction session</li></ul>
 </main>
-<footer>IBM4212 · Cal Poly Pomona · generated 2026-09-09 from the course source of record — report broken links to Dr. Lin</footer>
+<footer>IBM4212 · Cal Poly Pomona · generated 2026-09-12 from the course source of record — report broken links to Dr. Lin</footer>
 <script>
 function hubOpenHash(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;
 var el=document.getElementById(h);if(!el)return;
