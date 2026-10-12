@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>AI FAST Adoption Kit</title>
+<style>
+:root{--pine:#1B5E4B;--amber:#D98E32;--ink:#212B36;--paper:#F4F1EA;--gray:#5B6770}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+header{background:var(--pine);color:#fff;padding:2.2rem 1.5rem 1.6rem}
+header .wrap{max-width:1000px;margin:0 auto}
+header h1{margin:0 0 .3rem;font-size:1.7rem}header p{margin:.2rem 0;color:var(--paper)}
+header a{color:#FFD9A0}
+.badge{display:inline-block;background:var(--amber);color:var(--pine);font-weight:700;border-radius:999px;padding:.15rem .7rem;font-size:.85rem;margin-bottom:.6rem}
+nav{position:sticky;top:0;z-index:10;background:var(--pine);border-top:1px solid rgba(255,255,255,.25);padding:.5rem 1.5rem;display:flex;gap:1.3rem;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.92rem}
+nav a:hover{color:#FFD9A0}
+main{max-width:1000px;margin:0 auto;padding:1rem 1.5rem 4rem}
+h2{color:var(--pine);border-bottom:3px solid var(--amber);padding-bottom:.3rem;margin-top:2.4rem;scroll-margin-top:3.4rem}
+h3{color:var(--pine);margin:1.6rem 0 .4rem;font-size:1.08rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:1rem 0}
+th{background:var(--pine);color:#fff;text-align:left;padding:.45rem .6rem}
+td{border-bottom:1px solid #ddd;padding:.45rem .6rem;vertical-align:top}
+tr:nth-child(even) td{background:var(--paper)}
+a{color:var(--pine)}
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:1rem;margin-top:1rem}
+.card{background:var(--paper);border-radius:8px;padding:1rem 1.2rem;scroll-margin-top:3.4rem;display:flex;flex-direction:column}
+.card h3{margin:.1rem 0 .1rem}
+.card .course{color:var(--gray);font-size:.85rem;font-weight:600}
+.card p{margin:.5rem 0}
+.try{background:#FFF6E8;border-left:4px solid var(--amber);padding:.5rem .8rem;border-radius:0 6px 6px 0;font-size:.92rem}
+.btns{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:auto;padding-top:.6rem}
+.btn{display:inline-block;background:var(--pine);color:#fff;text-decoration:none;font-weight:600;border-radius:6px;padding:.45rem .9rem;font-size:.9rem}
+.btn.alt{background:#fff;color:var(--pine);border:2px solid var(--pine)}
+video{width:100%;border-radius:6px;margin-top:.6rem;background:#000}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;margin:1rem 0}
+.tile{border:2px solid var(--pine);border-radius:8px;padding:.7rem;text-align:center;background:#fff}
+.tile b{display:block;font-size:1.8rem;color:var(--pine);line-height:1.1}
+.tile span{font-size:.85rem;color:var(--gray)}
+ul.rec{list-style:none;padding:0;margin:.3rem 0}
+ul.rec li{padding:.35rem 0;border-bottom:1px solid #eee}
+ul.rec li::before{content:"▶ ";color:var(--amber)}
+ul.rec .kind{color:var(--gray);font-size:.82rem}
+.note{background:#FFF6E8;border-left:4px solid var(--amber);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:1rem 0}
+footer{color:var(--gray);font-size:.8rem;text-align:center;padding:2rem}
+@media(max-width:640px){table{display:block;overflow-x:auto}header h1{font-size:1.4rem}}
+</style></head><body>
+<header><div class="wrap"><span class="badge">INSPIRE 2026 · Poster 13</span>
+<h1>AI across the marketing major: adoption kit</h1>
+<p>Apps to try, plug-and-play modules and class recordings from Cal Poly Pomona's marketing curriculum,
+built under AI FAST (California Education Learning Lab, Agreement 10664). Free to adapt.</p>
+<p>Yufan (Frank) Lin · <a href="mailto:yufanlin@cpp.edu">yufanlin@cpp.edu</a> ·
+<a href="files/INSPIRE_2026_Poster_48x36_v2.pdf">Download the poster (PDF)</a></p></div></header>
+<nav><a href="#try">Try it</a><a href="#modules">Modules</a><a href="#recordings">Class recordings</a>
+<a href="#evidence">Evidence</a><a href="#contact">Contact</a></nav>
+<main>
+<h2 id="try">Try it: interactive apps</h2>
+<p>Each app opens in a new tab and runs on a phone or laptop. None of them needs an account or an API key in demo mode.</p>
+<div class="apps"><div class="card" id="odi"><h3>ODI Grips customer-support chatbot</h3><div class="course">IBM 6450 · IBM 4212</div><p>A support bot for a real Riverside company, built from four prompt blocks: task, customer persona, tone and data access (the product catalog).</p><div class="try"><b>Try this:</b> Ask “I want the Rogue in green.” Then open <b>Structured Prompts</b>, delete the Data Access block, and ask again. Does the bot invent a product?</div><video controls preload="none" playsinline poster="videos/ODI_Chatbot_demo_walkthrough_voice.jpg" src="videos/ODI_Chatbot_demo_walkthrough_voice.mp4"></video><p class="course">3-minute narrated walkthrough, in case you would rather watch</p><div class="btns"><a class="btn" href="https://web-production-a0ce0.up.railway.app/" target="_blank" rel="noopener">Open the app</a></div></div><div class="card" id="caliper"><h3>CALIPER: build and check an AI text classifier</h3><div class="course">IBM 6450 · research</div><p>Write a definition, label about 30 examples, and let two AI coders and a judge turn their disagreements into written coding rules. The codebook is adopted only if it beats the plain definition.</p><div class="try"><b>Try this:</b> Choose <b>Walk through it step by step</b>. No API key needed: it replays a recorded run (mean F1 .573 → .809 on 395 airline chat turns).</div><video controls preload="none" playsinline poster="videos/CALIPER_demo_walkthrough_voice.jpg" src="videos/CALIPER_demo_walkthrough_voice.mp4"></video><p class="course">3-minute narrated walkthrough, in case you would rather watch</p><div class="btns"><a class="btn" href="https://caliper-app-production.up.railway.app/" target="_blank" rel="noopener">Open the app</a></div></div><div class="card" id="focus-group"><h3>Simulated focus group</h3><div class="course">IBM 3302</div><p>Students rehearse moderating a focus group on a real client&#x27;s product before running a real one. Co-designed with Dr. Fan Wang and student developers Anderson Edmond, Minh Nhat Doan and Yaza M. Tun.</p><div class="try"><b>Try this:</b> Tick <b>Demo (no AI)</b> at the top left to open a recorded room of six personas, free and with no key.</div><video controls preload="none" playsinline poster="videos/Focus_Group_demo_walkthrough_voice.jpg" src="videos/Focus_Group_demo_walkthrough_voice.mp4"></video><p class="course">3-minute narrated walkthrough, in case you would rather watch</p><div class="btns"><a class="btn" href="https://synthetic-respondent-lab.vercel.app/focus-group" target="_blank" rel="noopener">Open the app</a></div></div><div class="card" id="pmap"><h3>Synthetic perceptual map (“Beat the AI”)</h3><div class="course">IBM 6450</div><p>Students replicate Li et al. (2024, Marketing Science): ask AI-simulated consumers to rate brands, map them, then check the map against a real class survey.</p><div class="try"><b>Try this:</b> Guess where Starbucks, Dunkin' and Dutch Bros sit, then compare. The AI matched real students on 81% of brand-pair orderings (chance 50%; class n = 8).</div><div class="btns"><a class="btn" href="https://lyf718718.github.io/course-hubs/ibm6450/mini/student.html" target="_blank" rel="noopener">Open the app</a><a class="btn alt" href="https://youtu.be/A9__SvO--GQ" target="_blank" rel="noopener">Watch the class session</a></div></div></div>
+
+<h2 id="modules">Modules you can adopt</h2>
+<h3>Featured on the poster</h3>
+<table><tr><th>Module</th><th>Course</th><th>Materials</th></tr>
+<tr><td><b>ODI Grips support chatbot</b>: four prompt blocks, hallucination tests, ablation</td><td>IBM 6450 · IBM 4212</td>
+<td>Harvard Business School case 626021 (2025), <a href="https://hbsp.harvard.edu/product/626021-PDF-ENG" target="_blank" rel="noopener"><i>ODI Grips: A Hands-on Generative AI Prompting Exercise for Customer Support Chatbots</i></a>, by Bojinov, Cook, Lin, Chen, Kang &amp; Stein ·
+<a href="https://youtu.be/Yc5ZYk6KaWQ" target="_blank" rel="noopener">class session</a></td></tr>
+<tr><td><b>Synthetic perceptual map</b>: AI-simulated consumers vs. a real class survey</td><td>IBM 6450</td>
+<td><a href="https://lyf718718.github.io/course-hubs/ibm6450/mini/student.html" target="_blank" rel="noopener">student companion</a> ·
+<a href="https://youtu.be/A9__SvO--GQ" target="_blank" rel="noopener">class session</a></td></tr>
+<tr><td><b>CALIPER</b>: develop and validate an LLM text classifier</td><td>IBM 6450</td>
+<td><a href="https://caliper-app-production.up.railway.app/" target="_blank" rel="noopener">app with built-in guide</a> ·
+<a href="https://youtu.be/HVcKLRiilmQ" target="_blank" rel="noopener">tutorial</a></td></tr>
+<tr><td><b>Simulated focus group</b>: rehearse moderating, then run a real one</td><td>IBM 3302</td>
+<td><a href="https://synthetic-respondent-lab.vercel.app/focus-group" target="_blank" rel="noopener">app</a> ·
+<a href="https://youtu.be/MsCWsHXq_uI" target="_blank" rel="noopener">walk-through</a></td></tr>
+<tr><td><b>Course hub</b>: the full AI in Marketing course, schedule and briefs</td><td>IBM 6450</td>
+<td><a href="https://lyf718718.github.io/course-hubs/ibm6450/" target="_blank" rel="noopener">live course hub</a></td></tr>
+</table>
+<h3>AI FAST plug-and-play modules</h3>
+<p>Four modules and a capstone project that faculty dropped into courses they already teach, across
+20 faculty and 40 course sections. Each page has the Canvas-ready materials.</p>
+<table><tr><th>Module</th><th>Fits</th><th>Recordings</th></tr>
+
+<tr><td><a href="https://aicertificate.notion.site/1d00c52fba5b8068ada2c82c7120755e" target="_blank" rel="noopener"><b>Module 1 · AI in Business Foundations</b></a></td><td>General business</td><td><a href="https://youtu.be/AKicY7NIy5Q" target="_blank" rel="noopener">Theory class</a> · <a href="https://youtu.be/7SzGvaOnkak" target="_blank" rel="noopener">Interactive exercise</a></td></tr>
+<tr><td><a href="https://aicertificate.notion.site/1d00c52fba5b8028a5e8fce2bca6c999" target="_blank" rel="noopener"><b>Module 2 · AI Ethics &amp; Accountability</b></a></td><td>General business</td><td>—</td></tr>
+<tr><td><a href="https://aicertificate.notion.site/1d00c52fba5b8042a073d6a92cdaf21c" target="_blank" rel="noopener"><b>Module 3 · AI for Business Strategy</b></a></td><td>Marketing</td><td>—</td></tr>
+<tr><td><a href="https://aicertificate.notion.site/1d00c52fba5b8066b834fda0a8896eaf" target="_blank" rel="noopener"><b>Module 4 · AI for Business Analytics</b></a></td><td>Marketing</td><td>—</td></tr>
+<tr><td><a href="https://aicertificate.notion.site/1d00c52fba5b80c89be6f500c43049f9" target="_blank" rel="noopener"><b>AI capstone term project</b></a></td><td>Marketing</td><td>—</td></tr>
+<tr><td><a href="https://aicertificate.notion.site/1ef0c52fba5b8014968ec1cbb6609a63" target="_blank" rel="noopener"><b>Harvard Business case materials</b></a></td><td>Marketing · general business</td><td>—</td></tr>
+<tr><td><a href="https://aicertificate.notion.site/3310c52fba5b8148a73cfa60ea32f200" target="_blank" rel="noopener"><b>AiBizLab simulation app</b></a></td><td>General business</td><td>—</td></tr>
+</table><h3>Teaching support</h3><ul>
+<li><a href="https://aicertificate.notion.site/2800c52fba5b804dab48ce4e7b0423fd" target="_blank" rel="noopener">Module 1 teaching note</a></li>
+<li><a href="https://aicertificate.notion.site/2550c52fba5b801cae7be09a28805680" target="_blank" rel="noopener">Assignment-specific AI policy example</a></li>
+<li><a href="https://aicertificate.notion.site/25a0c52fba5b80ca8afdde0d88ca085d" target="_blank" rel="noopener">Embedding an AI app in a Canvas page</a></li>
+<li><a href="https://aicertificate.notion.site/24c0c52fba5b80a08d41d084eae53c95" target="_blank" rel="noopener">How participating faculty adopted and adapted the modules</a></li>
+<li><a href="https://aicertificate.notion.site/31a0c52fba5b8097b903ff7d940a3b68" target="_blank" rel="noopener">Spring 2026 faculty panel discussion</a></li>
+<li><a href="https://aicertificate.notion.site/3800c52fba5b805ca3c6d55c39a8eae1" target="_blank" rel="noopener">Summer 2026 AI in Business Hackathon student panel</a></li>
+</ul>
+<h2 id="recordings">Class recordings</h2><p>Edited class sessions and demos, grouped by course, so you can see how each piece runs in a real classroom.</p>
+<h3>IBM 6450 AI in Marketing (Fall 2026)</h3><ul class="rec">
+<li><a href="https://youtu.be/A9__SvO--GQ" target="_blank" rel="noopener">Week 3 · Learning a paper: the synthetic perceptual map</a> <span class="kind">(full class session)</span></li>
+<li><a href="https://youtu.be/Yc5ZYk6KaWQ" target="_blank" rel="noopener">Week 5 · Custom AI assistants: the ODI support chatbot, ablation and a custom GPT</a> <span class="kind">(full class session, 72 min)</span></li>
+</ul>
+<h3>IBM 4212 / GBA 6520 Marketing Problems (AI as a case partner)</h3><ul class="rec">
+<li><a href="https://youtu.be/tKleBgwsXik" target="_blank" rel="noopener">Marketing strategy and AI-assisted strategic case analysis: introduction</a></li>
+<li><a href="https://youtu.be/pwtJhciLERk" target="_blank" rel="noopener">A custom GPT for the Aldi case</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/U5dycC2wSBQ" target="_blank" rel="noopener">Custom GPTs for education: introduction</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/i34emcIwl_M" target="_blank" rel="noopener">Case rubrics and a grading bot</a> <span class="kind">(instructor tool)</span></li>
+<li><a href="https://youtu.be/rRtdVf-gjEc" target="_blank" rel="noopener">Batch grading bot</a> <span class="kind">(instructor tool)</span></li>
+</ul>
+<h3>IBM 3302 Marketing Research (AI respondents vs. real data)</h3><ul class="rec">
+<li><a href="https://youtu.be/MsCWsHXq_uI" target="_blank" rel="noopener">Simulated focus group walk-through</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/Xs9pkaosMa8" target="_blank" rel="noopener">Simulated marketing research</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/JVPCU5m0nX4" target="_blank" rel="noopener">Sampling-plan implementation with simulated market research</a> <span class="kind">(class session)</span></li>
+<li><a href="https://youtu.be/Rez0sGJJDfs" target="_blank" rel="noopener">AI-powered data analysis: an insight example</a> <span class="kind">(demo)</span></li>
+</ul>
+<h3>ODI chatbot and the customer-support lab</h3><ul class="rec">
+<li><a href="https://youtu.be/sR352hBT7ss" target="_blank" rel="noopener">ODI product-recommendation chatbot</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/2e9fiTzDcjo" target="_blank" rel="noopener">AI customer-support lab (voice walk-through)</a> <span class="kind">(demo)</span></li>
+</ul>
+<h3>Text classification with LLMs (CALIPER / STAMP)</h3><ul class="rec">
+<li><a href="https://youtu.be/HVcKLRiilmQ" target="_blank" rel="noopener">STAMP tutorial</a> <span class="kind">(tutorial)</span></li>
+<li><a href="https://youtu.be/rgwKQJ9Jeh8" target="_blank" rel="noopener">Generative-AI text classification demo</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/pl2wDu5o324" target="_blank" rel="noopener">Text-classification supplement app and student app</a> <span class="kind">(demo)</span></li>
+<li><a href="https://youtu.be/K7BElEfKf6Y" target="_blank" rel="noopener">2026 AIM presentation: STAMP, a standardized protocol for LLM-based text classification</a> <span class="kind">(research talk)</span></li>
+</ul>
+<h3>For faculty</h3><ul class="rec">
+<li><a href="https://youtu.be/ey1zxcEfc-0" target="_blank" rel="noopener">Using AI to supercharge your teaching and research (CPP Fall Conference 2026)</a> <span class="kind">(talk)</span></li>
+<li><a href="https://youtu.be/lRbJmRNxpQE" target="_blank" rel="noopener">AI in Business Hackathon in five minutes</a> <span class="kind">(overview)</span></li>
+</ul>
+<h2 id="evidence">Evidence</h2><div class="tiles"><div class="tile"><b>1,583</b><span>students surveyed</span></div><div class="tile"><b>413</b><span>matched pre/post</span></div><div class="tile"><b>20</b><span>faculty adopters</span></div><div class="tile"><b>40</b><span>course sections</span></div><div class="tile"><b>320</b><span>hackathon students</span></div></div>
+<ul>
+<li>Students gained on every AI self-assessment, pre → post: AI knowledge d = .62, confidence
+d = .51, proficiency d = .45 (all p &lt; .001).</li>
+<li>First-generation students gained the most self-efficacy (+0.65 vs. +0.35
+for peers); 39.7% of matched students are Hispanic/Latino.</li>
+<li>Honest note: the objective AI-literacy quiz did not move (d = .04). Next we assess skills,
+not only self-reports.</li>
+<li>Hackathon: AI-literacy self-rating rose pre → post (d = .33, p = .006, n = 73 matched).</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>Questions, or want to adopt a module? Email <a href="mailto:yufanlin@cpp.edu">Yufan (Frank) Lin, yufanlin@cpp.edu</a>,
+College of Business Administration, Cal Poly Pomona.</p>
+<p class="course">AI FAST team: Yiwen Chen (SFSU), In-Hye Kang, Randy Stein, Fan Wang.
+Thanks to the AI FAST faculty cohort, the Tarkington Business Futures Institute, our student developers and our business partners.</p>
+</main><footer>AI FAST · California Education Learning Lab, Agreement 10664 · Cal Poly Pomona</footer></body></html>
